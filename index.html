@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BARKHO</title>
+<meta name="description" content="BARKHO — made to order, shipped to you." />
+<link rel="icon" type="image/svg+xml" href="emblem-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#" class="logo">BARKHO</a>
+      <nav class="main-nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <h1 class="hero-wordmark">BARKHO</h1>
+        <p class="hero-tagline">Made to order. Shipped when you order it — nothing sits in a warehouse first.</p>
+        <a href="#shop" class="btn btn-accent">Shop the collection</a>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="wrap">
+        <h2 class="section-title">The collection</h2>
+        <div class="product-grid" id="productGrid">
+          <!-- product tiles injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-inner">
+        <img src="emblem-mark.svg" alt="BARKHO emblem" class="about-emblem">
+        <div class="about-copy">
+          <h2 class="section-title">About</h2>
+          <p>
+            BARKHO started as one name on a handful of designs. Every piece is
+            printed after you order it, so there's no leftover stock and no
+            guessing what will sell — just the pieces you actually chose.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> BARKHO</span>
+      <a href="mailto:hello@barkho.com">hello@barkho.com</a>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h2>Your cart</h2>
+      <button class="drawer-close" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">0 NOK</span>
+      </div>
+      <button class="btn btn-accent btn-block" id="checkoutBtn">Checkout</button>
+      <p class="cart-note">Shipping and any customs fees are calculated at checkout.</p>
+    </div>
+  </aside>
+
+  <!-- Size-select modal -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="sizeModal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div class="modal-swatch" id="modalSwatch"></div>
+    <h3 id="modalName"></h3>
+    <p class="modal-desc" id="modalDesc"></p>
+    <p class="modal-price" id="modalPrice"></p>
+    <div class="size-options" id="sizeOptions"></div>
+    <button class="btn btn-accent btn-block" id="addToCartBtn">Add to cart</button>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

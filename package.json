@@ -1,0 +1,10 @@
+{
+  "name": "barkho-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BARKHO — print-on-demand storefront (static site + Netlify Functions + Stripe + Printful + Supabase)",
+  "dependencies": {
+    "stripe": "^16.12.0",
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

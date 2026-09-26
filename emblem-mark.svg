@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>BARKHO emblem</title>
+<line x1="217" y1="217" x2="231" y2="231" stroke="#C9A227" stroke-width="2"/>
+<line x1="103" y1="217" x2="89" y2="231" stroke="#C9A227" stroke-width="2"/>
+<line x1="103" y1="103" x2="89" y2="89" stroke="#C9A227" stroke-width="2"/>
+<line x1="217" y1="103" x2="231" y2="89" stroke="#C9A227" stroke-width="2"/>
+<path d="M160,14 L166,20 L160,26 L154,20 Z" fill="#C9A227"/>
+<path d="M300,154 L306,160 L300,166 L294,160 Z" fill="#C9A227"/>
+<path d="M160,294 L166,300 L160,306 L154,300 Z" fill="#C9A227"/>
+<path d="M20,154 L26,160 L20,166 L14,160 Z" fill="#C9A227"/>
+<circle cx="160" cy="160" r="78" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+<circle cx="160" cy="160" r="70" fill="#C9A227"/>
+<circle cx="160" cy="160" r="62" fill="none" stroke="#17140F" stroke-width="1.5"/>
+<text x="145" y="180" text-anchor="middle" font-family="'Bodoni Moda', Georgia, serif" font-size="64" font-style="italic" font-weight="700" fill="#17140F">B</text>
+<g transform="translate(320,0) scale(-1,1)">
+<text x="145" y="180" text-anchor="middle" font-family="'Bodoni Moda', Georgia, serif" font-size="64" font-style="italic" font-weight="700" fill="#17140F">B</text>
+</g>
+</svg>
