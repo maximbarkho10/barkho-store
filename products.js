@@ -25,10 +25,10 @@ const PRODUCTS = [
     priceNok: 349,
     color: "#2440E0",
     sizes: {
-      S: { syncVariantId: 0 },
-      M: { syncVariantId: 0 },
-      L: { syncVariantId: 0 },
-      XL: { syncVariantId: 0 },
+      S: { syncVariantId: 5526814895 },
+      M: { syncVariantId: 5526814896 },
+      L: { syncVariantId: 5526814897 },
+      XL: { syncVariantId: 5526814898 },
     },
   },
   {
@@ -38,10 +38,10 @@ const PRODUCTS = [
     priceNok: 349,
     color: "#EFEAE0",
     sizes: {
-      S: { syncVariantId: 0 },
-      M: { syncVariantId: 0 },
-      L: { syncVariantId: 0 },
-      XL: { syncVariantId: 0 },
+      S: { syncVariantId: 5526814904 },
+      M: { syncVariantId: 5526814905 },
+      L: { syncVariantId: 5526814906 },
+      XL: { syncVariantId: 5526814908 },
     },
   },
   {
