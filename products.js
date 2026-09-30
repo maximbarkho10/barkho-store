@@ -8,11 +8,13 @@
  * IMPORTANT: priceNok is the ONLY price the server trusts. Never trust a
  * price sent from the browser — always look it up here by product id.
  *
- * printfulVariantId values below are PLACEHOLDERS. After you connect your
- * Printful store and sync these designs, replace each one with the real
- * variant id from your Printful dashboard (Store > Products > a variant's
- * "..." menu > shows the Variant ID), or via GET /store/products in the
- * Printful API.
+ * syncVariantId values below are PLACEHOLDERS. These must be SYNC variant
+ * IDs — the ID of a variant inside a product you've created in your own
+ * Printful store (My products), with your design already attached. Get
+ * them from GET /store/products/{id} in the Printful API, or from your
+ * dashboard product's URL/details after you create and publish it. A
+ * generic catalog variant ID (from the Catalog API) will NOT work here —
+ * it has no design attached and would ship a blank item.
  */
 
 const PRODUCTS = [
@@ -23,10 +25,10 @@ const PRODUCTS = [
     priceNok: 349,
     color: "#2440E0",
     sizes: {
-      S: { printfulVariantId: 0 },
-      M: { printfulVariantId: 0 },
-      L: { printfulVariantId: 0 },
-      XL: { printfulVariantId: 0 },
+      S: { syncVariantId: 0 },
+      M: { syncVariantId: 0 },
+      L: { syncVariantId: 0 },
+      XL: { syncVariantId: 0 },
     },
   },
   {
@@ -36,10 +38,10 @@ const PRODUCTS = [
     priceNok: 349,
     color: "#EFEAE0",
     sizes: {
-      S: { printfulVariantId: 0 },
-      M: { printfulVariantId: 0 },
-      L: { printfulVariantId: 0 },
-      XL: { printfulVariantId: 0 },
+      S: { syncVariantId: 0 },
+      M: { syncVariantId: 0 },
+      L: { syncVariantId: 0 },
+      XL: { syncVariantId: 0 },
     },
   },
   {
@@ -49,10 +51,10 @@ const PRODUCTS = [
     priceNok: 549,
     color: "#2440E0",
     sizes: {
-      S: { printfulVariantId: 0 },
-      M: { printfulVariantId: 0 },
-      L: { printfulVariantId: 0 },
-      XL: { printfulVariantId: 0 },
+      S: { syncVariantId: 0 },
+      M: { syncVariantId: 0 },
+      L: { syncVariantId: 0 },
+      XL: { syncVariantId: 0 },
     },
   },
   {
@@ -62,7 +64,7 @@ const PRODUCTS = [
     priceNok: 249,
     color: "#57534A",
     sizes: {
-      "One size": { printfulVariantId: 0 },
+      "One size": { syncVariantId: 0 },
     },
   },
 ];
