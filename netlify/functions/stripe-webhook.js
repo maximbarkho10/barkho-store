@@ -1,4 +1,3 @@
-
 const Stripe = require("stripe");
 const { createClient } = require("@supabase/supabase-js");
 const PRODUCTS = require("../../products.js");
@@ -38,11 +37,28 @@ exports.handler = async (event) => {
     for (const line of cart) {
       const product = PRODUCTS.find((p) => p.id === line.id);
       const sizeInfo = product && product.sizes[line.size];
-      if (!sizeInfo || !sizeInfo.printfulVariantId) {
+      if (!sizeInfo || !sizeInfo.syncVariantId) {
         console.error(
           `Missing Printful variant id for ${line.id} / ${line.size} — ` +
           `replace the placeholder in products.js with the real variant id.`
         );
         continue;
       }
-      printfulItems.push({ variant_id:
+      printfulItems.push({ sync_variant_id: sizeInfo.syncVariantId, quantity: line.qty });
+    }
+
+    let printfulOrderId = null;
+
+    if (printfulItems.length > 0) {
+      const printfulRes = await fetch("https://api.printful.com/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.PRINTFUL_API_KEY}`,
+        },
+        body: JSON.stringify({
+          external_id: session.id,
+          recipient: {
+            name: shipping.name || customer.name || "",
+            address1: address.line1 || "",
+            address2:
