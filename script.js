@@ -4,24 +4,48 @@
   const PRODUCTS = window.PRODUCTS || [];
   const CART_KEY = "barkho_cart_v1";
 
+  // ---------- helpers ----------
+  function findProduct(id) {
+    return PRODUCTS.find((p) => p.id === id);
+  }
+
+  // Real Printful mockup if the product has one, otherwise the emblem on a color swatch
+  function swatchInner(product) {
+    if (product.image) {
+      return `<img src="${product.image}" alt="${product.name}" loading="lazy"
+        style="width:100%;height:100%;object-fit:cover;display:block;">`;
+    }
+    return `<img src="emblem-mark.svg" alt="${product.name} emblem" class="swatch-emblem">`;
+  }
+
+  function swatchBackground(product) {
+    return product.image ? "#F4F1EA" : product.color;
+  }
+
   // ---------- cart state ----------
   function loadCart() {
     try {
-      return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+      const saved = JSON.parse(localStorage.getItem(CART_KEY)) || [];
+      // drop old items whose product no longer exists (e.g. renamed products)
+      return saved.filter((line) => {
+        const p = findProduct(line.id);
+        return p && p.sizes[line.size];
+      });
     } catch (e) {
       return [];
     }
   }
 
   function saveCart(cart) {
-    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    try {
+      localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    } catch (e) {
+      /* storage unavailable — cart still works for this visit */
+    }
   }
 
   let cart = loadCart();
-
-  function findProduct(id) {
-    return PRODUCTS.find((p) => p.id === id);
-  }
+  saveCart(cart);
 
   function cartLineTotal(line) {
     const product = findProduct(line.id);
@@ -70,8 +94,8 @@
       const tile = document.createElement("div");
       tile.className = "product-tile";
       tile.innerHTML = `
-        <div class="product-swatch" style="background:${product.color}">
-          <img src="emblem-mark.svg" alt="${product.name} emblem" class="swatch-emblem">
+        <div class="product-swatch" style="background:${swatchBackground(product)};overflow:hidden;">
+          ${swatchInner(product)}
         </div>
         <p class="product-name">${product.name}</p>
         <p class="product-price">${product.priceNok} NOK</p>
@@ -107,8 +131,13 @@
         if (!product) return;
         const row = document.createElement("div");
         row.className = "cart-item";
+        const thumb = product.image
+          ? `<div class="cart-item-swatch" style="background:#F4F1EA;overflow:hidden;">
+               <img src="${product.image}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+             </div>`
+          : `<div class="cart-item-swatch" style="background:${product.color}"></div>`;
         row.innerHTML = `
-          <div class="cart-item-swatch" style="background:${product.color}"></div>
+          ${thumb}
           <div class="cart-item-info">
             <p class="cart-item-name">${product.name}</p>
             <p class="cart-item-meta">Size ${line.size} · ${product.priceNok} NOK</p>
@@ -167,25 +196,35 @@
     if (!product) return;
     activeProductId = productId;
     selectedSize = null;
+    sizeOptionsEl.style.outline = "";
 
-    modalSwatch.style.background = product.color;
-    modalSwatch.innerHTML = `<img src="emblem-mark.svg" alt="${product.name} emblem" class="swatch-emblem">`;
+    modalSwatch.style.background = swatchBackground(product);
+    modalSwatch.style.overflow = "hidden";
+    modalSwatch.innerHTML = swatchInner(product);
     modalName.textContent = product.name;
     modalDesc.textContent = product.description;
     modalPrice.textContent = product.priceNok + " NOK";
 
     sizeOptionsEl.innerHTML = "";
-    Object.keys(product.sizes).forEach((size) => {
+    const sizes = Object.keys(product.sizes);
+    sizes.forEach((size) => {
       const btn = document.createElement("button");
       btn.className = "size-option";
       btn.textContent = size;
       btn.addEventListener("click", () => {
         selectedSize = size;
+        sizeOptionsEl.style.outline = "";
         sizeOptionsEl.querySelectorAll(".size-option").forEach((el) => el.classList.remove("selected"));
         btn.classList.add("selected");
       });
       sizeOptionsEl.appendChild(btn);
     });
+
+    // one-size products (caps): pre-select automatically
+    if (sizes.length === 1) {
+      selectedSize = sizes[0];
+      sizeOptionsEl.querySelector(".size-option").classList.add("selected");
+    }
 
     modal.classList.add("open");
     modalBackdrop.classList.add("visible");
