@@ -1,7 +1,7 @@
 const Stripe = require("stripe");
 const PRODUCTS = require("../../products.js");
 
-const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = process.env.STRIPE_SECRET_KEY ? Stripe(process.env.STRIPE_SECRET_KEY) : null;
 
 // Countries Stripe will collect a shipping address for at checkout.
 // Add/remove ISO country codes to match where you're willing to ship.
@@ -11,6 +11,19 @@ exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" };
   }
+
+  if (!stripe) {
+    console.error("STRIPE_SECRET_KEY is not set in Netlify environment variables");
+    return { statusCode: 500, body: "Server config error: STRIPE_SECRET_KEY is missing" };
+  }
+
+  // Netlify sets URL automatically; SITE_URL (if set) wins. Fall back to the request origin.
+  const siteUrl = (
+    process.env.SITE_URL ||
+    process.env.URL ||
+    (event.headers && (event.headers.origin || `https://${event.headers.host}`)) ||
+    ""
+  ).replace(/\/+$/, "");
 
   let payload;
   try {
@@ -54,8 +67,8 @@ exports.handler = async (event) => {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items,
-      success_url: `${process.env.SITE_URL}/success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.SITE_URL}/cancel.html`,
+      success_url: `${siteUrl}/success.html?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${siteUrl}/cancel.html`,
       shipping_address_collection: { allowed_countries: SHIPPING_COUNTRIES },
       metadata: {
         cart: JSON.stringify(cartForMetadata),
@@ -64,10 +77,12 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url: session.url }),
     };
   } catch (err) {
     console.error("Stripe session error:", err);
-    return { statusCode: 500, body: "Could not create checkout session" };
+    // Show the real reason (safe in test mode; Stripe messages never contain keys)
+    return { statusCode: 500, body: `Could not create checkout session: ${err.message}` };
   }
 };
