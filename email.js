@@ -1,149 +1,122 @@
-const Stripe = require("stripe");
-const { createClient } = require("@supabase/supabase-js");
-const PRODUCTS = require("../../products.js");
-const { sendOrderConfirmation } = require("../../email.js");
+/**
+ * BARKHO — order confirmation email (sent through Resend: https://resend.com)
+ *
+ * Needs two Netlify environment variables:
+ *   RESEND_API_KEY  — your Resend API key (starts with re_)
+ *   EMAIL_FROM      — sender, e.g. "BARKHO <orders@yourdomain.com>"
+ *                     (before you have a domain: "BARKHO <onboarding@resend.dev>",
+ *                      which can only send to your own Resend account email)
+ *
+ * If RESEND_API_KEY is missing, nothing is sent and orders still work.
+ */
 
-const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
+const PRODUCTS = require("./products.js");
 
-exports.handler = async (event) => {
-  const sig = event.headers["stripe-signature"];
-  const rawBody = event.isBase64Encoded ? Buffer.from(event.body, "base64") : event.body;
+function escapeHtml(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
-  // 1) Verify the request really comes from Stripe
-  let stripeEvent;
-  try {
-    stripeEvent = stripe.webhooks.constructEvent(rawBody, sig, process.env.STRIPE_WEBHOOK_SECRET);
-  } catch (err) {
-    console.error("Webhook signature check failed:", err.message);
-    return { statusCode: 400, body: `Webhook Error: ${err.message}` };
-  }
+function formatNok(amount) {
+  return `${Math.round(amount)} NOK`;
+}
 
-  if (stripeEvent.type !== "checkout.session.completed") {
-    return { statusCode: 200, body: "ignored" };
-  }
-
-  const session = stripeEvent.data.object;
-
-  try {
-    // 2) Stripe may send the same event more than once — skip if already saved
-    const { data: existing, error: lookupError } = await supabase
-      .from("orders")
-      .select("id")
-      .eq("stripe_session_id", session.id)
-      .maybeSingle();
-    if (lookupError) throw new Error(`Supabase lookup failed: ${lookupError.message}`);
-    if (existing) {
-      console.log(`Order ${session.id} already saved — skipping`);
-      return { statusCode: 200, body: "already processed" };
-    }
-
-    // 3) Read full session details
-    const fullSession = await stripe.checkout.sessions.retrieve(session.id);
-    const cart = JSON.parse((fullSession.metadata && fullSession.metadata.cart) || "[]");
-    const shipping =
-      fullSession.shipping_details ||
-      (fullSession.collected_information && fullSession.collected_information.shipping_details) ||
-      {};
-    const address = shipping.address || {};
-    const customer = fullSession.customer_details || {};
-
-    // 4) Save the order in Supabase first (so it's never lost)
-    const { data: inserted, error: insertError } = await supabase
-      .from("orders")
-      .insert({
-        stripe_session_id: session.id,
-        customer_email: customer.email || null,
-        customer_name: shipping.name || customer.name || null,
-        shipping_address: address,
-        items: cart,
-        amount_total: (fullSession.amount_total || 0) / 100,
-        currency: fullSession.currency,
-        status: "paid",
-      })
-      .select("id")
-      .single();
-    if (insertError) throw new Error(`Supabase insert failed: ${insertError.message}`);
-
-    // 5) Build Printful items from the trusted catalog
-    const printfulItems = [];
-    for (const line of cart) {
+function buildEmail({ name, cart, amountTotal, address, siteUrl }) {
+  let itemsTotal = 0;
+  const rows = cart
+    .map((line) => {
       const product = PRODUCTS.find((p) => p.id === line.id);
-      const sizeInfo = product && product.sizes[line.size];
-      if (!sizeInfo || !sizeInfo.syncVariantId) {
-        console.error(`Missing Printful sync variant id for ${line.id} / ${line.size}`);
-        continue;
-      }
-      printfulItems.push({ sync_variant_id: sizeInfo.syncVariantId, quantity: line.qty || 1 });
-    }
+      const title = product ? product.name : line.id;
+      const price = product ? product.priceNok * (line.qty || 1) : 0;
+      itemsTotal += price;
+      return `
+        <tr>
+          <td style="padding:10px 0;border-bottom:1px solid #DEDACD;">
+            ${escapeHtml(title)}<br>
+            <span style="color:#57534A;font-size:13px;">Size ${escapeHtml(line.size)} · Qty ${escapeHtml(line.qty || 1)}</span>
+          </td>
+          <td style="padding:10px 0;border-bottom:1px solid #DEDACD;text-align:right;white-space:nowrap;">${formatNok(price)}</td>
+        </tr>`;
+    })
+    .join("");
 
-    // 6) Create the Printful order as a DRAFT (no confirm=true → nothing is charged or printed)
-    let printfulOrderId = null;
-    let status = "paid";
+  const addressLines = [
+    address.line1,
+    address.line2,
+    [address.postal_code, address.city].filter(Boolean).join(" "),
+    address.country,
+  ]
+    .filter(Boolean)
+    .map(escapeHtml)
+    .join("<br>");
 
-    if (printfulItems.length === 0) {
-      status = "printful_no_items";
-    } else {
-      const printfulRes = await fetch("https://api.printful.com/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.PRINTFUL_API_KEY}`,
-        },
-        body: JSON.stringify({
-          // Printful allows max 32 characters here
-          external_id: session.id.slice(-32),
-          recipient: {
-            name: shipping.name || customer.name || "",
-            address1: address.line1 || "",
-            address2: address.line2 || "",
-            city: address.city || "",
-            state_code: address.state || "",
-            country_code: address.country || "",
-            zip: address.postal_code || "",
-            email: customer.email || "",
-            phone: customer.phone || "",
-          },
-          items: printfulItems,
-        }),
-      });
+  const html = `
+  <div style="background:#F4F1EA;padding:32px 16px;font-family:Georgia,serif;color:#17140F;">
+    <div style="max-width:560px;margin:0 auto;background:#FFFFFF;padding:32px;">
+      <div style="font-size:28px;font-weight:bold;letter-spacing:2px;">BARKHO</div>
+      <h1 style="font-size:24px;margin:28px 0 8px;">Thank you${name ? ", " + escapeHtml(name.split(" ")[0]) : ""}.</h1>
+      <p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.6;color:#57534A;margin:0 0 24px;">
+        Your order is confirmed. Every piece is made to order — production takes 2–5 business days,
+        and you'll get a shipping notice when it's on its way.
+      </p>
+      <table style="width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:15px;">
+        ${rows}
+        <tr>
+          <td style="padding:10px 0;">Shipping</td>
+          <td style="padding:10px 0;text-align:right;">${formatNok(Math.max(0, amountTotal - itemsTotal))}</td>
+        </tr>
+        <tr>
+          <td style="padding:12px 0;font-weight:bold;border-top:2px solid #17140F;">Total</td>
+          <td style="padding:12px 0;font-weight:bold;text-align:right;border-top:2px solid #17140F;">${formatNok(amountTotal)}</td>
+        </tr>
+      </table>
+      <p style="font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#57534A;margin:24px 0 0;">
+        <b style="color:#17140F;">Shipping to</b><br>${addressLines}
+      </p>
+      <p style="font-family:Arial,sans-serif;font-size:13px;line-height:1.6;color:#57534A;margin:28px 0 0;border-top:1px solid #DEDACD;padding-top:16px;">
+        Questions? Just reply to this email.<br>
+        <a href="${siteUrl}/shipping-returns.html" style="color:#2440E0;">Shipping &amp; Returns</a> ·
+        <a href="${siteUrl}/terms.html" style="color:#2440E0;">Terms</a>
+      </p>
+    </div>
+  </div>`;
 
-      const printfulData = await printfulRes.json().catch(() => ({}));
-      if (printfulRes.ok && printfulData.result) {
-        printfulOrderId = String(printfulData.result.id);
-        status = "sent_to_printful";
-      } else {
-        console.error("Printful order failed:", printfulRes.status, JSON.stringify(printfulData));
-        status = "printful_failed";
-      }
-    }
+  return html;
+}
 
-    // 7) Update the saved order with the Printful result
-    const { error: updateError } = await supabase
-      .from("orders")
-      .update({ printful_order_id: printfulOrderId, status })
-      .eq("id", inserted.id);
-    if (updateError) console.error("Supabase update failed:", updateError.message);
-
-    // 8) Email the customer a confirmation (never blocks the order if it fails)
-    try {
-      await sendOrderConfirmation({
-        to: customer.email,
-        name: shipping.name || customer.name,
-        cart,
-        amountTotal: (fullSession.amount_total || 0) / 100,
-        address,
-        siteUrl: (process.env.SITE_URL || process.env.URL || "").replace(/\/+$/, ""),
-      });
-    } catch (emailErr) {
-      console.error("Confirmation email failed:", emailErr.message);
-    }
-
-    console.log(`Order ${session.id} saved — status: ${status}, printful: ${printfulOrderId}`);
-    return { statusCode: 200, body: "ok" };
-  } catch (err) {
-    console.error("Webhook processing error:", err);
-    // 500 tells Stripe to retry later
-    return { statusCode: 500, body: `Webhook processing error: ${err.message}` };
+async function sendOrderConfirmation({ to, name, cart, amountTotal, address, siteUrl }) {
+  if (!process.env.RESEND_API_KEY) {
+    console.log("RESEND_API_KEY not set — skipping confirmation email");
+    return { skipped: true };
   }
-};
+  if (!to) {
+    console.log("No customer email — skipping confirmation email");
+    return { skipped: true };
+  }
+
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: process.env.EMAIL_FROM || "BARKHO <onboarding@resend.dev>",
+      to: [to],
+      reply_to: "maxim.barkho@hotmail.com",
+      subject: "Your BARKHO order is confirmed",
+      html: buildEmail({ name, cart, amountTotal, address: address || {}, siteUrl }),
+    }),
+  });
+
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(`Resend ${res.status}: ${JSON.stringify(data)}`);
+  }
+  return data;
+}
+
+module.exports = { sendOrderConfirmation };
