@@ -7,6 +7,9 @@ const stripe = process.env.STRIPE_SECRET_KEY ? Stripe(process.env.STRIPE_SECRET_
 // Add/remove ISO country codes to match where you're willing to ship.
 const SHIPPING_COUNTRIES = ["NO", "SE", "DK", "FI", "DE", "NL", "GB", "US"];
 
+// Flat shipping fee per order, in NOK. Change this one number to adjust it.
+const SHIPPING_NOK = 99;
+
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" };
@@ -70,6 +73,24 @@ exports.handler = async (event) => {
       success_url: `${siteUrl}/success.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/cancel.html`,
       shipping_address_collection: { allowed_countries: SHIPPING_COUNTRIES },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            display_name: "Standard shipping",
+            type: "fixed_amount",
+            fixed_amount: { amount: SHIPPING_NOK * 100, currency: "nok" },
+            delivery_estimate: {
+              minimum: { unit: "business_day", value: 5 },
+              maximum: { unit: "business_day", value: 12 },
+            },
+          },
+        },
+      ],
+      custom_text: {
+        submit: {
+          message: `By paying you accept our Terms of Sale: ${siteUrl}/terms.html`,
+        },
+      },
       metadata: {
         cart: JSON.stringify(cartForMetadata),
       },
