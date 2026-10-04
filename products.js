@@ -12,12 +12,18 @@
  * Printful store (GET /store/products/{id}). Catalog variant IDs will NOT work.
  *
  * image = real Printful mockup preview for that product/color.
+ *
+ * collection  = "core" (all year) or "winter" (seasonal). Missing = "core".
+ * comingSoon  = true -> shown on the site, but cannot be bought yet.
+ *               To launch it: add real sizes/syncVariantIds + image, then
+ *               delete the comingSoon line.
  */
 
 const PRODUCTS = [
   // ---------- T-SHIRTS (Gildan 64000) — Printful product 476574454 ----------
   {
     id: "wordmark-tee-blue",
+    collection: "core",
     name: "BARKHO Wordmark Tee — Blue",
     description: "Heavyweight cotton tee with the core emblem across the chest.",
     priceNok: 349,
@@ -32,6 +38,7 @@ const PRODUCTS = [
   },
   {
     id: "wordmark-tee-white",
+    collection: "core",
     name: "BARKHO Wordmark Tee — White",
     description: "Same cut, inverted colorway. Heavyweight cotton.",
     priceNok: 349,
@@ -48,6 +55,7 @@ const PRODUCTS = [
   // ---------- ZIP HOODIE (Gildan 18600) — Printful product 476932132 ----------
   {
     id: "zip-hoodie-black",
+    collection: "core",
     name: "BARKHO Zip Hoodie — Black",
     description: "Heavy blend zip hoodie with BARKHO emblem label and embroidered wrist detail.",
     priceNok: 749,
@@ -62,6 +70,7 @@ const PRODUCTS = [
   },
   {
     id: "zip-hoodie-blue",
+    collection: "core",
     name: "BARKHO Zip Hoodie — Royal Blue",
     description: "Heavy blend zip hoodie with BARKHO emblem label and embroidered wrist detail.",
     priceNok: 749,
@@ -76,6 +85,7 @@ const PRODUCTS = [
   },
   {
     id: "zip-hoodie-white",
+    collection: "core",
     name: "BARKHO Zip Hoodie — White",
     description: "Heavy blend zip hoodie with BARKHO emblem label and embroidered wrist detail.",
     priceNok: 749,
@@ -92,6 +102,7 @@ const PRODUCTS = [
   // ---------- FLAT BILL CAP (Yupoong 6007) — Printful product 477154308 ----------
   {
     id: "cap-black",
+    collection: "core",
     name: "BARKHO Cap — Black",
     description: "Flat bill snapback with the gold BARKHO emblem embroidered on the front.",
     priceNok: 399,
@@ -103,6 +114,7 @@ const PRODUCTS = [
   },
   {
     id: "cap-blue",
+    collection: "core",
     name: "BARKHO Cap — Royal Blue",
     description: "Flat bill snapback with the gold BARKHO emblem embroidered on the front.",
     priceNok: 399,
@@ -114,6 +126,7 @@ const PRODUCTS = [
   },
   {
     id: "cap-white",
+    collection: "core",
     name: "BARKHO Cap — White",
     description: "Flat bill snapback with the gold BARKHO emblem embroidered on the front.",
     priceNok: 399,
@@ -122,6 +135,48 @@ const PRODUCTS = [
     sizes: {
       "One size": { syncVariantId: 5529312014 },
     },
+  },
+
+  // ---------- WINTER COLLECTION (coming soon) ----------
+  {
+    id: "crewneck-onyx",
+    collection: "winter",
+    comingSoon: true,
+    name: "BARKHO Crewneck — Onyx",
+    description: "Heavyweight crewneck sweatshirt with the gold emblem on the chest.",
+    priceNok: 649,
+    color: "#17140F",
+    sizes: {},
+  },
+  {
+    id: "zip-hoodie-01-premium",
+    collection: "winter",
+    comingSoon: true,
+    name: "Zip Hoodie 01 — Premium",
+    description: "Oversized boxy zip hoodie with the gold emblem and BARKHO neck label.",
+    priceNok: 899,
+    color: "#17140F",
+    sizes: {},
+  },
+  {
+    id: "winter-jacket",
+    collection: "winter",
+    comingSoon: true,
+    name: "BARKHO Jacket",
+    description: "Winter jacket with embroidered BARKHO detail.",
+    priceNok: 1099,
+    color: "#2440E0",
+    sizes: {},
+  },
+  {
+    id: "winter-scarf",
+    collection: "winter",
+    comingSoon: true,
+    name: "BARKHO Scarf",
+    description: "Soft winter scarf with a small gold emblem.",
+    priceNok: 399,
+    color: "#EFEAE0",
+    sizes: {},
   },
 ];
 

@@ -85,23 +85,58 @@
     renderCart();
   }
 
-  // ---------- rendering: product grid ----------
-  const productGrid = document.getElementById("productGrid");
+  // ---------- rendering: collections ----------
+  const COLLECTIONS = [
+    {
+      id: "core",
+      title: "Core Collection",
+      tagline: "The essentials. Made to order, all year round.",
+    },
+    {
+      id: "winter",
+      title: "Winter Collection",
+      tagline: "Heavyweight layers for the cold months. Dropping soon.",
+    },
+  ];
+
+  const collectionsEl = document.getElementById("collections");
+
+  function productTile(product) {
+    const tile = document.createElement("div");
+    tile.className = "product-tile" + (product.comingSoon ? " is-soon" : "");
+    tile.innerHTML = `
+      <div class="product-swatch" style="background:${swatchBackground(product)};overflow:hidden;position:relative;">
+        ${swatchInner(product)}
+        ${product.comingSoon ? '<span class="soon-badge">Coming soon</span>' : ""}
+      </div>
+      <p class="product-name">${product.name}</p>
+      <p class="product-price">${product.comingSoon ? "Coming soon" : product.priceNok + " NOK"}</p>
+    `;
+    if (!product.comingSoon) {
+      tile.addEventListener("click", () => openSizeModal(product.id));
+    }
+    return tile;
+  }
 
   function renderProducts() {
-    productGrid.innerHTML = "";
-    PRODUCTS.forEach((product) => {
-      const tile = document.createElement("div");
-      tile.className = "product-tile";
-      tile.innerHTML = `
-        <div class="product-swatch" style="background:${swatchBackground(product)};overflow:hidden;">
-          ${swatchInner(product)}
+    collectionsEl.innerHTML = "";
+    COLLECTIONS.forEach((collection) => {
+      const items = PRODUCTS.filter((p) => (p.collection || "core") === collection.id);
+      if (items.length === 0) return;
+
+      const section = document.createElement("div");
+      section.className = "collection";
+      section.id = collection.id;
+      section.innerHTML = `
+        <div class="collection-head">
+          <h2 class="section-title">${collection.title}</h2>
+          <p class="collection-tagline">${collection.tagline}</p>
         </div>
-        <p class="product-name">${product.name}</p>
-        <p class="product-price">${product.priceNok} NOK</p>
+        <div class="product-grid"></div>
       `;
-      tile.addEventListener("click", () => openSizeModal(product.id));
-      productGrid.appendChild(tile);
+      const grid = section.querySelector(".product-grid");
+      items.forEach((product) => grid.appendChild(productTile(product)));
+      collectionsEl.appendChild(section);
     });
   }
 
@@ -193,7 +228,7 @@
 
   function openSizeModal(productId) {
     const product = findProduct(productId);
-    if (!product) return;
+    if (!product || product.comingSoon) return;
     activeProductId = productId;
     selectedSize = null;
     sizeOptionsEl.style.outline = "";
