@@ -1,18 +1,1 @@
-<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>BARKHO emblem</title>
-<line x1="217" y1="217" x2="231" y2="231" stroke="#C9A227" stroke-width="2"/>
-<line x1="103" y1="217" x2="89" y2="231" stroke="#C9A227" stroke-width="2"/>
-<line x1="103" y1="103" x2="89" y2="89" stroke="#C9A227" stroke-width="2"/>
-<line x1="217" y1="103" x2="231" y2="89" stroke="#C9A227" stroke-width="2"/>
-<path d="M160,14 L166,20 L160,26 L154,20 Z" fill="#C9A227"/>
-<path d="M300,154 L306,160 L300,166 L294,160 Z" fill="#C9A227"/>
-<path d="M160,294 L166,300 L160,306 L154,300 Z" fill="#C9A227"/>
-<path d="M20,154 L26,160 L20,166 L14,160 Z" fill="#C9A227"/>
-<circle cx="160" cy="160" r="78" fill="none" stroke="#C9A227" stroke-width="1.5"/>
-<circle cx="160" cy="160" r="70" fill="#C9A227"/>
-<circle cx="160" cy="160" r="62" fill="none" stroke="#17140F" stroke-width="1.5"/>
-<text x="145" y="180" text-anchor="middle" font-family="'Bodoni Moda', Georgia, serif" font-size="64" font-style="italic" font-weight="700" fill="#17140F">B</text>
-<g transform="translate(320,0) scale(-1,1)">
-<text x="145" y="180" text-anchor="middle" font-family="'Bodoni Moda', Georgia, serif" font-size="64" font-style="italic" font-weight="700" fill="#17140F">B</text>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"><title>BARKHO emblem</title><g fill="#C9A227"><circle r="47" fill="none" stroke="#C9A227" stroke-width="2.2"/><circle cx="0" cy="-43" r="1.6" transform="rotate(15)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(45)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(75)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(105)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(135)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(165)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(195)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(225)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(255)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(285)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(315)"/><circle cx="0" cy="-43" r="1.6" transform="rotate(345)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(0)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(30)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(60)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(90)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(120)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(150)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(180)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(210)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(240)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(270)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(300)"/><path d="M0,-15 Q7.5,-27 0,-39 Q-7.5,-27 0,-15 Z" transform="rotate(330)"/><path fill-rule="evenodd" d="M0,-9 A9,9 0 1,1 0,9 A9,9 0 1,1 0,-9 Z M0,-4 A4,4 0 1,0 0,4 A4,4 0 1,0 0,-4 Z"/></g></svg>
