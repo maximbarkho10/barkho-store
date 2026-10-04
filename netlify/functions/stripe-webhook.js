@@ -1,6 +1,7 @@
 const Stripe = require("stripe");
 const { createClient } = require("@supabase/supabase-js");
 const PRODUCTS = require("../../products.js");
+const { sendOrderConfirmation } = require("../../email.js");
 
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
@@ -123,6 +124,20 @@ exports.handler = async (event) => {
       .update({ printful_order_id: printfulOrderId, status })
       .eq("id", inserted.id);
     if (updateError) console.error("Supabase update failed:", updateError.message);
+
+    // 8) Email the customer a confirmation (never blocks the order if it fails)
+    try {
+      await sendOrderConfirmation({
+        to: customer.email,
+        name: shipping.name || customer.name,
+        cart,
+        amountTotal: (fullSession.amount_total || 0) / 100,
+        address,
+        siteUrl: (process.env.SITE_URL || process.env.URL || "").replace(/\/+$/, ""),
+      });
+    } catch (emailErr) {
+      console.error("Confirmation email failed:", emailErr.message);
+    }
 
     console.log(`Order ${session.id} saved — status: ${status}, printful: ${printfulOrderId}`);
     return { statusCode: 200, body: "ok" };
