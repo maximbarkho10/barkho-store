@@ -25,6 +25,17 @@ exports.handler = async (event) => {
 
   const session = stripeEvent.data.object;
 
+  // Test-mode payments (cs_test_… / livemode=false) must never create real
+  // Printful orders or count as real sales. They are saved with status "test"
+  // so testing still works, but Printful and the customer email are skipped.
+  const isTestMode = stripeEvent.livemode === false || String(session.id).startsWith("cs_test_");
+
+  // Only fulfil sessions that are actually paid (Klarna etc. can complete as "unpaid").
+  if (!isTestMode && session.payment_status && session.payment_status !== "paid") {
+    console.log(`Session ${session.id} completed but payment_status=${session.payment_status} — skipping`);
+    return { statusCode: 200, body: "not paid" };
+  }
+
   try {
     // 2) Stripe may send the same event more than once — skip if already saved
     const { data: existing, error: lookupError } = await supabase
@@ -59,11 +70,16 @@ exports.handler = async (event) => {
         items: cart,
         amount_total: (fullSession.amount_total || 0) / 100,
         currency: fullSession.currency,
-        status: "paid",
+        status: isTestMode ? "test" : "paid",
       })
       .select("id")
       .single();
     if (insertError) throw new Error(`Supabase insert failed: ${insertError.message}`);
+
+    if (isTestMode) {
+      console.log(`Test-mode order ${session.id} saved with status "test" — Printful and email skipped`);
+      return { statusCode: 200, body: "test order saved" };
+    }
 
     // 5) Build Printful items from the trusted catalog
     const printfulItems = [];
