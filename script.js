@@ -392,6 +392,24 @@
   });
 
   // ---------- checkout ----------
+  // ---------- shipping region ----------
+  const SHIP_NOTES = {
+    europe: "Shipping: 99 NOK, added at checkout. Made to order — ships in 2–5 business days.",
+    middleeast: "Shipping: 179 NOK, added at checkout. Made to order — delivery usually 2–4 weeks. Local import duties/taxes, if any, are paid on delivery.",
+  };
+  const shipRegionEl = document.getElementById("shipRegion");
+  const cartNoteEl = document.getElementById("cartNote");
+  try {
+    const saved = localStorage.getItem("barkho_ship_region");
+    if (saved && SHIP_NOTES[saved]) shipRegionEl.value = saved;
+  } catch (e) { /* ignore */ }
+  function updateShipNote() {
+    cartNoteEl.textContent = SHIP_NOTES[shipRegionEl.value] || SHIP_NOTES.europe;
+    try { localStorage.setItem("barkho_ship_region", shipRegionEl.value); } catch (e) { /* ignore */ }
+  }
+  shipRegionEl.addEventListener("change", updateShipNote);
+  updateShipNote();
+
   document.getElementById("checkoutBtn").addEventListener("click", async () => {
     if (cart.length === 0) return;
 
@@ -403,7 +421,7 @@
       const res = await fetch("/.netlify/functions/create-checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cart }),
+        body: JSON.stringify({ cart, region: shipRegionEl.value }),
       });
 
       if (!res.ok) throw new Error("checkout session failed");

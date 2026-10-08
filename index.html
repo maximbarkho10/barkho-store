@@ -34,6 +34,8 @@
   .gallery-thumbs { display: flex; gap: 8px; margin: -6px 0 14px; overflow-x: auto; }
   .gallery-thumbs img { width: 58px; height: 58px; object-fit: cover; background: #F4F1EA; border: 1px solid rgba(0,0,0,.12); cursor: pointer; flex: none; }
   .gallery-thumbs img.active { border: 2px solid #C9A227; }
+  .ship-region-label { display: block; font-size: .8rem; margin: 4px 0 6px; color: var(--ink-soft, #5a5248); }
+  .ship-region { width: 100%; padding: 10px; margin-bottom: 12px; font: inherit; font-size: .85rem; background: #fff; border: 1px solid rgba(0,0,0,.2); }
   .soon-badge { position: absolute; top: 12px; left: 12px; background: #17140F; color: #C9A227; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px; border: 1px solid #C9A227; }
 </style>
 </head>
@@ -115,8 +117,13 @@
         <span>Subtotal</span>
         <span id="cartSubtotal">0 NOK</span>
       </div>
+      <label class="ship-region-label" for="shipRegion">Ship to</label>
+      <select class="ship-region" id="shipRegion">
+        <option value="europe">Norway, Nordics, Europe &amp; USA — 99 NOK</option>
+        <option value="middleeast">Middle East (UAE, Saudi Arabia, Jordan, Qatar, Kuwait, Turkey) — 179 NOK</option>
+      </select>
       <button class="btn btn-accent btn-block" id="checkoutBtn">Checkout</button>
-      <p class="cart-note">Shipping: 99 NOK, added at checkout. Made to order — ships in 2–5 business days.</p>
+      <p class="cart-note" id="cartNote">Shipping: 99 NOK, added at checkout. Made to order — ships in 2–5 business days.</p>
     </div>
   </aside>
 
