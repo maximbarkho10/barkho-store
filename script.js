@@ -101,27 +101,53 @@
 
   const collectionsEl = document.getElementById("collections");
 
+  // All colour entries of the same design (same "group"). Products without a
+  // group are their own single-colour group.
+  function groupOf(product) {
+    if (!product.group) return [product];
+    return PRODUCTS.filter((p) => p.group === product.group);
+  }
+
+  // One tile per design. Shows the first colour's mockup + small colour dots.
   function productTile(product) {
+    const variants = groupOf(product);
     const tile = document.createElement("div");
     tile.className = "product-tile" + (product.comingSoon ? " is-soon" : "");
+    const dots = variants.length > 1
+      ? `<div class="color-dots">${variants
+          .map((v) => `<span class="color-dot" title="${v.colorName || ""}" style="background:${v.color}"></span>`)
+          .join("")}</div>`
+      : "";
     tile.innerHTML = `
       <div class="product-swatch" style="background:${swatchBackground(product)};overflow:hidden;position:relative;">
         ${swatchInner(product)}
         ${product.comingSoon ? '<span class="soon-badge">Coming soon</span>' : ""}
       </div>
-      <p class="product-name">${product.name}</p>
+      <p class="product-name">${product.title || product.name}</p>
+      ${dots}
       <p class="product-price">${product.comingSoon ? "Coming soon" : product.priceNok + " NOK"}</p>
     `;
     if (!product.comingSoon) {
-      tile.addEventListener("click", () => openSizeModal(product.id));
+      tile.addEventListener("click", () => { selectedSize = null; openSizeModal(product.id); });
     }
     return tile;
+  }
+
+  // First entry of every group, in catalog order
+  function groupLeaders(items) {
+    const seen = new Set();
+    return items.filter((p) => {
+      const key = p.group || p.id;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   }
 
   function renderProducts() {
     collectionsEl.innerHTML = "";
     COLLECTIONS.forEach((collection) => {
-      const items = PRODUCTS.filter((p) => (p.collection || "core") === collection.id);
+      const items = groupLeaders(PRODUCTS.filter((p) => (p.collection || "core") === collection.id));
       if (items.length === 0) return;
 
       const section = document.createElement("div");
@@ -132,10 +158,23 @@
           <h2 class="section-title">${collection.title}</h2>
           <p class="collection-tagline">${collection.tagline}</p>
         </div>
-        <div class="product-grid"></div>
       `;
-      const grid = section.querySelector(".product-grid");
-      items.forEach((product) => grid.appendChild(productTile(product)));
+
+      // Sub-sections by product type (Hoodies, T-shirts, ...) when types are set
+      const types = [];
+      items.forEach((p) => { if (!types.includes(p.type || "")) types.push(p.type || ""); });
+      types.forEach((type) => {
+        if (type) {
+          const h = document.createElement("h3");
+          h.className = "type-title";
+          h.textContent = type;
+          section.appendChild(h);
+        }
+        const grid = document.createElement("div");
+        grid.className = "product-grid";
+        items.filter((p) => (p.type || "") === type).forEach((product) => grid.appendChild(productTile(product)));
+        section.appendChild(grid);
+      });
       collectionsEl.appendChild(section);
     });
   }
@@ -226,25 +265,43 @@
   let activeProductId = null;
   let selectedSize = null;
 
+  const colorOptionsEl = document.getElementById("colorOptions");
+
   function openSizeModal(productId) {
     const product = findProduct(productId);
     if (!product || product.comingSoon) return;
     activeProductId = productId;
-    selectedSize = null;
     sizeOptionsEl.style.outline = "";
 
     modalSwatch.style.background = swatchBackground(product);
     modalSwatch.style.overflow = "hidden";
     modalSwatch.innerHTML = swatchInner(product);
-    modalName.textContent = product.name;
+    modalName.textContent = product.title ? `${product.title} — ${product.colorName}` : product.name;
     modalDesc.textContent = product.description;
     modalPrice.textContent = product.priceNok + " NOK";
+
+    // colour picker (only when the design comes in more than one colour)
+    const variants = groupOf(product);
+    colorOptionsEl.innerHTML = "";
+    colorOptionsEl.style.display = variants.length > 1 ? "" : "none";
+    variants.forEach((v) => {
+      const btn = document.createElement("button");
+      btn.className = "color-option" + (v.id === product.id ? " selected" : "");
+      btn.title = v.colorName || v.name;
+      btn.setAttribute("aria-label", v.colorName || v.name);
+      btn.style.background = v.color;
+      btn.addEventListener("click", () => openSizeModal(v.id));
+      colorOptionsEl.appendChild(btn);
+    });
+
+    // keep the chosen size when switching colour, if that colour has it
+    if (selectedSize && !product.sizes[selectedSize]) selectedSize = null;
 
     sizeOptionsEl.innerHTML = "";
     const sizes = Object.keys(product.sizes);
     sizes.forEach((size) => {
       const btn = document.createElement("button");
-      btn.className = "size-option";
+      btn.className = "size-option" + (size === selectedSize ? " selected" : "");
       btn.textContent = size;
       btn.addEventListener("click", () => {
         selectedSize = size;

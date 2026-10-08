@@ -13,8 +13,8 @@
   --accent-ink: #FFFFFF;
   --line: #DEDACD;
 
-  --font-display: "Bodoni Moda", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Bodoni Moda", "Noto Sans Syriac Eastern", Georgia, serif;
+  --font-body: "Inter", "Noto Sans Syriac Eastern", -apple-system, BlinkMacSystemFont, sans-serif;
 
   --container: 1180px;
 }

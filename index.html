@@ -8,7 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="emblem-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700&family=Noto+Sans+Syriac+Eastern:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
   .collection + .collection { margin-top: 88px; }
@@ -18,6 +18,13 @@
   .collection-tagline { margin: 0; color: var(--ink-soft); }
   .product-tile.is-soon { cursor: default; }
   .product-tile.is-soon .product-price { color: var(--ink-soft); font-weight: 500; }
+  .type-title { font-family: "Bodoni Moda", serif; font-size: 1.5rem; font-weight: 500; margin: 40px 0 18px; }
+  .collection-head + .type-title { margin-top: 0; }
+  .color-dots { display: flex; gap: 6px; margin: 2px 0 6px; }
+  .color-dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); }
+  .color-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 14px; }
+  .color-option { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.3); cursor: pointer; padding: 0; }
+  .color-option.selected { box-shadow: 0 0 0 2px #C9A227; }
   .soon-badge { position: absolute; top: 12px; left: 12px; background: #17140F; color: #C9A227; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px; border: 1px solid #C9A227; }
 </style>
 </head>
@@ -112,6 +119,7 @@
     <h3 id="modalName"></h3>
     <p class="modal-desc" id="modalDesc"></p>
     <p class="modal-price" id="modalPrice"></p>
+    <div class="color-options" id="colorOptions"></div>
     <div class="size-options" id="sizeOptions"></div>
     <button class="btn btn-accent btn-block" id="addToCartBtn">Add to cart</button>
   </div>
