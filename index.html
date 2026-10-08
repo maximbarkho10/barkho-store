@@ -25,6 +25,15 @@
   .color-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 14px; }
   .color-option { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.3); cursor: pointer; padding: 0; }
   .color-option.selected { box-shadow: 0 0 0 2px #C9A227; }
+  .modal { width: min(460px, 92vw); max-height: 92vh; overflow-y: auto; }
+  .modal-swatch { aspect-ratio: 1 / 1; position: relative; }
+  .gallery-main { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(255,255,255,.88); color: #17140F; font-size: 22px; line-height: 1; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+  .gallery-prev { left: 8px; }
+  .gallery-next { right: 8px; }
+  .gallery-thumbs { display: flex; gap: 8px; margin: -6px 0 14px; overflow-x: auto; }
+  .gallery-thumbs img { width: 58px; height: 58px; object-fit: cover; background: #F4F1EA; border: 1px solid rgba(0,0,0,.12); cursor: pointer; flex: none; }
+  .gallery-thumbs img.active { border: 2px solid #C9A227; }
   .soon-badge { position: absolute; top: 12px; left: 12px; background: #17140F; color: #C9A227; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px; border: 1px solid #C9A227; }
 </style>
 </head>
@@ -116,6 +125,7 @@
   <div class="modal" id="sizeModal" role="dialog" aria-modal="true">
     <button class="modal-close" id="modalClose" aria-label="Close">×</button>
     <div class="modal-swatch" id="modalSwatch"></div>
+    <div class="gallery-thumbs" id="galleryThumbs"></div>
     <h3 id="modalName"></h3>
     <p class="modal-desc" id="modalDesc"></p>
     <p class="modal-price" id="modalPrice"></p>

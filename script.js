@@ -266,6 +266,57 @@
   let selectedSize = null;
 
   const colorOptionsEl = document.getElementById("colorOptions");
+  const galleryThumbsEl = document.getElementById("galleryThumbs");
+
+  // ---------- product gallery (front, back, sides) ----------
+  let galleryImages = [];
+  let galleryIndex = 0;
+
+  function showGalleryImage(i) {
+    if (!galleryImages.length) return;
+    galleryIndex = (i + galleryImages.length) % galleryImages.length;
+    const main = modalSwatch.querySelector(".gallery-main");
+    if (main) main.src = galleryImages[galleryIndex];
+    galleryThumbsEl.querySelectorAll("img").forEach((t, n) => t.classList.toggle("active", n === galleryIndex));
+  }
+
+  function renderGallery(product) {
+    galleryImages = (product.images && product.images.length ? product.images : [product.image]).filter(Boolean);
+    galleryIndex = 0;
+    galleryThumbsEl.innerHTML = "";
+    if (!galleryImages.length) {
+      modalSwatch.innerHTML = swatchInner(product);
+      galleryThumbsEl.style.display = "none";
+      return;
+    }
+    const multi = galleryImages.length > 1;
+    modalSwatch.innerHTML = `
+      <img class="gallery-main" src="${galleryImages[0]}" alt="${product.name}">
+      ${multi ? '<button class="gallery-nav gallery-prev" aria-label="Previous image">‹</button><button class="gallery-nav gallery-next" aria-label="Next image">›</button>' : ""}
+    `;
+    galleryThumbsEl.style.display = multi ? "" : "none";
+    if (!multi) return;
+    modalSwatch.querySelector(".gallery-prev").addEventListener("click", () => showGalleryImage(galleryIndex - 1));
+    modalSwatch.querySelector(".gallery-next").addEventListener("click", () => showGalleryImage(galleryIndex + 1));
+    galleryImages.forEach((src, n) => {
+      const t = document.createElement("img");
+      t.src = src;
+      t.alt = "";
+      t.loading = "lazy";
+      if (n === 0) t.className = "active";
+      t.addEventListener("click", () => showGalleryImage(n));
+      galleryThumbsEl.appendChild(t);
+    });
+    // swipe on phones
+    let startX = null;
+    modalSwatch.ontouchstart = (e) => { startX = e.touches[0].clientX; };
+    modalSwatch.ontouchend = (e) => {
+      if (startX === null) return;
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) showGalleryImage(galleryIndex + (dx < 0 ? 1 : -1));
+      startX = null;
+    };
+  }
 
   function openSizeModal(productId) {
     const product = findProduct(productId);
@@ -275,7 +326,7 @@
 
     modalSwatch.style.background = swatchBackground(product);
     modalSwatch.style.overflow = "hidden";
-    modalSwatch.innerHTML = swatchInner(product);
+    renderGallery(product);
     modalName.textContent = product.title ? `${product.title} — ${product.colorName}` : product.name;
     modalDesc.textContent = product.description;
     modalPrice.textContent = product.priceNok + " NOK";
