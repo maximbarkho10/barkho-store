@@ -3,12 +3,22 @@ const PRODUCTS = require("../../products.js");
 
 const stripe = process.env.STRIPE_SECRET_KEY ? Stripe(process.env.STRIPE_SECRET_KEY) : null;
 
-// Countries Stripe will collect a shipping address for at checkout.
-// Add/remove ISO country codes to match where you're willing to ship.
-const SHIPPING_COUNTRIES = ["NO", "SE", "DK", "FI", "DE", "NL", "GB", "US"];
-
-// Flat shipping fee per order, in NOK. Change this one number to adjust it.
-const SHIPPING_NOK = 99;
+// Shipping regions. The customer picks one in the cart; Stripe then only
+// accepts addresses in that region's countries and charges its flat fee (NOK).
+const SHIPPING_REGIONS = {
+  europe: {
+    countries: ["NO", "SE", "DK", "FI", "DE", "NL", "GB", "US"],
+    feeNok: 99,
+    label: "Standard shipping",
+    days: [5, 12],
+  },
+  middleeast: {
+    countries: ["AE", "SA", "JO", "QA", "KW", "TR"],
+    feeNok: 179,
+    label: "International shipping (Middle East)",
+    days: [10, 25],
+  },
+};
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -64,6 +74,9 @@ exports.handler = async (event) => {
     });
   }
 
+  const region = SHIPPING_REGIONS[payload.region] ? payload.region : "europe";
+  const ship = SHIPPING_REGIONS[region];
+
   const cartForMetadata = cart.map((l) => ({ id: l.id, size: l.size, qty: l.qty }));
 
   try {
@@ -72,16 +85,16 @@ exports.handler = async (event) => {
       line_items,
       success_url: `${siteUrl}/success.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/cancel.html`,
-      shipping_address_collection: { allowed_countries: SHIPPING_COUNTRIES },
+      shipping_address_collection: { allowed_countries: ship.countries },
       shipping_options: [
         {
           shipping_rate_data: {
-            display_name: "Standard shipping",
+            display_name: ship.label,
             type: "fixed_amount",
-            fixed_amount: { amount: SHIPPING_NOK * 100, currency: "nok" },
+            fixed_amount: { amount: ship.feeNok * 100, currency: "nok" },
             delivery_estimate: {
-              minimum: { unit: "business_day", value: 5 },
-              maximum: { unit: "business_day", value: 12 },
+              minimum: { unit: "business_day", value: ship.days[0] },
+              maximum: { unit: "business_day", value: ship.days[1] },
             },
           },
         },
@@ -93,6 +106,7 @@ exports.handler = async (event) => {
       },
       metadata: {
         cart: JSON.stringify(cartForMetadata),
+        region,
       },
     });
 
