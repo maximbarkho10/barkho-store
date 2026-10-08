@@ -93,7 +93,7 @@ exports.handler = async (event) => {
       printfulItems.push({ sync_variant_id: sizeInfo.syncVariantId, quantity: line.qty || 1 });
     }
 
-    // 6) Create the Printful order as a DRAFT (no confirm=true → nothing is charged or printed)
+    // 6) Create the Printful order (as a draft first, then confirmed in step 6b)
     let printfulOrderId = null;
     let status = "paid";
 
@@ -127,7 +127,25 @@ exports.handler = async (event) => {
       const printfulData = await printfulRes.json().catch(() => ({}));
       if (printfulRes.ok && printfulData.result) {
         printfulOrderId = String(printfulData.result.id);
-        status = "sent_to_printful";
+        status = "printful_draft";
+
+        // 6b) Auto-confirm: the customer has already paid in Stripe, so send the
+        // order straight to production. Printful charges the saved billing method.
+        // Set PRINTFUL_AUTO_CONFIRM=false in Netlify to go back to manual confirming.
+        if (process.env.PRINTFUL_AUTO_CONFIRM !== "false") {
+          const confirmRes = await fetch(`https://api.printful.com/orders/${printfulOrderId}/confirm`, {
+            method: "POST",
+            headers: { Authorization: `Bearer ${process.env.PRINTFUL_API_KEY}` },
+          });
+          const confirmData = await confirmRes.json().catch(() => ({}));
+          if (confirmRes.ok && confirmData.result) {
+            status = "confirmed_in_printful";
+          } else {
+            // Draft still exists — it can be confirmed by hand in Printful.
+            console.error("Printful confirm failed:", confirmRes.status, JSON.stringify(confirmData));
+            status = "printful_confirm_failed";
+          }
+        }
       } else {
         console.error("Printful order failed:", printfulRes.status, JSON.stringify(printfulData));
         status = "printful_failed";
