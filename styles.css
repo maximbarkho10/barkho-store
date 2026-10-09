@@ -690,3 +690,9 @@ img { max-width: 100%; }
   .promo-bar .sep { display: block; height: 0; overflow: hidden; margin: 0; }
   .story { padding: 64px 0; }
 }
+
+/* Social links */
+.social-links { display: flex; gap: 18px; align-items: center; }
+.social-links a { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; opacity: .85; }
+.social-links a:hover { opacity: 1; color: var(--gold, #c9a45c); }
+.story-social a { color: var(--gold-deep, #a67843); font-weight: 600; }
