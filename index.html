@@ -3,51 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>BARKHO</title>
-<meta name="description" content="BARKHO — made to order, shipped to you." />
+<title>BARKHO — Wear your name</title>
+<meta name="description" content="BARKHO (ܒܪܟ݂ܐ) — hoodies, sweatshirts, tees and caps with our name embroidered in modern Assyrian. Made to order, shipped across Europe and the Middle East." />
+<meta property="og:title" content="BARKHO — Wear your name" />
+<meta property="og:description" content="Clothing with ܒܪܟ݂ܐ embroidered in modern Assyrian. Made to order." />
+<meta property="og:image" content="https://files.cdn.printful.com/files/3a9/3a9d45fe0700ed7fa2f19833b3446abf_preview.png" />
+<meta property="og:type" content="website" />
 <link rel="icon" type="image/svg+xml" href="emblem-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700&family=Noto+Sans+Syriac+Eastern:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .collection + .collection { margin-top: 88px; }
-  .collection { scroll-margin-top: 96px; }
-  .collection-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 32px; }
-  .collection-head .section-title { margin: 0; }
-  .collection-tagline { margin: 0; color: var(--ink-soft); }
-  .product-tile.is-soon { cursor: default; }
-  .product-tile.is-soon .product-price { color: var(--ink-soft); font-weight: 500; }
-  .type-title { font-family: "Bodoni Moda", serif; font-size: 1.5rem; font-weight: 500; margin: 40px 0 18px; }
-  .collection-head + .type-title { margin-top: 0; }
-  .color-dots { display: flex; gap: 6px; margin: 2px 0 6px; }
-  .color-dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); }
-  .color-options { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 14px; }
-  .color-option { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.3); cursor: pointer; padding: 0; }
-  .color-option.selected { box-shadow: 0 0 0 2px #C9A227; }
-  .modal { width: min(460px, 92vw); max-height: 92vh; overflow-y: auto; }
-  .modal-swatch { aspect-ratio: 1 / 1; position: relative; }
-  .gallery-main { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(255,255,255,.88); color: #17140F; font-size: 22px; line-height: 1; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
-  .gallery-prev { left: 8px; }
-  .gallery-next { right: 8px; }
-  .gallery-thumbs { display: flex; gap: 8px; margin: -6px 0 14px; overflow-x: auto; }
-  .gallery-thumbs img { width: 58px; height: 58px; object-fit: cover; background: #F4F1EA; border: 1px solid rgba(0,0,0,.12); cursor: pointer; flex: none; }
-  .gallery-thumbs img.active { border: 2px solid #C9A227; }
-  .ship-region-label { display: block; font-size: .8rem; margin: 4px 0 6px; color: var(--ink-soft, #5a5248); }
-  .ship-region { width: 100%; padding: 10px; margin-bottom: 12px; font: inherit; font-size: .85rem; background: #fff; border: 1px solid rgba(0,0,0,.2); }
-  .soon-badge { position: absolute; top: 12px; left: 12px; background: #17140F; color: #C9A227; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 10px; border: 1px solid #C9A227; }
-</style>
 </head>
 <body>
 
+  <div class="promo-bar">
+    <strong>WELCOME10</strong> — 10% off your first order<span class="sep">·</span>Free shipping over 1,200 NOK to Europe &amp; USA
+  </div>
+
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="#" class="logo">BARKHO</a>
+      <a href="#" class="logo"><img src="emblem-mark.svg" alt="">BARKHO</a>
       <nav class="main-nav">
-        <a href="#core">Shop</a>
-        <a href="#winter">Winter</a>
-        <a href="#about">About</a>
+        <a href="#type-hoodies">Hoodies</a>
+        <a href="#type-sweatshirts">Sweatshirts</a>
+        <a href="#type-t-shirts">T-shirts</a>
+        <a href="#type-caps">Caps</a>
+        <a href="#story">Our story</a>
       </nav>
       <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
         Cart <span class="cart-count" id="cartCount">0</span>
@@ -56,11 +38,43 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap hero-inner">
-        <h1 class="hero-wordmark">BARKHO</h1>
-        <p class="hero-tagline">Made to order. Shipped when you order it — nothing sits in a warehouse first.</p>
-        <a href="#shop" class="btn btn-accent">Shop the collection</a>
+    <section class="hero hero-split">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow"><span class="syriac">ܒܪܟ݂ܐ</span> Modern Assyrian</p>
+          <h1 class="hero-title">Wear your name.</h1>
+          <p class="hero-tagline">Heavyweight hoodies, sweatshirts and tees with our name embroidered in modern Assyrian. Made to order for you, shipped across Europe and the Middle East.</p>
+          <div class="hero-actions">
+            <a href="#type-hoodies" class="btn btn-accent">Shop hoodies</a>
+            <a href="#shop" class="btn btn-ghost">See everything</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="https://files.cdn.printful.com/files/3a9/3a9d45fe0700ed7fa2f19833b3446abf_preview.png" alt="Man wearing a black BARKHO hoodie with the gold rosette embroidered on the chest" fetchpriority="high">
+          <span class="hero-badge">Rosette Hoodie — Black</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Why BARKHO">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><span class="trust-icon">✦</span><div><b>Embroidered, not printed</b>Gold thread that lasts wash after wash.</div></div>
+        <div class="trust-item"><span class="trust-icon">✓</span><div><b>Made to order</b>Produced for you in 2–5 days. No waste.</div></div>
+        <div class="trust-item"><span class="trust-icon">➜</span><div><b>Ships to you</b>Europe, USA and the Middle East.</div></div>
+        <div class="trust-item"><span class="trust-icon">🔒</span><div><b>Secure checkout</b>Card, Apple Pay and Google Pay via Stripe.</div></div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="wrap">
+        <p class="section-kicker">Shop by category</p>
+        <h2 class="section-title">Find your piece</h2>
+        <div class="cat-grid">
+          <a class="cat-card" href="#type-hoodies"><img src="https://files.cdn.printful.com/files/427/427919317f05e7fd1ae3a3d01fd9757f_preview.png" alt="Woman wearing a BARKHO hoodie" loading="lazy"><span>Hoodies</span></a>
+          <a class="cat-card" href="#type-sweatshirts"><img src="https://files.cdn.printful.com/files/dc6/dc6e6382cb2d4a5c53736c8262482e7c_preview.png" alt="Woman wearing a BARKHO sweatshirt" loading="lazy"><span>Sweatshirts</span></a>
+          <a class="cat-card" href="#type-t-shirts"><img src="https://files.cdn.printful.com/files/d58/d5845bbc274f07074ce1f06e75228056_preview.png" alt="Woman wearing a BARKHO t-shirt" loading="lazy"><span>T-shirts</span></a>
+          <a class="cat-card" href="#type-caps"><img src="https://files.cdn.printful.com/files/555/5550378aca53067f655d3ac03ff27d3a_preview.png" alt="Man wearing a BARKHO cap" loading="lazy"><span>Caps</span></a>
+        </div>
       </div>
     </section>
 
@@ -72,21 +86,18 @@
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="wrap about-inner">
-        <img src="emblem-mark.svg" alt="BARKHO emblem" class="about-emblem">
-        <div class="about-copy">
-          <h2 class="section-title">About</h2>
-          <p>
-            Hi, I'm Maxim. BARKHO is my own family name — an Assyrian surname
-            carried from an ancient civilization into a small label I'm
-            building today from Norway. The emblem on every piece draws from
-            real Assyrian iconography: a golden sun disc, the same kind of
-            mark found at the heart of the modern Assyrian flag, reworked
-            here as a personal signature. Everything is made only after you
-            order it — no stockpiles, no guessing what sells, just the
-            pieces you actually chose.
-          </p>
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="story-mark">
+          <img src="emblem-mark.svg" alt="The BARKHO rosette">
+          <span class="syriac">ܒܪܟ݂ܐ</span>
+        </div>
+        <div>
+          <p class="section-kicker">Our story</p>
+          <h2 class="section-title">A family name, carried forward.</h2>
+          <p>BARKHO is my family name. Written in modern Assyrian it is ܒܪܟ݂ܐ. I'm Maxim, an Assyrian living in Norway, and I started this label so we can wear our name and our heritage with pride, wherever we live today.</p>
+          <p>The rosette on every piece comes from ancient Assyrian palace art, carved into the walls of Nineveh and Nimrud. We embroider it in gold thread, together with ܒܪܟ݂ܐ, and make each piece only after you order it.</p>
+          <p class="signature">— Maxim Barkho</p>
         </div>
       </div>
     </section>
@@ -94,7 +105,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <span>© <span id="year"></span> BARKHO</span>
+      <span>© <span id="year"></span> BARKHO · Halden, Norway</span>
       <nav style="display:flex;flex-wrap:wrap;gap:20px;" aria-label="Legal">
         <a href="terms.html">Terms</a>
         <a href="shipping-returns.html">Shipping &amp; Returns</a>
@@ -117,6 +128,7 @@
         <span>Subtotal</span>
         <span id="cartSubtotal">0 NOK</span>
       </div>
+      <div class="free-ship" id="freeShip"></div>
       <label class="ship-region-label" for="shipRegion">Ship to</label>
       <select class="ship-region" id="shipRegion">
         <option value="europe">Norway, Nordics, Europe &amp; USA — 99 NOK</option>
@@ -127,7 +139,7 @@
     </div>
   </aside>
 
-  <!-- Size-select modal -->
+  <!-- Product modal -->
   <div class="modal-backdrop" id="modalBackdrop"></div>
   <div class="modal" id="sizeModal" role="dialog" aria-modal="true">
     <button class="modal-close" id="modalClose" aria-label="Close">×</button>
@@ -139,6 +151,11 @@
     <div class="color-options" id="colorOptions"></div>
     <div class="size-options" id="sizeOptions"></div>
     <button class="btn btn-accent btn-block" id="addToCartBtn">Add to cart</button>
+    <ul class="modal-perks">
+      <li>Use code WELCOME10 for 10% off your first order</li>
+      <li>Free shipping over 1,200 NOK to Europe &amp; USA</li>
+      <li>Made to order — ships in 2–5 business days</li>
+    </ul>
   </div>
 
   <script src="products.js"></script>

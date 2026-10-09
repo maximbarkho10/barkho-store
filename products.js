@@ -38,9 +38,15 @@ const PRODUCTS = [
     color: "#080808",
     image: "https://files.cdn.printful.com/files/a03/a0370df50ad3fb106b3c520008b5417f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e1e/e1e1f4f39edd56da53dc8a93ea5d13e1_preview.png",
       "https://files.cdn.printful.com/files/a03/a0370df50ad3fb106b3c520008b5417f_preview.png",
+      "https://files.cdn.printful.com/files/ee3/ee3ec94e8c4dc2d123bbca7ffcf5d50c_preview.png",
       "https://files.cdn.printful.com/files/173/173878271a212d4b4c3566ba15c10ae7_preview.png",
       "https://files.cdn.printful.com/files/56d/56d05bf2e0460054cc2210b5d47cae3e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e1e/e1e1f4f39edd56da53dc8a93ea5d13e1_preview.png",
+      "https://files.cdn.printful.com/files/ee3/ee3ec94e8c4dc2d123bbca7ffcf5d50c_preview.png",
     ],
     printfulProduct: 479240972,
     sizes: {
@@ -67,9 +73,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/b7f/b7fbe0ca29f0e3d04083d457ad6f597f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/184/1842a080f2d3cfdb7e1bc86dedd8f93e_preview.png",
       "https://files.cdn.printful.com/files/b7f/b7fbe0ca29f0e3d04083d457ad6f597f_preview.png",
+      "https://files.cdn.printful.com/files/bb8/bb807921ebca69cc9ba6fa22167879db_preview.png",
       "https://files.cdn.printful.com/files/944/9444040bc4e4c9fd7a5f4ed2cb819015_preview.png",
       "https://files.cdn.printful.com/files/1dd/1dd5310c7b681855fd8f4b7dd3efbeff_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/184/1842a080f2d3cfdb7e1bc86dedd8f93e_preview.png",
+      "https://files.cdn.printful.com/files/bb8/bb807921ebca69cc9ba6fa22167879db_preview.png",
     ],
     printfulProduct: 479240972,
     sizes: {
@@ -96,9 +108,15 @@ const PRODUCTS = [
     color: "#7d263a",
     image: "https://files.cdn.printful.com/files/c57/c57507b56065725fad8cbcfaa66e516d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/37c/37c4c0860bc3fa403531819a70d28334_preview.png",
       "https://files.cdn.printful.com/files/c57/c57507b56065725fad8cbcfaa66e516d_preview.png",
+      "https://files.cdn.printful.com/files/1b9/1b9d57a43c51c72768712d2961ddf475_preview.png",
       "https://files.cdn.printful.com/files/65a/65a05b790c0fd0d83352245098a96a94_preview.png",
       "https://files.cdn.printful.com/files/3fa/3fa254a6f33752ec2050e16fa586b3c7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/37c/37c4c0860bc3fa403531819a70d28334_preview.png",
+      "https://files.cdn.printful.com/files/1b9/1b9d57a43c51c72768712d2961ddf475_preview.png",
     ],
     printfulProduct: 479240972,
     sizes: {
@@ -123,9 +141,15 @@ const PRODUCTS = [
     color: "#463e3d",
     image: "https://files.cdn.printful.com/files/75d/75d9e68663c5af94daf5f2facf61a3c4_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/249/2493aee39581c679331718320454f0b0_preview.png",
       "https://files.cdn.printful.com/files/75d/75d9e68663c5af94daf5f2facf61a3c4_preview.png",
+      "https://files.cdn.printful.com/files/f2e/f2ea54bf8e823a30b4de5daa4653ce66_preview.png",
       "https://files.cdn.printful.com/files/11f/11f44047b7f00ccbe8532245daee6061_preview.png",
       "https://files.cdn.printful.com/files/5bc/5bc80c961feb87e39279973e45813c8c_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/249/2493aee39581c679331718320454f0b0_preview.png",
+      "https://files.cdn.printful.com/files/f2e/f2ea54bf8e823a30b4de5daa4653ce66_preview.png",
     ],
     printfulProduct: 479240972,
     sizes: {
@@ -152,9 +176,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/e55/e550337f143fa27a4d92d97c9b44f4cb_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/5d3/5d349e0444c28000aac27fc3f55e5be8_preview.png",
       "https://files.cdn.printful.com/files/e55/e550337f143fa27a4d92d97c9b44f4cb_preview.png",
+      "https://files.cdn.printful.com/files/0af/0afa17895c94112033e0a568a6feab12_preview.png",
       "https://files.cdn.printful.com/files/54a/54a6f092c3b48ef32eeae7039c28f359_preview.png",
       "https://files.cdn.printful.com/files/fef/fef74f5299a46ad75ef05ce5bc79386f_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/5d3/5d349e0444c28000aac27fc3f55e5be8_preview.png",
+      "https://files.cdn.printful.com/files/0af/0afa17895c94112033e0a568a6feab12_preview.png",
     ],
     printfulProduct: 479240972,
     sizes: {
@@ -179,9 +209,15 @@ const PRODUCTS = [
     color: "#1b43ae",
     image: "https://files.cdn.printful.com/files/62a/62ae203959a8e9a1d088a1ca2fe9f033_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/3b8/3b856cc9dd140f6f6e671097c42b2524_preview.png",
       "https://files.cdn.printful.com/files/62a/62ae203959a8e9a1d088a1ca2fe9f033_preview.png",
+      "https://files.cdn.printful.com/files/dcf/dcf00efeca3a078c7b15240e2b0f8034_preview.png",
       "https://files.cdn.printful.com/files/376/376cc07ca23adcfec852a381603b3809_preview.png",
       "https://files.cdn.printful.com/files/619/6198377f0b4e597b7e91023bcb23742a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/3b8/3b856cc9dd140f6f6e671097c42b2524_preview.png",
+      "https://files.cdn.printful.com/files/dcf/dcf00efeca3a078c7b15240e2b0f8034_preview.png",
     ],
     printfulProduct: 479376103,
     sizes: {
@@ -206,9 +242,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/747/74732ade42b26bada10ceb43c512fb11_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/436/436308814b4410d91cd197b87fefbdeb_preview.png",
       "https://files.cdn.printful.com/files/747/74732ade42b26bada10ceb43c512fb11_preview.png",
+      "https://files.cdn.printful.com/files/98d/98d73bc27fb153b6527cb27e078c2b1a_preview.png",
       "https://files.cdn.printful.com/files/417/4179cdaf8ce1e90dc502a1ba1cf5106b_preview.png",
       "https://files.cdn.printful.com/files/0ef/0ef0f4c311f040d6a53af005efe7bf0d_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/436/436308814b4410d91cd197b87fefbdeb_preview.png",
+      "https://files.cdn.printful.com/files/98d/98d73bc27fb153b6527cb27e078c2b1a_preview.png",
     ],
     printfulProduct: 479376103,
     sizes: {
@@ -233,9 +275,15 @@ const PRODUCTS = [
     color: "#d6edf7",
     image: "https://files.cdn.printful.com/files/e89/e89f34ee8c07694fa1113fe06fece8e9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/379/3790fe01155ece6dd0a9d8e4dab34e4a_preview.png",
       "https://files.cdn.printful.com/files/e89/e89f34ee8c07694fa1113fe06fece8e9_preview.png",
+      "https://files.cdn.printful.com/files/8da/8da8feb23f05baf704368b385326ab33_preview.png",
       "https://files.cdn.printful.com/files/d37/d37f046c2090201bf99d7e82b5c9bdbf_preview.png",
       "https://files.cdn.printful.com/files/0f3/0f357d7fa309d9a1e17f706c76fadbb1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/379/3790fe01155ece6dd0a9d8e4dab34e4a_preview.png",
+      "https://files.cdn.printful.com/files/8da/8da8feb23f05baf704368b385326ab33_preview.png",
     ],
     printfulProduct: 479376342,
     sizes: {
@@ -260,9 +308,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/938/938c9fe49eba718a81297b9ea3d8b018_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a84/a84ad2fc4aaf06b5142f3f47c55529eb_preview.png",
       "https://files.cdn.printful.com/files/938/938c9fe49eba718a81297b9ea3d8b018_preview.png",
+      "https://files.cdn.printful.com/files/c18/c18848a2ee3897226e80112da04e8d09_preview.png",
       "https://files.cdn.printful.com/files/2e1/2e1ea99585bc927b1bb0acee7850edde_preview.png",
       "https://files.cdn.printful.com/files/f02/f02dda57b30b3e53fb813ce71b25afcd_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a84/a84ad2fc4aaf06b5142f3f47c55529eb_preview.png",
+      "https://files.cdn.printful.com/files/c18/c18848a2ee3897226e80112da04e8d09_preview.png",
     ],
     printfulProduct: 479376342,
     sizes: {
@@ -287,9 +341,15 @@ const PRODUCTS = [
     color: "#fbf2e1",
     image: "https://files.cdn.printful.com/files/7e8/7e8dab030883cc4973e9c44f051c6a6a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/ef0/ef084e95802d97a5dc51dbd089b57f01_preview.png",
       "https://files.cdn.printful.com/files/7e8/7e8dab030883cc4973e9c44f051c6a6a_preview.png",
+      "https://files.cdn.printful.com/files/fe1/fe18facca0655f479861845ea37f15a4_preview.png",
       "https://files.cdn.printful.com/files/a86/a86d470d04f584e407afd1b3f9827fd4_preview.png",
       "https://files.cdn.printful.com/files/2f1/2f16ac720f6e00c8deb84845c2459ff7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/ef0/ef084e95802d97a5dc51dbd089b57f01_preview.png",
+      "https://files.cdn.printful.com/files/fe1/fe18facca0655f479861845ea37f15a4_preview.png",
     ],
     printfulProduct: 479376342,
     sizes: {
@@ -314,9 +374,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/e18/e18a258422f4b9a78140952750b27027_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/443/4434991750e29a569f63523207a79a2a_preview.png",
       "https://files.cdn.printful.com/files/e18/e18a258422f4b9a78140952750b27027_preview.png",
+      "https://files.cdn.printful.com/files/b79/b797b1e8d51f3bcaec0d491e7417738d_preview.png",
       "https://files.cdn.printful.com/files/354/35435aea1a6b3bebab9ff7e8a9d6fcf8_preview.png",
       "https://files.cdn.printful.com/files/d05/d059d987fd68f340fc61cff54285169a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/443/4434991750e29a569f63523207a79a2a_preview.png",
+      "https://files.cdn.printful.com/files/b79/b797b1e8d51f3bcaec0d491e7417738d_preview.png",
     ],
     printfulProduct: 479376342,
     sizes: {
@@ -342,9 +408,15 @@ const PRODUCTS = [
     color: "#080808",
     image: "https://files.cdn.printful.com/files/977/9771d73e5380d1fdf007696b333b3a8d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/d86/d861acdeb27e462193c96cf8ebdf5769_preview.png",
       "https://files.cdn.printful.com/files/977/9771d73e5380d1fdf007696b333b3a8d_preview.png",
+      "https://files.cdn.printful.com/files/340/34010bebb800f51ea4ca7de90618dbc7_preview.png",
       "https://files.cdn.printful.com/files/173/173878271a212d4b4c3566ba15c10ae7_preview.png",
       "https://files.cdn.printful.com/files/56d/56d05bf2e0460054cc2210b5d47cae3e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/d86/d861acdeb27e462193c96cf8ebdf5769_preview.png",
+      "https://files.cdn.printful.com/files/340/34010bebb800f51ea4ca7de90618dbc7_preview.png",
     ],
     printfulProduct: 479244800,
     sizes: {
@@ -371,9 +443,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/440/440ea699379daf83cef6d8f9fea42453_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/bc1/bc1d3471e7d599234c80f6634bdbe081_preview.png",
       "https://files.cdn.printful.com/files/440/440ea699379daf83cef6d8f9fea42453_preview.png",
+      "https://files.cdn.printful.com/files/e62/e62be10b3d8930cd492073208d8bf536_preview.png",
       "https://files.cdn.printful.com/files/944/9444040bc4e4c9fd7a5f4ed2cb819015_preview.png",
       "https://files.cdn.printful.com/files/1dd/1dd5310c7b681855fd8f4b7dd3efbeff_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/bc1/bc1d3471e7d599234c80f6634bdbe081_preview.png",
+      "https://files.cdn.printful.com/files/e62/e62be10b3d8930cd492073208d8bf536_preview.png",
     ],
     printfulProduct: 479244800,
     sizes: {
@@ -400,9 +478,15 @@ const PRODUCTS = [
     color: "#7d263a",
     image: "https://files.cdn.printful.com/files/61f/61f5c9f87abfa08c2d2b8ab24c564c8b_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/57e/57e48de8baab7230643da7a140607a65_preview.png",
       "https://files.cdn.printful.com/files/61f/61f5c9f87abfa08c2d2b8ab24c564c8b_preview.png",
+      "https://files.cdn.printful.com/files/caf/cafe7425563fd786475c0240d152426f_preview.png",
       "https://files.cdn.printful.com/files/65a/65a05b790c0fd0d83352245098a96a94_preview.png",
       "https://files.cdn.printful.com/files/3fa/3fa254a6f33752ec2050e16fa586b3c7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/57e/57e48de8baab7230643da7a140607a65_preview.png",
+      "https://files.cdn.printful.com/files/caf/cafe7425563fd786475c0240d152426f_preview.png",
     ],
     printfulProduct: 479244800,
     sizes: {
@@ -427,9 +511,15 @@ const PRODUCTS = [
     color: "#463e3d",
     image: "https://files.cdn.printful.com/files/ffc/ffc1e8acfa72b9673442d6a13e0d1b91_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4f2/4f240be847ca8fdf680ffc85ca18ee10_preview.png",
       "https://files.cdn.printful.com/files/ffc/ffc1e8acfa72b9673442d6a13e0d1b91_preview.png",
+      "https://files.cdn.printful.com/files/86b/86b1cdbb157c28a23ede418243dd2ef8_preview.png",
       "https://files.cdn.printful.com/files/11f/11f44047b7f00ccbe8532245daee6061_preview.png",
       "https://files.cdn.printful.com/files/5bc/5bc80c961feb87e39279973e45813c8c_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4f2/4f240be847ca8fdf680ffc85ca18ee10_preview.png",
+      "https://files.cdn.printful.com/files/86b/86b1cdbb157c28a23ede418243dd2ef8_preview.png",
     ],
     printfulProduct: 479244800,
     sizes: {
@@ -456,9 +546,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/ef6/ef68d7eb14be8aa3231613bb1a3920b8_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/256/2563e87f0af518bd9f87ae6644a9bb7a_preview.png",
       "https://files.cdn.printful.com/files/ef6/ef68d7eb14be8aa3231613bb1a3920b8_preview.png",
+      "https://files.cdn.printful.com/files/ad7/ad7da6c4fb5e2834c419ccc926daf164_preview.png",
       "https://files.cdn.printful.com/files/54a/54a6f092c3b48ef32eeae7039c28f359_preview.png",
       "https://files.cdn.printful.com/files/fef/fef74f5299a46ad75ef05ce5bc79386f_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/256/2563e87f0af518bd9f87ae6644a9bb7a_preview.png",
+      "https://files.cdn.printful.com/files/ad7/ad7da6c4fb5e2834c419ccc926daf164_preview.png",
     ],
     printfulProduct: 479244800,
     sizes: {
@@ -483,9 +579,15 @@ const PRODUCTS = [
     color: "#1b43ae",
     image: "https://files.cdn.printful.com/files/dcb/dcb952a5c7d7bc2ba9e5be0e2d0a2590_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a5b/a5bde40030f8c836cd7e68540f8ef1d9_preview.png",
       "https://files.cdn.printful.com/files/dcb/dcb952a5c7d7bc2ba9e5be0e2d0a2590_preview.png",
+      "https://files.cdn.printful.com/files/aed/aed9d5de75115324cb4e91630e093183_preview.png",
       "https://files.cdn.printful.com/files/376/376cc07ca23adcfec852a381603b3809_preview.png",
       "https://files.cdn.printful.com/files/619/6198377f0b4e597b7e91023bcb23742a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a5b/a5bde40030f8c836cd7e68540f8ef1d9_preview.png",
+      "https://files.cdn.printful.com/files/aed/aed9d5de75115324cb4e91630e093183_preview.png",
     ],
     printfulProduct: 479375455,
     sizes: {
@@ -510,9 +612,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/7c5/7c5506a0c737ac8cbc78c428611483c9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1c8/1c874f74862aba397ee8ec8c7f2e2255_preview.png",
       "https://files.cdn.printful.com/files/7c5/7c5506a0c737ac8cbc78c428611483c9_preview.png",
+      "https://files.cdn.printful.com/files/172/1721f8ba188a8b0f5d91dd35746d16bd_preview.png",
       "https://files.cdn.printful.com/files/417/4179cdaf8ce1e90dc502a1ba1cf5106b_preview.png",
       "https://files.cdn.printful.com/files/0ef/0ef0f4c311f040d6a53af005efe7bf0d_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1c8/1c874f74862aba397ee8ec8c7f2e2255_preview.png",
+      "https://files.cdn.printful.com/files/172/1721f8ba188a8b0f5d91dd35746d16bd_preview.png",
     ],
     printfulProduct: 479375455,
     sizes: {
@@ -537,9 +645,15 @@ const PRODUCTS = [
     color: "#d6edf7",
     image: "https://files.cdn.printful.com/files/c21/c2112099cb62e3ed669457205a7d4bcd_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/05c/05c1bf4428717f4a1bf714131326ba98_preview.png",
       "https://files.cdn.printful.com/files/c21/c2112099cb62e3ed669457205a7d4bcd_preview.png",
+      "https://files.cdn.printful.com/files/047/047818b2355a33c71a0f87213cfdc423_preview.png",
       "https://files.cdn.printful.com/files/d37/d37f046c2090201bf99d7e82b5c9bdbf_preview.png",
       "https://files.cdn.printful.com/files/0f3/0f357d7fa309d9a1e17f706c76fadbb1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/05c/05c1bf4428717f4a1bf714131326ba98_preview.png",
+      "https://files.cdn.printful.com/files/047/047818b2355a33c71a0f87213cfdc423_preview.png",
     ],
     printfulProduct: 479375493,
     sizes: {
@@ -564,9 +678,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/cec/cec03e7f1f3d60902a4dab6a50f1b5ad_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c20/c201ebe057e7bc0d01a35e701deb81a7_preview.png",
       "https://files.cdn.printful.com/files/cec/cec03e7f1f3d60902a4dab6a50f1b5ad_preview.png",
+      "https://files.cdn.printful.com/files/bf9/bf944acc1107b358eb6388f84d5c1fbc_preview.png",
       "https://files.cdn.printful.com/files/2e1/2e1ea99585bc927b1bb0acee7850edde_preview.png",
       "https://files.cdn.printful.com/files/f02/f02dda57b30b3e53fb813ce71b25afcd_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c20/c201ebe057e7bc0d01a35e701deb81a7_preview.png",
+      "https://files.cdn.printful.com/files/bf9/bf944acc1107b358eb6388f84d5c1fbc_preview.png",
     ],
     printfulProduct: 479375493,
     sizes: {
@@ -591,9 +711,15 @@ const PRODUCTS = [
     color: "#fbf2e1",
     image: "https://files.cdn.printful.com/files/ac9/ac9819e184c7b4b31738e42821eb4f42_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/b8b/b8b42862bccda3a68b520309fdbe0db9_preview.png",
       "https://files.cdn.printful.com/files/ac9/ac9819e184c7b4b31738e42821eb4f42_preview.png",
+      "https://files.cdn.printful.com/files/106/1067378e9b402ce1d901f72bdadb228c_preview.png",
       "https://files.cdn.printful.com/files/a86/a86d470d04f584e407afd1b3f9827fd4_preview.png",
       "https://files.cdn.printful.com/files/2f1/2f16ac720f6e00c8deb84845c2459ff7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/b8b/b8b42862bccda3a68b520309fdbe0db9_preview.png",
+      "https://files.cdn.printful.com/files/106/1067378e9b402ce1d901f72bdadb228c_preview.png",
     ],
     printfulProduct: 479375493,
     sizes: {
@@ -618,9 +744,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/275/2757df2c02cbb065c9139c28241d0950_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/04a/04a93c8929e8bb1549f966f5abc1363e_preview.png",
       "https://files.cdn.printful.com/files/275/2757df2c02cbb065c9139c28241d0950_preview.png",
+      "https://files.cdn.printful.com/files/c4a/c4a736e9d26f0028df9957cde4719a06_preview.png",
       "https://files.cdn.printful.com/files/354/35435aea1a6b3bebab9ff7e8a9d6fcf8_preview.png",
       "https://files.cdn.printful.com/files/d05/d059d987fd68f340fc61cff54285169a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/04a/04a93c8929e8bb1549f966f5abc1363e_preview.png",
+      "https://files.cdn.printful.com/files/c4a/c4a736e9d26f0028df9957cde4719a06_preview.png",
     ],
     printfulProduct: 479375493,
     sizes: {
@@ -646,9 +778,15 @@ const PRODUCTS = [
     color: "#080808",
     image: "https://files.cdn.printful.com/files/4fd/4fd155fff22aae83a8da80ca58815423_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1aa/1aa802b28f8501b51aecb3e1c8ed757e_preview.png",
       "https://files.cdn.printful.com/files/4fd/4fd155fff22aae83a8da80ca58815423_preview.png",
+      "https://files.cdn.printful.com/files/759/7590c1e6d72201239b46663871e73693_preview.png",
       "https://files.cdn.printful.com/files/173/173878271a212d4b4c3566ba15c10ae7_preview.png",
       "https://files.cdn.printful.com/files/56d/56d05bf2e0460054cc2210b5d47cae3e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1aa/1aa802b28f8501b51aecb3e1c8ed757e_preview.png",
+      "https://files.cdn.printful.com/files/759/7590c1e6d72201239b46663871e73693_preview.png",
     ],
     printfulProduct: 479244980,
     sizes: {
@@ -675,9 +813,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/c5d/c5dbe1bd7aa89d1d2a7e382bc18c7589_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/913/913ed4cbd280965462c5aeaa12c42901_preview.png",
       "https://files.cdn.printful.com/files/c5d/c5dbe1bd7aa89d1d2a7e382bc18c7589_preview.png",
+      "https://files.cdn.printful.com/files/1a7/1a7fd3583c6ac23aaddca6395aed477c_preview.png",
       "https://files.cdn.printful.com/files/944/9444040bc4e4c9fd7a5f4ed2cb819015_preview.png",
       "https://files.cdn.printful.com/files/1dd/1dd5310c7b681855fd8f4b7dd3efbeff_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/913/913ed4cbd280965462c5aeaa12c42901_preview.png",
+      "https://files.cdn.printful.com/files/1a7/1a7fd3583c6ac23aaddca6395aed477c_preview.png",
     ],
     printfulProduct: 479244980,
     sizes: {
@@ -704,9 +848,15 @@ const PRODUCTS = [
     color: "#7d263a",
     image: "https://files.cdn.printful.com/files/a4c/a4ccba22d719d9a78b09de8a0e8c03ec_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/675/6752b2a70e736b7beff43e8605cd6a43_preview.png",
       "https://files.cdn.printful.com/files/a4c/a4ccba22d719d9a78b09de8a0e8c03ec_preview.png",
+      "https://files.cdn.printful.com/files/105/1056745f4aaaaf9a0b178c5ef1084d62_preview.png",
       "https://files.cdn.printful.com/files/65a/65a05b790c0fd0d83352245098a96a94_preview.png",
       "https://files.cdn.printful.com/files/3fa/3fa254a6f33752ec2050e16fa586b3c7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/675/6752b2a70e736b7beff43e8605cd6a43_preview.png",
+      "https://files.cdn.printful.com/files/105/1056745f4aaaaf9a0b178c5ef1084d62_preview.png",
     ],
     printfulProduct: 479244980,
     sizes: {
@@ -731,9 +881,15 @@ const PRODUCTS = [
     color: "#463e3d",
     image: "https://files.cdn.printful.com/files/701/70181bed0e26e0d505046c531b65a953_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/5f0/5f0890d853c02d53c19c5c71361adc06_preview.png",
       "https://files.cdn.printful.com/files/701/70181bed0e26e0d505046c531b65a953_preview.png",
+      "https://files.cdn.printful.com/files/5a8/5a87a9d8b76492b4f1830a6148a54cb2_preview.png",
       "https://files.cdn.printful.com/files/11f/11f44047b7f00ccbe8532245daee6061_preview.png",
       "https://files.cdn.printful.com/files/5bc/5bc80c961feb87e39279973e45813c8c_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/5f0/5f0890d853c02d53c19c5c71361adc06_preview.png",
+      "https://files.cdn.printful.com/files/5a8/5a87a9d8b76492b4f1830a6148a54cb2_preview.png",
     ],
     printfulProduct: 479244980,
     sizes: {
@@ -760,9 +916,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/218/218f13ba687901b85a04375fd3dcfb85_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1a2/1a24ac407dbd973b02af87a2bcd8c856_preview.png",
       "https://files.cdn.printful.com/files/218/218f13ba687901b85a04375fd3dcfb85_preview.png",
+      "https://files.cdn.printful.com/files/411/411282b98eff31598c95a4cc3d2a4e3c_preview.png",
       "https://files.cdn.printful.com/files/54a/54a6f092c3b48ef32eeae7039c28f359_preview.png",
       "https://files.cdn.printful.com/files/fef/fef74f5299a46ad75ef05ce5bc79386f_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1a2/1a24ac407dbd973b02af87a2bcd8c856_preview.png",
+      "https://files.cdn.printful.com/files/411/411282b98eff31598c95a4cc3d2a4e3c_preview.png",
     ],
     printfulProduct: 479244980,
     sizes: {
@@ -787,9 +949,15 @@ const PRODUCTS = [
     color: "#1b43ae",
     image: "https://files.cdn.printful.com/files/eb6/eb6245dfebdc13caa1937abb8b4fccdc_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/cfc/cfc762ce0d1259acabc2a72d908f68cf_preview.png",
       "https://files.cdn.printful.com/files/eb6/eb6245dfebdc13caa1937abb8b4fccdc_preview.png",
+      "https://files.cdn.printful.com/files/ff0/ff0b54581dfa18ae501934578dc937f1_preview.png",
       "https://files.cdn.printful.com/files/376/376cc07ca23adcfec852a381603b3809_preview.png",
       "https://files.cdn.printful.com/files/619/6198377f0b4e597b7e91023bcb23742a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/cfc/cfc762ce0d1259acabc2a72d908f68cf_preview.png",
+      "https://files.cdn.printful.com/files/ff0/ff0b54581dfa18ae501934578dc937f1_preview.png",
     ],
     printfulProduct: 479375265,
     sizes: {
@@ -814,9 +982,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/ddc/ddc362014002b1688b40e40aa12e82d7_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/b3a/b3ab1d768368d01af585fb2d7c545604_preview.png",
       "https://files.cdn.printful.com/files/ddc/ddc362014002b1688b40e40aa12e82d7_preview.png",
+      "https://files.cdn.printful.com/files/bb1/bb16860edf0e579a39dc3b0c0ea7530c_preview.png",
       "https://files.cdn.printful.com/files/417/4179cdaf8ce1e90dc502a1ba1cf5106b_preview.png",
       "https://files.cdn.printful.com/files/0ef/0ef0f4c311f040d6a53af005efe7bf0d_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/b3a/b3ab1d768368d01af585fb2d7c545604_preview.png",
+      "https://files.cdn.printful.com/files/bb1/bb16860edf0e579a39dc3b0c0ea7530c_preview.png",
     ],
     printfulProduct: 479375265,
     sizes: {
@@ -841,9 +1015,15 @@ const PRODUCTS = [
     color: "#d6edf7",
     image: "https://files.cdn.printful.com/files/c59/c5931073746c805d3a80238b9b3db93a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/49d/49d6aec57ed0356ee59a4a89c5db5305_preview.png",
       "https://files.cdn.printful.com/files/c59/c5931073746c805d3a80238b9b3db93a_preview.png",
+      "https://files.cdn.printful.com/files/38a/38a93024a7d8113457dae7e5e9f169fc_preview.png",
       "https://files.cdn.printful.com/files/d37/d37f046c2090201bf99d7e82b5c9bdbf_preview.png",
       "https://files.cdn.printful.com/files/0f3/0f357d7fa309d9a1e17f706c76fadbb1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/49d/49d6aec57ed0356ee59a4a89c5db5305_preview.png",
+      "https://files.cdn.printful.com/files/38a/38a93024a7d8113457dae7e5e9f169fc_preview.png",
     ],
     printfulProduct: 479375302,
     sizes: {
@@ -868,9 +1048,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/31f/31fdc22b94298cf6a0bbb7b0991a7ac6_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/149/149975a0c4a363fe7b165d4fe815475a_preview.png",
       "https://files.cdn.printful.com/files/31f/31fdc22b94298cf6a0bbb7b0991a7ac6_preview.png",
+      "https://files.cdn.printful.com/files/532/53203dbaeb7edcf239592081568f2b12_preview.png",
       "https://files.cdn.printful.com/files/2e1/2e1ea99585bc927b1bb0acee7850edde_preview.png",
       "https://files.cdn.printful.com/files/f02/f02dda57b30b3e53fb813ce71b25afcd_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/149/149975a0c4a363fe7b165d4fe815475a_preview.png",
+      "https://files.cdn.printful.com/files/532/53203dbaeb7edcf239592081568f2b12_preview.png",
     ],
     printfulProduct: 479375302,
     sizes: {
@@ -895,9 +1081,15 @@ const PRODUCTS = [
     color: "#fbf2e1",
     image: "https://files.cdn.printful.com/files/64c/64c93d1eaa8715c167905e1e11e12887_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/b41/b4116bdf7d76965a817a2d2c4659be12_preview.png",
       "https://files.cdn.printful.com/files/64c/64c93d1eaa8715c167905e1e11e12887_preview.png",
+      "https://files.cdn.printful.com/files/428/4285a973b67c67ba9078ba3fa665ab2c_preview.png",
       "https://files.cdn.printful.com/files/a86/a86d470d04f584e407afd1b3f9827fd4_preview.png",
       "https://files.cdn.printful.com/files/2f1/2f16ac720f6e00c8deb84845c2459ff7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/b41/b4116bdf7d76965a817a2d2c4659be12_preview.png",
+      "https://files.cdn.printful.com/files/428/4285a973b67c67ba9078ba3fa665ab2c_preview.png",
     ],
     printfulProduct: 479375302,
     sizes: {
@@ -922,9 +1114,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/8e4/8e4433d48956e35e0c711b9b5bc0c2b3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/834/83471e83cc61eec5853ffda31bc30263_preview.png",
       "https://files.cdn.printful.com/files/8e4/8e4433d48956e35e0c711b9b5bc0c2b3_preview.png",
+      "https://files.cdn.printful.com/files/639/6392c53429ff640adb1ad803bcfee74f_preview.png",
       "https://files.cdn.printful.com/files/354/35435aea1a6b3bebab9ff7e8a9d6fcf8_preview.png",
       "https://files.cdn.printful.com/files/d05/d059d987fd68f340fc61cff54285169a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/834/83471e83cc61eec5853ffda31bc30263_preview.png",
+      "https://files.cdn.printful.com/files/639/6392c53429ff640adb1ad803bcfee74f_preview.png",
     ],
     printfulProduct: 479375302,
     sizes: {
@@ -950,9 +1148,15 @@ const PRODUCTS = [
     color: "#080808",
     image: "https://files.cdn.printful.com/files/69d/69d79d60046f8f7ff09f229743a40515_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/cb2/cb235da31a925cc56b5941a338b9c9ad_preview.png",
       "https://files.cdn.printful.com/files/69d/69d79d60046f8f7ff09f229743a40515_preview.png",
+      "https://files.cdn.printful.com/files/ba0/ba0ab559823df1df9b68672ebe0ac2d8_preview.png",
       "https://files.cdn.printful.com/files/d3e/d3ed60c47d88e2741a6c6857c50bb31e_preview.png",
       "https://files.cdn.printful.com/files/56d/56d05bf2e0460054cc2210b5d47cae3e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/cb2/cb235da31a925cc56b5941a338b9c9ad_preview.png",
+      "https://files.cdn.printful.com/files/ba0/ba0ab559823df1df9b68672ebe0ac2d8_preview.png",
     ],
     printfulProduct: 479243661,
     sizes: {
@@ -979,9 +1183,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/8f6/8f6ae12aaf865a82f69eb9615d1f81c9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/857/8576b04162df5413fc602129fee0fed2_preview.png",
       "https://files.cdn.printful.com/files/8f6/8f6ae12aaf865a82f69eb9615d1f81c9_preview.png",
+      "https://files.cdn.printful.com/files/165/165646c7c42305934db27aa1841e4f2c_preview.png",
       "https://files.cdn.printful.com/files/bd8/bd8ec2ea9dedd874c3538052e9172259_preview.png",
       "https://files.cdn.printful.com/files/1dd/1dd5310c7b681855fd8f4b7dd3efbeff_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/857/8576b04162df5413fc602129fee0fed2_preview.png",
+      "https://files.cdn.printful.com/files/165/165646c7c42305934db27aa1841e4f2c_preview.png",
     ],
     printfulProduct: 479243661,
     sizes: {
@@ -1008,9 +1218,15 @@ const PRODUCTS = [
     color: "#7d263a",
     image: "https://files.cdn.printful.com/files/89a/89a178fe1f958cca550def8b44387b65_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/220/220494d23af26ca064e17596a7918e8f_preview.png",
       "https://files.cdn.printful.com/files/89a/89a178fe1f958cca550def8b44387b65_preview.png",
+      "https://files.cdn.printful.com/files/74a/74a5c532ecfdeb5d50a2588656f0c714_preview.png",
       "https://files.cdn.printful.com/files/261/261e1b34000aeedbcb3096e43d5ac108_preview.png",
       "https://files.cdn.printful.com/files/3fa/3fa254a6f33752ec2050e16fa586b3c7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/220/220494d23af26ca064e17596a7918e8f_preview.png",
+      "https://files.cdn.printful.com/files/74a/74a5c532ecfdeb5d50a2588656f0c714_preview.png",
     ],
     printfulProduct: 479243661,
     sizes: {
@@ -1035,9 +1251,15 @@ const PRODUCTS = [
     color: "#463e3d",
     image: "https://files.cdn.printful.com/files/e2b/e2b8b08195512a78c766e9921f9d7062_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1ac/1ac14330a26623fac8bdd2ce32ac1082_preview.png",
       "https://files.cdn.printful.com/files/e2b/e2b8b08195512a78c766e9921f9d7062_preview.png",
+      "https://files.cdn.printful.com/files/792/792769c120b0aec0a79feb065e83f7ed_preview.png",
       "https://files.cdn.printful.com/files/081/08123fc5b5a253c3aa3629b6430038f0_preview.png",
       "https://files.cdn.printful.com/files/5bc/5bc80c961feb87e39279973e45813c8c_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1ac/1ac14330a26623fac8bdd2ce32ac1082_preview.png",
+      "https://files.cdn.printful.com/files/792/792769c120b0aec0a79feb065e83f7ed_preview.png",
     ],
     printfulProduct: 479243661,
     sizes: {
@@ -1064,9 +1286,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/a8f/a8f397a789a0f022adedd3bb8cdd79c8_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/d21/d21f4646a7991625fe07e4ded84f5ae6_preview.png",
       "https://files.cdn.printful.com/files/a8f/a8f397a789a0f022adedd3bb8cdd79c8_preview.png",
+      "https://files.cdn.printful.com/files/f27/f27c6e7adfc8b0a4663b487f0f46a2eb_preview.png",
       "https://files.cdn.printful.com/files/eaf/eafed4b29a615fae53548fb5499205d1_preview.png",
       "https://files.cdn.printful.com/files/fef/fef74f5299a46ad75ef05ce5bc79386f_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/d21/d21f4646a7991625fe07e4ded84f5ae6_preview.png",
+      "https://files.cdn.printful.com/files/f27/f27c6e7adfc8b0a4663b487f0f46a2eb_preview.png",
     ],
     printfulProduct: 479243661,
     sizes: {
@@ -1091,9 +1319,15 @@ const PRODUCTS = [
     color: "#1b43ae",
     image: "https://files.cdn.printful.com/files/348/34831899cbb4aa90a02408a01f6d199a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4c4/4c4232d35fbefa684295fda317c7dc21_preview.png",
       "https://files.cdn.printful.com/files/348/34831899cbb4aa90a02408a01f6d199a_preview.png",
+      "https://files.cdn.printful.com/files/5c8/5c895143889041a19e842140d60a3bdd_preview.png",
       "https://files.cdn.printful.com/files/241/241cf629f84117c451c489c3639aba92_preview.png",
       "https://files.cdn.printful.com/files/619/6198377f0b4e597b7e91023bcb23742a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4c4/4c4232d35fbefa684295fda317c7dc21_preview.png",
+      "https://files.cdn.printful.com/files/5c8/5c895143889041a19e842140d60a3bdd_preview.png",
     ],
     printfulProduct: 479375558,
     sizes: {
@@ -1118,9 +1352,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/069/069b15c0933427df6b9e181dbd31c02b_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4c9/4c9c88dcf32db90e36d21b308e3e42ed_preview.png",
       "https://files.cdn.printful.com/files/069/069b15c0933427df6b9e181dbd31c02b_preview.png",
+      "https://files.cdn.printful.com/files/20e/20ec36ad9a187a1960267d3ae46c3ddd_preview.png",
       "https://files.cdn.printful.com/files/a15/a15b5b0c0c35cbc0f316e0b6503c5f94_preview.png",
       "https://files.cdn.printful.com/files/0ef/0ef0f4c311f040d6a53af005efe7bf0d_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4c9/4c9c88dcf32db90e36d21b308e3e42ed_preview.png",
+      "https://files.cdn.printful.com/files/20e/20ec36ad9a187a1960267d3ae46c3ddd_preview.png",
     ],
     printfulProduct: 479375558,
     sizes: {
@@ -1145,9 +1385,15 @@ const PRODUCTS = [
     color: "#d6edf7",
     image: "https://files.cdn.printful.com/files/8b2/8b2f55fe21d42d4eb8d3567ddd71b2ed_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e3f/e3f1bfa95881ce0b9a1afc0d1a826983_preview.png",
       "https://files.cdn.printful.com/files/8b2/8b2f55fe21d42d4eb8d3567ddd71b2ed_preview.png",
+      "https://files.cdn.printful.com/files/9ab/9ab8348b6b1134405ff70d76339030cd_preview.png",
       "https://files.cdn.printful.com/files/d65/d65dd3ae57efa13adfa70ab733b3e88c_preview.png",
       "https://files.cdn.printful.com/files/0f3/0f357d7fa309d9a1e17f706c76fadbb1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e3f/e3f1bfa95881ce0b9a1afc0d1a826983_preview.png",
+      "https://files.cdn.printful.com/files/9ab/9ab8348b6b1134405ff70d76339030cd_preview.png",
     ],
     printfulProduct: 479375627,
     sizes: {
@@ -1172,9 +1418,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/6bc/6bc7fe7787f44e69094f48cc1ac02cb0_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/bb1/bb1467032b54a2ccbfd7602f18f1ad03_preview.png",
       "https://files.cdn.printful.com/files/6bc/6bc7fe7787f44e69094f48cc1ac02cb0_preview.png",
+      "https://files.cdn.printful.com/files/7f0/7f06d2edc71c88852380344c5dfc1fef_preview.png",
       "https://files.cdn.printful.com/files/96a/96a01685dee83cdd42f2844b0f9a5327_preview.png",
       "https://files.cdn.printful.com/files/f02/f02dda57b30b3e53fb813ce71b25afcd_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/bb1/bb1467032b54a2ccbfd7602f18f1ad03_preview.png",
+      "https://files.cdn.printful.com/files/7f0/7f06d2edc71c88852380344c5dfc1fef_preview.png",
     ],
     printfulProduct: 479375627,
     sizes: {
@@ -1199,9 +1451,15 @@ const PRODUCTS = [
     color: "#fbf2e1",
     image: "https://files.cdn.printful.com/files/e9d/e9d5c9b9cc5972c1745089ff39b6414a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/dd2/dd2fb4606c43e139bc26ad7fff2dbb03_preview.png",
       "https://files.cdn.printful.com/files/e9d/e9d5c9b9cc5972c1745089ff39b6414a_preview.png",
+      "https://files.cdn.printful.com/files/a59/a594f0c232ad319d7782b32d48b2396b_preview.png",
       "https://files.cdn.printful.com/files/252/25243844dbda760f41889c97a19c56c0_preview.png",
       "https://files.cdn.printful.com/files/2f1/2f16ac720f6e00c8deb84845c2459ff7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/dd2/dd2fb4606c43e139bc26ad7fff2dbb03_preview.png",
+      "https://files.cdn.printful.com/files/a59/a594f0c232ad319d7782b32d48b2396b_preview.png",
     ],
     printfulProduct: 479375627,
     sizes: {
@@ -1226,9 +1484,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/dbc/dbc0e39be3da1b7fdec443f09807ae52_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/dbe/dbe592668a3c2ed8a7f12c2bbfc465de_preview.png",
       "https://files.cdn.printful.com/files/dbc/dbc0e39be3da1b7fdec443f09807ae52_preview.png",
+      "https://files.cdn.printful.com/files/768/7689dd624b9eab238beaa9b8b8663843_preview.png",
       "https://files.cdn.printful.com/files/7c4/7c45ce1357b88af3dad5a74566ac499f_preview.png",
       "https://files.cdn.printful.com/files/d05/d059d987fd68f340fc61cff54285169a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/dbe/dbe592668a3c2ed8a7f12c2bbfc465de_preview.png",
+      "https://files.cdn.printful.com/files/768/7689dd624b9eab238beaa9b8b8663843_preview.png",
     ],
     printfulProduct: 479375627,
     sizes: {
@@ -1254,9 +1518,15 @@ const PRODUCTS = [
     color: "#1a1a1a",
     image: "https://files.cdn.printful.com/files/826/826aacf5d1f37d16d8892c212acb38de_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/39d/39dfcd03684b2e7c163737350c566c19_preview.png",
       "https://files.cdn.printful.com/files/826/826aacf5d1f37d16d8892c212acb38de_preview.png",
+      "https://files.cdn.printful.com/files/ffd/ffd648ec9ffb28fae602b88e1066f170_preview.png",
       "https://files.cdn.printful.com/files/16f/16ff4ef9bb31bbd02a60f4d7cf1bd7ec_preview.png",
       "https://files.cdn.printful.com/files/d0b/d0bf6d46bdf5f491424b41ce14b70d74_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/39d/39dfcd03684b2e7c163737350c566c19_preview.png",
+      "https://files.cdn.printful.com/files/ffd/ffd648ec9ffb28fae602b88e1066f170_preview.png",
     ],
     printfulProduct: 479382339,
     sizes: {
@@ -1281,9 +1551,15 @@ const PRODUCTS = [
     color: "#2b3339",
     image: "https://files.cdn.printful.com/files/83b/83bf934a20de58771acdbc24a3be9640_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a05/a0544bf87f112b3acb440fcf6aa423b7_preview.png",
       "https://files.cdn.printful.com/files/83b/83bf934a20de58771acdbc24a3be9640_preview.png",
+      "https://files.cdn.printful.com/files/d3b/d3b3125d73673304d92abf78e63e8208_preview.png",
       "https://files.cdn.printful.com/files/a6e/a6e3a626a75ff875e487f71a0e57eb66_preview.png",
       "https://files.cdn.printful.com/files/739/73933b42be2cbff8d1f184ea1b528ae0_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a05/a0544bf87f112b3acb440fcf6aa423b7_preview.png",
+      "https://files.cdn.printful.com/files/d3b/d3b3125d73673304d92abf78e63e8208_preview.png",
     ],
     printfulProduct: 479382339,
     sizes: {
@@ -1308,9 +1584,15 @@ const PRODUCTS = [
     color: "#8c2f39",
     image: "https://files.cdn.printful.com/files/7b0/7b0efb83a39363de4e266a86e84acf76_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a1c/a1ce990e82b363177172c4a3287f4cfa_preview.png",
       "https://files.cdn.printful.com/files/7b0/7b0efb83a39363de4e266a86e84acf76_preview.png",
+      "https://files.cdn.printful.com/files/b89/b89dfcb5de51676a1cea6d59dcd8a609_preview.png",
       "https://files.cdn.printful.com/files/82f/82f4f2bbe0505835758ede7cda4d1403_preview.png",
       "https://files.cdn.printful.com/files/ec2/ec2399f81c2f1f2b97626fb2c9a0d2b5_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a1c/a1ce990e82b363177172c4a3287f4cfa_preview.png",
+      "https://files.cdn.printful.com/files/b89/b89dfcb5de51676a1cea6d59dcd8a609_preview.png",
     ],
     printfulProduct: 479382339,
     sizes: {
@@ -1335,9 +1617,15 @@ const PRODUCTS = [
     color: "#4b4844",
     image: "https://files.cdn.printful.com/files/dad/dad351cda427c9387d2a7989a0e8bb18_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c03/c03a5930104004ab2bc1304da425a86d_preview.png",
       "https://files.cdn.printful.com/files/dad/dad351cda427c9387d2a7989a0e8bb18_preview.png",
+      "https://files.cdn.printful.com/files/6b3/6b36c41bd11b821cc56e16ac6bde3ae6_preview.png",
       "https://files.cdn.printful.com/files/c62/c62e153f6f5df6bada6979501588ba39_preview.png",
       "https://files.cdn.printful.com/files/559/55937a6cfb8217093f3030d4d59740d1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c03/c03a5930104004ab2bc1304da425a86d_preview.png",
+      "https://files.cdn.printful.com/files/6b3/6b36c41bd11b821cc56e16ac6bde3ae6_preview.png",
     ],
     printfulProduct: 479382339,
     sizes: {
@@ -1362,9 +1650,15 @@ const PRODUCTS = [
     color: "#ec262d",
     image: "https://files.cdn.printful.com/files/d7e/d7e0ca44aa1d9080e01ed0aad81b8ff9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/40d/40d0032435394daab1496f3e44a8eeea_preview.png",
       "https://files.cdn.printful.com/files/d7e/d7e0ca44aa1d9080e01ed0aad81b8ff9_preview.png",
+      "https://files.cdn.printful.com/files/ced/ceddbb5fb5ae0f1f7f6c48c3cf075c3b_preview.png",
       "https://files.cdn.printful.com/files/936/936bbe79a7a6023b1968afa19b322c89_preview.png",
       "https://files.cdn.printful.com/files/b40/b401e46b641b8ea7dd43e096af3376e4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/40d/40d0032435394daab1496f3e44a8eeea_preview.png",
+      "https://files.cdn.printful.com/files/ced/ceddbb5fb5ae0f1f7f6c48c3cf075c3b_preview.png",
     ],
     printfulProduct: 479382339,
     sizes: {
@@ -1389,9 +1683,15 @@ const PRODUCTS = [
     color: "#cdcdcd",
     image: "https://files.cdn.printful.com/files/28f/28f79bf88cd2cb37756f707579eb4502_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/0b4/0b46b020c7cf9494c92feeb1e543350d_preview.png",
       "https://files.cdn.printful.com/files/28f/28f79bf88cd2cb37756f707579eb4502_preview.png",
+      "https://files.cdn.printful.com/files/f0c/f0c2d3bad22ed1a27c876f1451307189_preview.png",
       "https://files.cdn.printful.com/files/bad/badcfb06e12e02179897d00ac3966f73_preview.png",
       "https://files.cdn.printful.com/files/c32/c32f0ac05e73f763e48fb892abc07167_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/0b4/0b46b020c7cf9494c92feeb1e543350d_preview.png",
+      "https://files.cdn.printful.com/files/f0c/f0c2d3bad22ed1a27c876f1451307189_preview.png",
     ],
     printfulProduct: 479382570,
     sizes: {
@@ -1416,9 +1716,15 @@ const PRODUCTS = [
     color: "#f7f2eb",
     image: "https://files.cdn.printful.com/files/249/249d1561ccad7fc441675d7d942e77f4_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/fca/fca9151a25801c18a4fc246dc05aa6db_preview.png",
       "https://files.cdn.printful.com/files/249/249d1561ccad7fc441675d7d942e77f4_preview.png",
+      "https://files.cdn.printful.com/files/637/637af70f09354a601f6a32a970651638_preview.png",
       "https://files.cdn.printful.com/files/596/596f064439e9f8bdca43b7147a77428d_preview.png",
       "https://files.cdn.printful.com/files/c9f/c9fedfa4af5590f73709ebac82a132b0_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/fca/fca9151a25801c18a4fc246dc05aa6db_preview.png",
+      "https://files.cdn.printful.com/files/637/637af70f09354a601f6a32a970651638_preview.png",
     ],
     printfulProduct: 479382570,
     sizes: {
@@ -1443,9 +1749,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/557/557953942eb02186c940ac3c007c0946_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/bbc/bbc1586e85debd977087baf28a82cd21_preview.png",
       "https://files.cdn.printful.com/files/557/557953942eb02186c940ac3c007c0946_preview.png",
+      "https://files.cdn.printful.com/files/ce7/ce739463137db0a5eafca9be3d20ea34_preview.png",
       "https://files.cdn.printful.com/files/ae5/ae5363799115fffd6a18cfc25049acfd_preview.png",
       "https://files.cdn.printful.com/files/da1/da113c494122a1f87960289e6826022f_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/bbc/bbc1586e85debd977087baf28a82cd21_preview.png",
+      "https://files.cdn.printful.com/files/ce7/ce739463137db0a5eafca9be3d20ea34_preview.png",
     ],
     printfulProduct: 479382570,
     sizes: {
@@ -1471,9 +1783,15 @@ const PRODUCTS = [
     color: "#101010",
     image: "https://files.cdn.printful.com/files/bf6/bf604b43c5baf4b9ad65606635ec50e6_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1af/1af0d4a982bd7368433d5eb3de7203bf_preview.png",
       "https://files.cdn.printful.com/files/bf6/bf604b43c5baf4b9ad65606635ec50e6_preview.png",
+      "https://files.cdn.printful.com/files/e8f/e8f7c5cb278f39835e5b0503ad24e9cf_preview.png",
       "https://files.cdn.printful.com/files/10d/10d55217fee1d9cb2e7c589182418888_preview.png",
       "https://files.cdn.printful.com/files/b05/b0578b53c70a2624c462609ff989ab91_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1af/1af0d4a982bd7368433d5eb3de7203bf_preview.png",
+      "https://files.cdn.printful.com/files/e8f/e8f7c5cb278f39835e5b0503ad24e9cf_preview.png",
     ],
     printfulProduct: 479249937,
     sizes: {
@@ -1498,9 +1816,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/546/5462d3b224ed86ec1b446ad842dd3321_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/902/9022c81e5999a08450c40c3bed4e1bc9_preview.png",
       "https://files.cdn.printful.com/files/546/5462d3b224ed86ec1b446ad842dd3321_preview.png",
+      "https://files.cdn.printful.com/files/895/89530ae913262694cb19aef5fb5dc364_preview.png",
       "https://files.cdn.printful.com/files/6ec/6ecce3d17d7b40803a78ace1845eb01b_preview.png",
       "https://files.cdn.printful.com/files/80f/80f923ee64de4d6ff10a7c1202b52377_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/902/9022c81e5999a08450c40c3bed4e1bc9_preview.png",
+      "https://files.cdn.printful.com/files/895/89530ae913262694cb19aef5fb5dc364_preview.png",
     ],
     printfulProduct: 479249937,
     sizes: {
@@ -1525,9 +1849,15 @@ const PRODUCTS = [
     color: "#9E1510",
     image: "https://files.cdn.printful.com/files/7f1/7f19531e81096aa83f2e332fef5c24bc_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/841/8414539f15c26a8da21e2f9337f924d6_preview.png",
       "https://files.cdn.printful.com/files/7f1/7f19531e81096aa83f2e332fef5c24bc_preview.png",
+      "https://files.cdn.printful.com/files/514/514160b2bd819bcffd6022fbdee00981_preview.png",
       "https://files.cdn.printful.com/files/23b/23bbfc6f037da821aa43d16dbc794d2a_preview.png",
       "https://files.cdn.printful.com/files/306/3063497589886af82fe39779c8034eee_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/841/8414539f15c26a8da21e2f9337f924d6_preview.png",
+      "https://files.cdn.printful.com/files/514/514160b2bd819bcffd6022fbdee00981_preview.png",
     ],
     printfulProduct: 479249937,
     sizes: {
@@ -1552,9 +1882,15 @@ const PRODUCTS = [
     color: "#3a3a38",
     image: "https://files.cdn.printful.com/files/e4e/e4e91c468b2014146cb630afc0b498a5_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e92/e92576e80d231b82f4d27abb0b08b21c_preview.png",
       "https://files.cdn.printful.com/files/e4e/e4e91c468b2014146cb630afc0b498a5_preview.png",
+      "https://files.cdn.printful.com/files/9b8/9b87ec75b0fdaf880f01e9da3aed9438_preview.png",
       "https://files.cdn.printful.com/files/063/063bd1c063fde34e8b1a352f75088ae0_preview.png",
       "https://files.cdn.printful.com/files/37b/37b5ae74627a9698bd5db2945ee2b333_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e92/e92576e80d231b82f4d27abb0b08b21c_preview.png",
+      "https://files.cdn.printful.com/files/9b8/9b87ec75b0fdaf880f01e9da3aed9438_preview.png",
     ],
     printfulProduct: 479249937,
     sizes: {
@@ -1579,9 +1915,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/094/0948056016946c5ca912c6af028b7454_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/b25/b254ff9c7abf7e82da04f02f2d794e87_preview.png",
       "https://files.cdn.printful.com/files/094/0948056016946c5ca912c6af028b7454_preview.png",
+      "https://files.cdn.printful.com/files/9a9/9a9ffbd1206bb1a86c20ca9719c25c1f_preview.png",
       "https://files.cdn.printful.com/files/3a0/3a0e34b08a7189832cd935f3a9a2621c_preview.png",
       "https://files.cdn.printful.com/files/d32/d323c9b92c824c0f410382e2e82ec22e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/b25/b254ff9c7abf7e82da04f02f2d794e87_preview.png",
+      "https://files.cdn.printful.com/files/9a9/9a9ffbd1206bb1a86c20ca9719c25c1f_preview.png",
     ],
     printfulProduct: 479249937,
     sizes: {
@@ -1606,9 +1948,15 @@ const PRODUCTS = [
     color: "#2d407d",
     image: "https://files.cdn.printful.com/files/90b/90b6b4eedd7c9beb647f21bcc6f93135_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c9e/c9e5206f50c430d4cbd7bdbe5f8b66d0_preview.png",
       "https://files.cdn.printful.com/files/90b/90b6b4eedd7c9beb647f21bcc6f93135_preview.png",
+      "https://files.cdn.printful.com/files/511/511fdfa09e84492a170c3029fec47b19_preview.png",
       "https://files.cdn.printful.com/files/286/286a8e209b78b9cfbda42493fc947c4f_preview.png",
       "https://files.cdn.printful.com/files/921/9218fc8bc0d4999f334116a4329ac791_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c9e/c9e5206f50c430d4cbd7bdbe5f8b66d0_preview.png",
+      "https://files.cdn.printful.com/files/511/511fdfa09e84492a170c3029fec47b19_preview.png",
     ],
     printfulProduct: 479373585,
     sizes: {
@@ -1633,9 +1981,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/d7a/d7a8a8c6fa1c3fec08da5c7e444d5ca0_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/79b/79b710d9a9577379ebe5e7f516cadcfc_preview.png",
       "https://files.cdn.printful.com/files/d7a/d7a8a8c6fa1c3fec08da5c7e444d5ca0_preview.png",
+      "https://files.cdn.printful.com/files/c4b/c4b3d23d8497f29dd58d0ea3897b1552_preview.png",
       "https://files.cdn.printful.com/files/ee8/ee8761d3ab79efb84f74b3e18813b1c1_preview.png",
       "https://files.cdn.printful.com/files/881/881f112b0d62283d2a373d60eeb03f18_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/79b/79b710d9a9577379ebe5e7f516cadcfc_preview.png",
+      "https://files.cdn.printful.com/files/c4b/c4b3d23d8497f29dd58d0ea3897b1552_preview.png",
     ],
     printfulProduct: 479373585,
     sizes: {
@@ -1660,9 +2014,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/6a0/6a0e0bd910b626c23437fc5536732f56_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/7db/7db9416894f2b50a1e301dd3ab5a39bf_preview.png",
       "https://files.cdn.printful.com/files/6a0/6a0e0bd910b626c23437fc5536732f56_preview.png",
+      "https://files.cdn.printful.com/files/f17/f1766b0c9dc3bb00c7a53cf710c054eb_preview.png",
       "https://files.cdn.printful.com/files/e65/e65a23a951a42224f9663bb01454ec19_preview.png",
       "https://files.cdn.printful.com/files/636/6366b781b774d5bfc901b7f994189efe_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/7db/7db9416894f2b50a1e301dd3ab5a39bf_preview.png",
+      "https://files.cdn.printful.com/files/f17/f1766b0c9dc3bb00c7a53cf710c054eb_preview.png",
     ],
     printfulProduct: 479373647,
     sizes: {
@@ -1687,9 +2047,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/5fc/5fcbf0fc38eb834d7190b3bc625c8c83_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/02d/02d352f06298c2cbe460eb31f70dfecc_preview.png",
       "https://files.cdn.printful.com/files/5fc/5fcbf0fc38eb834d7190b3bc625c8c83_preview.png",
+      "https://files.cdn.printful.com/files/4c4/4c4fd07496169300422dde5eeb938e62_preview.png",
       "https://files.cdn.printful.com/files/6dc/6dc1bf2e2dd8d86111de9685064fac26_preview.png",
       "https://files.cdn.printful.com/files/9b4/9b421cf7f26c710e528f7533fb9409cb_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/02d/02d352f06298c2cbe460eb31f70dfecc_preview.png",
+      "https://files.cdn.printful.com/files/4c4/4c4fd07496169300422dde5eeb938e62_preview.png",
     ],
     printfulProduct: 479373647,
     sizes: {
@@ -1715,9 +2081,15 @@ const PRODUCTS = [
     color: "#101010",
     image: "https://files.cdn.printful.com/files/afe/afe5202f07dc63eec6312375dff35450_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e45/e45dc54d29f98f8aea4a487aa7264cdc_preview.png",
       "https://files.cdn.printful.com/files/afe/afe5202f07dc63eec6312375dff35450_preview.png",
+      "https://files.cdn.printful.com/files/5ed/5ed94dde4f2e768084ba7b7b3ef82cd8_preview.png",
       "https://files.cdn.printful.com/files/10d/10d55217fee1d9cb2e7c589182418888_preview.png",
       "https://files.cdn.printful.com/files/b05/b0578b53c70a2624c462609ff989ab91_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e45/e45dc54d29f98f8aea4a487aa7264cdc_preview.png",
+      "https://files.cdn.printful.com/files/5ed/5ed94dde4f2e768084ba7b7b3ef82cd8_preview.png",
     ],
     printfulProduct: 479256396,
     sizes: {
@@ -1742,9 +2114,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/d58/d58ea857db9d444a943ccc34e8da3361_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/cc0/cc04ce07ddd9df98e5fce5b20d2a982a_preview.png",
       "https://files.cdn.printful.com/files/d58/d58ea857db9d444a943ccc34e8da3361_preview.png",
+      "https://files.cdn.printful.com/files/221/22119c710668b7e6a6eb22e57234297b_preview.png",
       "https://files.cdn.printful.com/files/6ec/6ecce3d17d7b40803a78ace1845eb01b_preview.png",
       "https://files.cdn.printful.com/files/80f/80f923ee64de4d6ff10a7c1202b52377_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/cc0/cc04ce07ddd9df98e5fce5b20d2a982a_preview.png",
+      "https://files.cdn.printful.com/files/221/22119c710668b7e6a6eb22e57234297b_preview.png",
     ],
     printfulProduct: 479256396,
     sizes: {
@@ -1769,9 +2147,15 @@ const PRODUCTS = [
     color: "#9E1510",
     image: "https://files.cdn.printful.com/files/098/09857aa45dcc366ff65afc5a42a79b75_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/dc0/dc02682d2387ea8423bbdb0704db275d_preview.png",
       "https://files.cdn.printful.com/files/098/09857aa45dcc366ff65afc5a42a79b75_preview.png",
+      "https://files.cdn.printful.com/files/cc0/cc055ca47f43e2699b0161efd5103e7f_preview.png",
       "https://files.cdn.printful.com/files/23b/23bbfc6f037da821aa43d16dbc794d2a_preview.png",
       "https://files.cdn.printful.com/files/306/3063497589886af82fe39779c8034eee_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/dc0/dc02682d2387ea8423bbdb0704db275d_preview.png",
+      "https://files.cdn.printful.com/files/cc0/cc055ca47f43e2699b0161efd5103e7f_preview.png",
     ],
     printfulProduct: 479256396,
     sizes: {
@@ -1796,9 +2180,15 @@ const PRODUCTS = [
     color: "#3a3a38",
     image: "https://files.cdn.printful.com/files/ae0/ae007c0b3a696777051d849174ef3419_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/88c/88cdca6c2dede8a1aeb912213e12381a_preview.png",
       "https://files.cdn.printful.com/files/ae0/ae007c0b3a696777051d849174ef3419_preview.png",
+      "https://files.cdn.printful.com/files/5aa/5aa97244b7beb634b20760c33599c606_preview.png",
       "https://files.cdn.printful.com/files/063/063bd1c063fde34e8b1a352f75088ae0_preview.png",
       "https://files.cdn.printful.com/files/37b/37b5ae74627a9698bd5db2945ee2b333_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/88c/88cdca6c2dede8a1aeb912213e12381a_preview.png",
+      "https://files.cdn.printful.com/files/5aa/5aa97244b7beb634b20760c33599c606_preview.png",
     ],
     printfulProduct: 479256396,
     sizes: {
@@ -1823,9 +2213,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/50b/50b7a8659693a2e7085bc5ebd738b359_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/71b/71ba1e5d515c03515858ecde5d8fde3a_preview.png",
       "https://files.cdn.printful.com/files/50b/50b7a8659693a2e7085bc5ebd738b359_preview.png",
+      "https://files.cdn.printful.com/files/05b/05b8d2513117f58f7f2a58ff9b6d983b_preview.png",
       "https://files.cdn.printful.com/files/3a0/3a0e34b08a7189832cd935f3a9a2621c_preview.png",
       "https://files.cdn.printful.com/files/d32/d323c9b92c824c0f410382e2e82ec22e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/71b/71ba1e5d515c03515858ecde5d8fde3a_preview.png",
+      "https://files.cdn.printful.com/files/05b/05b8d2513117f58f7f2a58ff9b6d983b_preview.png",
     ],
     printfulProduct: 479256396,
     sizes: {
@@ -1850,9 +2246,15 @@ const PRODUCTS = [
     color: "#2d407d",
     image: "https://files.cdn.printful.com/files/fee/fee9475c8d5c48b36b5a2e9d2e73e146_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/92f/92f6958db0fab4175102676baab0d1fe_preview.png",
       "https://files.cdn.printful.com/files/fee/fee9475c8d5c48b36b5a2e9d2e73e146_preview.png",
+      "https://files.cdn.printful.com/files/277/2773ad62cc341408bc41c7a28d660e3e_preview.png",
       "https://files.cdn.printful.com/files/286/286a8e209b78b9cfbda42493fc947c4f_preview.png",
       "https://files.cdn.printful.com/files/921/9218fc8bc0d4999f334116a4329ac791_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/92f/92f6958db0fab4175102676baab0d1fe_preview.png",
+      "https://files.cdn.printful.com/files/277/2773ad62cc341408bc41c7a28d660e3e_preview.png",
     ],
     printfulProduct: 479373711,
     sizes: {
@@ -1877,9 +2279,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/2d8/2d887e6cabd0212c2e39d7fae2980fe3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/ce8/ce82bee8fe0c61f8343958de127a50c4_preview.png",
       "https://files.cdn.printful.com/files/2d8/2d887e6cabd0212c2e39d7fae2980fe3_preview.png",
+      "https://files.cdn.printful.com/files/452/4520615877ef7fbd1710c78ac6a4dd24_preview.png",
       "https://files.cdn.printful.com/files/ee8/ee8761d3ab79efb84f74b3e18813b1c1_preview.png",
       "https://files.cdn.printful.com/files/881/881f112b0d62283d2a373d60eeb03f18_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/ce8/ce82bee8fe0c61f8343958de127a50c4_preview.png",
+      "https://files.cdn.printful.com/files/452/4520615877ef7fbd1710c78ac6a4dd24_preview.png",
     ],
     printfulProduct: 479373711,
     sizes: {
@@ -1904,9 +2312,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/1dd/1dd021c7f9d28335435681ff484609a7_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/49a/49aa352ee99dfe4f921674cae6575866_preview.png",
       "https://files.cdn.printful.com/files/1dd/1dd021c7f9d28335435681ff484609a7_preview.png",
+      "https://files.cdn.printful.com/files/613/613082f34685bd84ba28d3968a824079_preview.png",
       "https://files.cdn.printful.com/files/e65/e65a23a951a42224f9663bb01454ec19_preview.png",
       "https://files.cdn.printful.com/files/636/6366b781b774d5bfc901b7f994189efe_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/49a/49aa352ee99dfe4f921674cae6575866_preview.png",
+      "https://files.cdn.printful.com/files/613/613082f34685bd84ba28d3968a824079_preview.png",
     ],
     printfulProduct: 479373753,
     sizes: {
@@ -1931,9 +2345,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/9e5/9e5e2ff73cc5a7617683f770b37118d1_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e32/e326fc63d5f9fbebcf2228287cf0933e_preview.png",
       "https://files.cdn.printful.com/files/9e5/9e5e2ff73cc5a7617683f770b37118d1_preview.png",
+      "https://files.cdn.printful.com/files/8b5/8b5f5446a418cbd5d88dd0af515cd897_preview.png",
       "https://files.cdn.printful.com/files/6dc/6dc1bf2e2dd8d86111de9685064fac26_preview.png",
       "https://files.cdn.printful.com/files/9b4/9b421cf7f26c710e528f7533fb9409cb_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e32/e326fc63d5f9fbebcf2228287cf0933e_preview.png",
+      "https://files.cdn.printful.com/files/8b5/8b5f5446a418cbd5d88dd0af515cd897_preview.png",
     ],
     printfulProduct: 479373753,
     sizes: {
@@ -1959,9 +2379,15 @@ const PRODUCTS = [
     color: "#101010",
     image: "https://files.cdn.printful.com/files/6ca/6ca16ad5fc048b1010c9901e3d3f0b45_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/439/439f36156045c3c219f9a3e3559bb638_preview.png",
       "https://files.cdn.printful.com/files/6ca/6ca16ad5fc048b1010c9901e3d3f0b45_preview.png",
+      "https://files.cdn.printful.com/files/597/59716cfa8d0e54cb10404845598deea5_preview.png",
       "https://files.cdn.printful.com/files/10d/10d55217fee1d9cb2e7c589182418888_preview.png",
       "https://files.cdn.printful.com/files/b05/b0578b53c70a2624c462609ff989ab91_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/439/439f36156045c3c219f9a3e3559bb638_preview.png",
+      "https://files.cdn.printful.com/files/597/59716cfa8d0e54cb10404845598deea5_preview.png",
     ],
     printfulProduct: 479259716,
     sizes: {
@@ -1986,9 +2412,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/4a9/4a9b201f5e6536f05ad7bfef9495e8e1_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/772/77286c4432be429e4ba2eea5eb731058_preview.png",
       "https://files.cdn.printful.com/files/4a9/4a9b201f5e6536f05ad7bfef9495e8e1_preview.png",
+      "https://files.cdn.printful.com/files/0e0/0e02ddcc71fd43d76796f8b709c2b9b4_preview.png",
       "https://files.cdn.printful.com/files/6ec/6ecce3d17d7b40803a78ace1845eb01b_preview.png",
       "https://files.cdn.printful.com/files/80f/80f923ee64de4d6ff10a7c1202b52377_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/772/77286c4432be429e4ba2eea5eb731058_preview.png",
+      "https://files.cdn.printful.com/files/0e0/0e02ddcc71fd43d76796f8b709c2b9b4_preview.png",
     ],
     printfulProduct: 479259716,
     sizes: {
@@ -2013,9 +2445,15 @@ const PRODUCTS = [
     color: "#9E1510",
     image: "https://files.cdn.printful.com/files/b7e/b7e9d977341b5ec282e92654d4cd12d2_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/2aa/2aa053d18630ceaf8e1ae1274c8ac0b4_preview.png",
       "https://files.cdn.printful.com/files/b7e/b7e9d977341b5ec282e92654d4cd12d2_preview.png",
+      "https://files.cdn.printful.com/files/5df/5dfb7018825972369afd82566867cccc_preview.png",
       "https://files.cdn.printful.com/files/23b/23bbfc6f037da821aa43d16dbc794d2a_preview.png",
       "https://files.cdn.printful.com/files/306/3063497589886af82fe39779c8034eee_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/2aa/2aa053d18630ceaf8e1ae1274c8ac0b4_preview.png",
+      "https://files.cdn.printful.com/files/5df/5dfb7018825972369afd82566867cccc_preview.png",
     ],
     printfulProduct: 479259716,
     sizes: {
@@ -2040,9 +2478,15 @@ const PRODUCTS = [
     color: "#3a3a38",
     image: "https://files.cdn.printful.com/files/21d/21dc9c60f5271f15b94b4477f86fc64c_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/847/847355e9cfb431734f1ac2ec94453605_preview.png",
       "https://files.cdn.printful.com/files/21d/21dc9c60f5271f15b94b4477f86fc64c_preview.png",
+      "https://files.cdn.printful.com/files/159/15939d3155697a85d6c6bce29fa03900_preview.png",
       "https://files.cdn.printful.com/files/063/063bd1c063fde34e8b1a352f75088ae0_preview.png",
       "https://files.cdn.printful.com/files/37b/37b5ae74627a9698bd5db2945ee2b333_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/847/847355e9cfb431734f1ac2ec94453605_preview.png",
+      "https://files.cdn.printful.com/files/159/15939d3155697a85d6c6bce29fa03900_preview.png",
     ],
     printfulProduct: 479259716,
     sizes: {
@@ -2067,9 +2511,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/929/929117504d3a0b2cd33d54665053751e_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/70a/70a901965cbabde106b4fb47ef20219f_preview.png",
       "https://files.cdn.printful.com/files/929/929117504d3a0b2cd33d54665053751e_preview.png",
+      "https://files.cdn.printful.com/files/a6d/a6de8190f90ee2e733828c8732128193_preview.png",
       "https://files.cdn.printful.com/files/3a0/3a0e34b08a7189832cd935f3a9a2621c_preview.png",
       "https://files.cdn.printful.com/files/d32/d323c9b92c824c0f410382e2e82ec22e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/70a/70a901965cbabde106b4fb47ef20219f_preview.png",
+      "https://files.cdn.printful.com/files/a6d/a6de8190f90ee2e733828c8732128193_preview.png",
     ],
     printfulProduct: 479259716,
     sizes: {
@@ -2094,9 +2544,15 @@ const PRODUCTS = [
     color: "#2d407d",
     image: "https://files.cdn.printful.com/files/af5/af5b707426a6d7946c92207ac8769fdd_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/089/0893c6bf9de1cc4b5223c2a41f386923_preview.png",
       "https://files.cdn.printful.com/files/af5/af5b707426a6d7946c92207ac8769fdd_preview.png",
+      "https://files.cdn.printful.com/files/521/5215970c7374bc63f07fff563955e24c_preview.png",
       "https://files.cdn.printful.com/files/286/286a8e209b78b9cfbda42493fc947c4f_preview.png",
       "https://files.cdn.printful.com/files/921/9218fc8bc0d4999f334116a4329ac791_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/089/0893c6bf9de1cc4b5223c2a41f386923_preview.png",
+      "https://files.cdn.printful.com/files/521/5215970c7374bc63f07fff563955e24c_preview.png",
     ],
     printfulProduct: 479373781,
     sizes: {
@@ -2121,9 +2577,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/cb9/cb9c86a752e16ded9a79387ec0bcbb73_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/8b2/8b2912dfceb8f95b8448d5eb74c70aa8_preview.png",
       "https://files.cdn.printful.com/files/cb9/cb9c86a752e16ded9a79387ec0bcbb73_preview.png",
+      "https://files.cdn.printful.com/files/be1/be11cfee03cb7c681a3a6543cf97b44f_preview.png",
       "https://files.cdn.printful.com/files/ee8/ee8761d3ab79efb84f74b3e18813b1c1_preview.png",
       "https://files.cdn.printful.com/files/881/881f112b0d62283d2a373d60eeb03f18_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/8b2/8b2912dfceb8f95b8448d5eb74c70aa8_preview.png",
+      "https://files.cdn.printful.com/files/be1/be11cfee03cb7c681a3a6543cf97b44f_preview.png",
     ],
     printfulProduct: 479373781,
     sizes: {
@@ -2148,9 +2610,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/e05/e058c2caca88783f867edd30b4677a48_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/24e/24e44336df5a0ef136f0e5a28f0856fd_preview.png",
       "https://files.cdn.printful.com/files/e05/e058c2caca88783f867edd30b4677a48_preview.png",
+      "https://files.cdn.printful.com/files/3bc/3bc3cbfa23ded2772f76e7552a490953_preview.png",
       "https://files.cdn.printful.com/files/e65/e65a23a951a42224f9663bb01454ec19_preview.png",
       "https://files.cdn.printful.com/files/636/6366b781b774d5bfc901b7f994189efe_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/24e/24e44336df5a0ef136f0e5a28f0856fd_preview.png",
+      "https://files.cdn.printful.com/files/3bc/3bc3cbfa23ded2772f76e7552a490953_preview.png",
     ],
     printfulProduct: 479373831,
     sizes: {
@@ -2175,9 +2643,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/161/16120deeb456ceb23e951451e26cea2c_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/dd7/dd7f344487cc9a77c83d59a159b77c16_preview.png",
       "https://files.cdn.printful.com/files/161/16120deeb456ceb23e951451e26cea2c_preview.png",
+      "https://files.cdn.printful.com/files/9cc/9cc025e00c0baa6a76d1020af94b57a4_preview.png",
       "https://files.cdn.printful.com/files/6dc/6dc1bf2e2dd8d86111de9685064fac26_preview.png",
       "https://files.cdn.printful.com/files/9b4/9b421cf7f26c710e528f7533fb9409cb_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/dd7/dd7f344487cc9a77c83d59a159b77c16_preview.png",
+      "https://files.cdn.printful.com/files/9cc/9cc025e00c0baa6a76d1020af94b57a4_preview.png",
     ],
     printfulProduct: 479373831,
     sizes: {
@@ -2203,9 +2677,15 @@ const PRODUCTS = [
     color: "#101010",
     image: "https://files.cdn.printful.com/files/5e5/5e55efbe0d0d2e99f0a592b3f49109ed_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c78/c781d0424152f7bafce5f05bf50c1130_preview.png",
       "https://files.cdn.printful.com/files/5e5/5e55efbe0d0d2e99f0a592b3f49109ed_preview.png",
+      "https://files.cdn.printful.com/files/f9e/f9e3b4794adb804f48a2bc81c0041a09_preview.png",
       "https://files.cdn.printful.com/files/b56/b562e15a53610b7a44b43a319d0f5363_preview.png",
       "https://files.cdn.printful.com/files/b05/b0578b53c70a2624c462609ff989ab91_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c78/c781d0424152f7bafce5f05bf50c1130_preview.png",
+      "https://files.cdn.printful.com/files/f9e/f9e3b4794adb804f48a2bc81c0041a09_preview.png",
     ],
     printfulProduct: 479253308,
     sizes: {
@@ -2230,9 +2710,15 @@ const PRODUCTS = [
     color: "#171f2c",
     image: "https://files.cdn.printful.com/files/106/106652d51481e7073548b3f04cafd735_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c2c/c2c37d672d727f3c476f075b68726924_preview.png",
       "https://files.cdn.printful.com/files/106/106652d51481e7073548b3f04cafd735_preview.png",
+      "https://files.cdn.printful.com/files/276/2765495e19ea657bbbe3b1707752a3e8_preview.png",
       "https://files.cdn.printful.com/files/db1/db1cf0f7766c38ff5790adf6bac29b42_preview.png",
       "https://files.cdn.printful.com/files/80f/80f923ee64de4d6ff10a7c1202b52377_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c2c/c2c37d672d727f3c476f075b68726924_preview.png",
+      "https://files.cdn.printful.com/files/276/2765495e19ea657bbbe3b1707752a3e8_preview.png",
     ],
     printfulProduct: 479253308,
     sizes: {
@@ -2257,9 +2743,15 @@ const PRODUCTS = [
     color: "#9E1510",
     image: "https://files.cdn.printful.com/files/f96/f9669bf1c137458cb33df47a94bb2490_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1da/1da52bea7eea686347cba9a9399a028b_preview.png",
       "https://files.cdn.printful.com/files/f96/f9669bf1c137458cb33df47a94bb2490_preview.png",
+      "https://files.cdn.printful.com/files/ec8/ec88393a7f6ffbc5e54b56fa1662b4a3_preview.png",
       "https://files.cdn.printful.com/files/77e/77e5b179255a21844e96b09bee93a9b2_preview.png",
       "https://files.cdn.printful.com/files/306/3063497589886af82fe39779c8034eee_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1da/1da52bea7eea686347cba9a9399a028b_preview.png",
+      "https://files.cdn.printful.com/files/ec8/ec88393a7f6ffbc5e54b56fa1662b4a3_preview.png",
     ],
     printfulProduct: 479253308,
     sizes: {
@@ -2284,9 +2776,15 @@ const PRODUCTS = [
     color: "#3a3a38",
     image: "https://files.cdn.printful.com/files/5e2/5e2461db245354128b9bb8715c09f631_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/e2f/e2fd3544d874a8c03305bedc9caff1a2_preview.png",
       "https://files.cdn.printful.com/files/5e2/5e2461db245354128b9bb8715c09f631_preview.png",
+      "https://files.cdn.printful.com/files/c20/c209dd11aa218766da2ad188a4df4a4b_preview.png",
       "https://files.cdn.printful.com/files/c7a/c7aa9def9a44dd5a28c19774d005eed4_preview.png",
       "https://files.cdn.printful.com/files/37b/37b5ae74627a9698bd5db2945ee2b333_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/e2f/e2fd3544d874a8c03305bedc9caff1a2_preview.png",
+      "https://files.cdn.printful.com/files/c20/c209dd11aa218766da2ad188a4df4a4b_preview.png",
     ],
     printfulProduct: 479253308,
     sizes: {
@@ -2311,9 +2809,15 @@ const PRODUCTS = [
     color: "#335231",
     image: "https://files.cdn.printful.com/files/d18/d185e9d2ccb4cd75650ccc4ebba51b0c_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/98d/98d9a803ef2177225699fc6d5c21ad86_preview.png",
       "https://files.cdn.printful.com/files/d18/d185e9d2ccb4cd75650ccc4ebba51b0c_preview.png",
+      "https://files.cdn.printful.com/files/558/55874e3ed642ea8de29aee6721e493ae_preview.png",
       "https://files.cdn.printful.com/files/8f8/8f895e42d587a8714632410c3c4d544e_preview.png",
       "https://files.cdn.printful.com/files/d32/d323c9b92c824c0f410382e2e82ec22e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/98d/98d9a803ef2177225699fc6d5c21ad86_preview.png",
+      "https://files.cdn.printful.com/files/558/55874e3ed642ea8de29aee6721e493ae_preview.png",
     ],
     printfulProduct: 479253308,
     sizes: {
@@ -2338,9 +2842,15 @@ const PRODUCTS = [
     color: "#2d407d",
     image: "https://files.cdn.printful.com/files/c76/c76ce7d973fc5219d4bb3409b8925491_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/ae5/ae579afc62d86be73f7d742b4d58e841_preview.png",
       "https://files.cdn.printful.com/files/c76/c76ce7d973fc5219d4bb3409b8925491_preview.png",
+      "https://files.cdn.printful.com/files/e77/e77bed5af532c3747e7bac81a70f5a1b_preview.png",
       "https://files.cdn.printful.com/files/80e/80e6688f86fb21b13f08be2935a5f805_preview.png",
       "https://files.cdn.printful.com/files/921/9218fc8bc0d4999f334116a4329ac791_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/ae5/ae579afc62d86be73f7d742b4d58e841_preview.png",
+      "https://files.cdn.printful.com/files/e77/e77bed5af532c3747e7bac81a70f5a1b_preview.png",
     ],
     printfulProduct: 479373930,
     sizes: {
@@ -2365,9 +2875,15 @@ const PRODUCTS = [
     color: "#FF2D41",
     image: "https://files.cdn.printful.com/files/401/401ffb4dda24cb71888af550347eb133_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/fac/fac3a768a8851591e2a7d3513f93112a_preview.png",
       "https://files.cdn.printful.com/files/401/401ffb4dda24cb71888af550347eb133_preview.png",
+      "https://files.cdn.printful.com/files/5cd/5cd77125b6ca8c80fddc8cacef9eabc6_preview.png",
       "https://files.cdn.printful.com/files/1b9/1b9b17242cb6ee1550d6ac37ab264e5a_preview.png",
       "https://files.cdn.printful.com/files/881/881f112b0d62283d2a373d60eeb03f18_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/fac/fac3a768a8851591e2a7d3513f93112a_preview.png",
+      "https://files.cdn.printful.com/files/5cd/5cd77125b6ca8c80fddc8cacef9eabc6_preview.png",
     ],
     printfulProduct: 479373930,
     sizes: {
@@ -2392,9 +2908,15 @@ const PRODUCTS = [
     color: "#f5e8ce",
     image: "https://files.cdn.printful.com/files/a57/a57a7a605f49ee586e6d8cdcecf499de_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/8cb/8cb243ca48893a27d55a311ad4dacf3b_preview.png",
       "https://files.cdn.printful.com/files/a57/a57a7a605f49ee586e6d8cdcecf499de_preview.png",
+      "https://files.cdn.printful.com/files/a58/a58124608ca4ed98a28d4f5f97f26091_preview.png",
       "https://files.cdn.printful.com/files/33e/33e97c74360756c16649b9564339fd9d_preview.png",
       "https://files.cdn.printful.com/files/636/6366b781b774d5bfc901b7f994189efe_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/8cb/8cb243ca48893a27d55a311ad4dacf3b_preview.png",
+      "https://files.cdn.printful.com/files/a58/a58124608ca4ed98a28d4f5f97f26091_preview.png",
     ],
     printfulProduct: 479374445,
     sizes: {
@@ -2419,9 +2941,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/376/376864a3e6ddfe20e2b60c72bd34b8aa_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/66a/66aff37e34cf68d84ca7e312577722b7_preview.png",
       "https://files.cdn.printful.com/files/376/376864a3e6ddfe20e2b60c72bd34b8aa_preview.png",
+      "https://files.cdn.printful.com/files/615/6159facdd03b55b2a7cacdd664862beb_preview.png",
       "https://files.cdn.printful.com/files/a54/a54273d296776e4b85b58eba226a19f4_preview.png",
       "https://files.cdn.printful.com/files/9b4/9b421cf7f26c710e528f7533fb9409cb_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/66a/66aff37e34cf68d84ca7e312577722b7_preview.png",
+      "https://files.cdn.printful.com/files/615/6159facdd03b55b2a7cacdd664862beb_preview.png",
     ],
     printfulProduct: 479374445,
     sizes: {
@@ -2447,9 +2975,15 @@ const PRODUCTS = [
     color: "#1c1c18",
     image: "https://files.cdn.printful.com/files/243/243e1ecc8f38033305b17c0ddfb82388_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/2b6/2b6a1b7f889634909d5fca786b80cdd0_preview.png",
       "https://files.cdn.printful.com/files/243/243e1ecc8f38033305b17c0ddfb82388_preview.png",
+      "https://files.cdn.printful.com/files/d58/d5845bbc274f07074ce1f06e75228056_preview.png",
       "https://files.cdn.printful.com/files/66f/66faebbcef157a1f51bdd13d5d0be13d_preview.png",
       "https://files.cdn.printful.com/files/305/3056eb4f55210f11f98a5b4cc8bfb70a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/2b6/2b6a1b7f889634909d5fca786b80cdd0_preview.png",
+      "https://files.cdn.printful.com/files/d58/d5845bbc274f07074ce1f06e75228056_preview.png",
     ],
     printfulProduct: 479245759,
     sizes: {
@@ -2474,9 +3008,15 @@ const PRODUCTS = [
     color: "#171c38",
     image: "https://files.cdn.printful.com/files/53c/53c06414e18ad715e7068bed1706660e_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/f66/f66f828fd1a8d0fb54127ca9c006d478_preview.png",
       "https://files.cdn.printful.com/files/53c/53c06414e18ad715e7068bed1706660e_preview.png",
+      "https://files.cdn.printful.com/files/d8f/d8f0fa20b5545153e16b021064b7156b_preview.png",
       "https://files.cdn.printful.com/files/300/3003c2a8c28327c2718c1e1ac0f1c7e0_preview.png",
       "https://files.cdn.printful.com/files/fc2/fc22163050e015dfb63f90e514f2ecf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/f66/f66f828fd1a8d0fb54127ca9c006d478_preview.png",
+      "https://files.cdn.printful.com/files/d8f/d8f0fa20b5545153e16b021064b7156b_preview.png",
     ],
     printfulProduct: 479245759,
     sizes: {
@@ -2501,9 +3041,15 @@ const PRODUCTS = [
     color: "#72373c",
     image: "https://files.cdn.printful.com/files/15f/15fbd984e3464799825d05d876738e1f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a24/a2449b485039c9d54cb47c4ea650321a_preview.png",
       "https://files.cdn.printful.com/files/15f/15fbd984e3464799825d05d876738e1f_preview.png",
+      "https://files.cdn.printful.com/files/7b6/7b6e60489f7428e06fea141df2f0eb20_preview.png",
       "https://files.cdn.printful.com/files/df4/df4313a73484b085abdd6cc8ec22de84_preview.png",
       "https://files.cdn.printful.com/files/5a6/5a6cb68655e5f1382247fd63b54414c4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a24/a2449b485039c9d54cb47c4ea650321a_preview.png",
+      "https://files.cdn.printful.com/files/7b6/7b6e60489f7428e06fea141df2f0eb20_preview.png",
     ],
     printfulProduct: 479245759,
     sizes: {
@@ -2528,9 +3074,15 @@ const PRODUCTS = [
     color: "#4d473b",
     image: "https://files.cdn.printful.com/files/7b7/7b7a839a4222245f7133bc2ad2f46b09_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/f35/f3542d6fe264d42afca8d60f64cd5339_preview.png",
       "https://files.cdn.printful.com/files/7b7/7b7a839a4222245f7133bc2ad2f46b09_preview.png",
+      "https://files.cdn.printful.com/files/504/504b56f741cf69b5282fa8f949699727_preview.png",
       "https://files.cdn.printful.com/files/9a2/9a2a7675cc147fc5991c9e40738848b2_preview.png",
       "https://files.cdn.printful.com/files/246/2464bfa1a3625d26c3b045a76e1adbf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/f35/f3542d6fe264d42afca8d60f64cd5339_preview.png",
+      "https://files.cdn.printful.com/files/504/504b56f741cf69b5282fa8f949699727_preview.png",
     ],
     printfulProduct: 479245759,
     sizes: {
@@ -2555,9 +3107,15 @@ const PRODUCTS = [
     color: "#537f72",
     image: "https://files.cdn.printful.com/files/213/213f36c8b700459aabad0648984f4183_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a28/a2878dcdea7fee0e67b9d041f6d89916_preview.png",
       "https://files.cdn.printful.com/files/213/213f36c8b700459aabad0648984f4183_preview.png",
+      "https://files.cdn.printful.com/files/a83/a83d8afe2544e5695f39bdd5e7bca7b5_preview.png",
       "https://files.cdn.printful.com/files/616/616ead4d52b8f14bde64d552f9bc0280_preview.png",
       "https://files.cdn.printful.com/files/f2f/f2fbcd5dd4d6f5c63f041f891a0f50f6_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a28/a2878dcdea7fee0e67b9d041f6d89916_preview.png",
+      "https://files.cdn.printful.com/files/a83/a83d8afe2544e5695f39bdd5e7bca7b5_preview.png",
     ],
     printfulProduct: 479245759,
     sizes: {
@@ -2582,9 +3140,15 @@ const PRODUCTS = [
     color: "#c1a887",
     image: "https://files.cdn.printful.com/files/211/211bb3887e2947002e73bb857e969c41_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/06d/06d5d9f4bd48748bf5c00578abf6d0a0_preview.png",
       "https://files.cdn.printful.com/files/211/211bb3887e2947002e73bb857e969c41_preview.png",
+      "https://files.cdn.printful.com/files/bf7/bf7d871d5605c28019c52eb2b71ba442_preview.png",
       "https://files.cdn.printful.com/files/3ae/3ae6f7e067c0fd2540a3a20f69d323d1_preview.png",
       "https://files.cdn.printful.com/files/d27/d272780003beeee1ab56c47ab54246e1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/06d/06d5d9f4bd48748bf5c00578abf6d0a0_preview.png",
+      "https://files.cdn.printful.com/files/bf7/bf7d871d5605c28019c52eb2b71ba442_preview.png",
     ],
     printfulProduct: 479375966,
     sizes: {
@@ -2609,9 +3173,15 @@ const PRODUCTS = [
     color: "#c9d0d6",
     image: "https://files.cdn.printful.com/files/432/432c08cdcfdf1c1206a60a2facdc353c_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/ddc/ddc39e87356b4866e3347fba8b1d0fb7_preview.png",
       "https://files.cdn.printful.com/files/432/432c08cdcfdf1c1206a60a2facdc353c_preview.png",
+      "https://files.cdn.printful.com/files/17a/17ab5c1ced94f0462aac0e0006124eaa_preview.png",
       "https://files.cdn.printful.com/files/566/566f10021481d4a521a5785988e02386_preview.png",
       "https://files.cdn.printful.com/files/999/999d2a3b0ca86d22068a69c0a068a638_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/ddc/ddc39e87356b4866e3347fba8b1d0fb7_preview.png",
+      "https://files.cdn.printful.com/files/17a/17ab5c1ced94f0462aac0e0006124eaa_preview.png",
     ],
     printfulProduct: 479375966,
     sizes: {
@@ -2636,9 +3206,15 @@ const PRODUCTS = [
     color: "#fff7e8",
     image: "https://files.cdn.printful.com/files/e5f/e5f4f9b1464218adb639fd8a54e07dd9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/441/44190517bbd6cab44adf3144266c7c56_preview.png",
       "https://files.cdn.printful.com/files/e5f/e5f4f9b1464218adb639fd8a54e07dd9_preview.png",
+      "https://files.cdn.printful.com/files/7a2/7a268a5c51205779112af7fd7d7701fb_preview.png",
       "https://files.cdn.printful.com/files/053/053515252cd88d900a913118e7e75ce2_preview.png",
       "https://files.cdn.printful.com/files/5ed/5ed60fe86eb35d84c934c8f5cfa63910_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/441/44190517bbd6cab44adf3144266c7c56_preview.png",
+      "https://files.cdn.printful.com/files/7a2/7a268a5c51205779112af7fd7d7701fb_preview.png",
     ],
     printfulProduct: 479375966,
     sizes: {
@@ -2664,9 +3240,15 @@ const PRODUCTS = [
     color: "#1c1c18",
     image: "https://files.cdn.printful.com/files/694/6947629a888526705901f8944b62db8f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/9f7/9f7a06d3a27b0f39203d06e1291b50fe_preview.png",
       "https://files.cdn.printful.com/files/694/6947629a888526705901f8944b62db8f_preview.png",
+      "https://files.cdn.printful.com/files/c66/c664292e2749eb90f556b1f65bb79888_preview.png",
       "https://files.cdn.printful.com/files/66f/66faebbcef157a1f51bdd13d5d0be13d_preview.png",
       "https://files.cdn.printful.com/files/305/3056eb4f55210f11f98a5b4cc8bfb70a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/9f7/9f7a06d3a27b0f39203d06e1291b50fe_preview.png",
+      "https://files.cdn.printful.com/files/c66/c664292e2749eb90f556b1f65bb79888_preview.png",
     ],
     printfulProduct: 479246536,
     sizes: {
@@ -2691,9 +3273,15 @@ const PRODUCTS = [
     color: "#171c38",
     image: "https://files.cdn.printful.com/files/4a2/4a2865ee7d5d37a04b728cf3bdb3070a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/64a/64af0f6cd4d95cf67bcd294ad953b2f1_preview.png",
       "https://files.cdn.printful.com/files/4a2/4a2865ee7d5d37a04b728cf3bdb3070a_preview.png",
+      "https://files.cdn.printful.com/files/81c/81c4bae0faf0d7e52411ebb432da2a41_preview.png",
       "https://files.cdn.printful.com/files/300/3003c2a8c28327c2718c1e1ac0f1c7e0_preview.png",
       "https://files.cdn.printful.com/files/fc2/fc22163050e015dfb63f90e514f2ecf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/64a/64af0f6cd4d95cf67bcd294ad953b2f1_preview.png",
+      "https://files.cdn.printful.com/files/81c/81c4bae0faf0d7e52411ebb432da2a41_preview.png",
     ],
     printfulProduct: 479246536,
     sizes: {
@@ -2718,9 +3306,15 @@ const PRODUCTS = [
     color: "#72373c",
     image: "https://files.cdn.printful.com/files/938/93868c3d317b94fa0ac71c117f319c91_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/f05/f05ade07b13d350298fb2f875b8073d9_preview.png",
       "https://files.cdn.printful.com/files/938/93868c3d317b94fa0ac71c117f319c91_preview.png",
+      "https://files.cdn.printful.com/files/5b6/5b6b1ab1d93f6ab2cd8223be00a28a43_preview.png",
       "https://files.cdn.printful.com/files/df4/df4313a73484b085abdd6cc8ec22de84_preview.png",
       "https://files.cdn.printful.com/files/5a6/5a6cb68655e5f1382247fd63b54414c4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/f05/f05ade07b13d350298fb2f875b8073d9_preview.png",
+      "https://files.cdn.printful.com/files/5b6/5b6b1ab1d93f6ab2cd8223be00a28a43_preview.png",
     ],
     printfulProduct: 479246536,
     sizes: {
@@ -2745,9 +3339,15 @@ const PRODUCTS = [
     color: "#4d473b",
     image: "https://files.cdn.printful.com/files/b4c/b4ce400adde756e94f89d7ec768c41bc_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/49a/49a46363378ebbcf8afd1caa8b18ce9f_preview.png",
       "https://files.cdn.printful.com/files/b4c/b4ce400adde756e94f89d7ec768c41bc_preview.png",
+      "https://files.cdn.printful.com/files/0bb/0bbbe2db171b80e7ece69de2a73d3f8f_preview.png",
       "https://files.cdn.printful.com/files/9a2/9a2a7675cc147fc5991c9e40738848b2_preview.png",
       "https://files.cdn.printful.com/files/246/2464bfa1a3625d26c3b045a76e1adbf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/49a/49a46363378ebbcf8afd1caa8b18ce9f_preview.png",
+      "https://files.cdn.printful.com/files/0bb/0bbbe2db171b80e7ece69de2a73d3f8f_preview.png",
     ],
     printfulProduct: 479246536,
     sizes: {
@@ -2772,9 +3372,15 @@ const PRODUCTS = [
     color: "#537f72",
     image: "https://files.cdn.printful.com/files/d65/d65a03a8c087ce0f518c3b2177896986_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/966/966f2d032f11f8781143de6d6aed4ebf_preview.png",
       "https://files.cdn.printful.com/files/d65/d65a03a8c087ce0f518c3b2177896986_preview.png",
+      "https://files.cdn.printful.com/files/5dd/5dda25aa9e933363d554c81aafb9a4a6_preview.png",
       "https://files.cdn.printful.com/files/616/616ead4d52b8f14bde64d552f9bc0280_preview.png",
       "https://files.cdn.printful.com/files/f2f/f2fbcd5dd4d6f5c63f041f891a0f50f6_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/966/966f2d032f11f8781143de6d6aed4ebf_preview.png",
+      "https://files.cdn.printful.com/files/5dd/5dda25aa9e933363d554c81aafb9a4a6_preview.png",
     ],
     printfulProduct: 479246536,
     sizes: {
@@ -2799,9 +3405,15 @@ const PRODUCTS = [
     color: "#c1a887",
     image: "https://files.cdn.printful.com/files/87c/87c29d8be576188cdc3f4610b3ccc69d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/8f3/8f333b8f56292b69729c2c8f7a488b6f_preview.png",
       "https://files.cdn.printful.com/files/87c/87c29d8be576188cdc3f4610b3ccc69d_preview.png",
+      "https://files.cdn.printful.com/files/40d/40dee7f8d60abd75726df26753937fd1_preview.png",
       "https://files.cdn.printful.com/files/3ae/3ae6f7e067c0fd2540a3a20f69d323d1_preview.png",
       "https://files.cdn.printful.com/files/d27/d272780003beeee1ab56c47ab54246e1_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/8f3/8f333b8f56292b69729c2c8f7a488b6f_preview.png",
+      "https://files.cdn.printful.com/files/40d/40dee7f8d60abd75726df26753937fd1_preview.png",
     ],
     printfulProduct: 479372589,
     sizes: {
@@ -2826,9 +3438,15 @@ const PRODUCTS = [
     color: "#c9d0d6",
     image: "https://files.cdn.printful.com/files/1a0/1a09c7b9fbdd7632915db6b4f1c6bc9d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/6e8/6e8aa5d2b6fe43dc629162687cfb5392_preview.png",
       "https://files.cdn.printful.com/files/1a0/1a09c7b9fbdd7632915db6b4f1c6bc9d_preview.png",
+      "https://files.cdn.printful.com/files/e94/e9435a86a9528f760f1b38084b1b4cbb_preview.png",
       "https://files.cdn.printful.com/files/566/566f10021481d4a521a5785988e02386_preview.png",
       "https://files.cdn.printful.com/files/999/999d2a3b0ca86d22068a69c0a068a638_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/6e8/6e8aa5d2b6fe43dc629162687cfb5392_preview.png",
+      "https://files.cdn.printful.com/files/e94/e9435a86a9528f760f1b38084b1b4cbb_preview.png",
     ],
     printfulProduct: 479372589,
     sizes: {
@@ -2853,9 +3471,15 @@ const PRODUCTS = [
     color: "#fff7e8",
     image: "https://files.cdn.printful.com/files/a0c/a0cf1f9c62af459e62460fa8283969d6_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4ba/4bab8d90e325f4c34cabce7bf4b9ac66_preview.png",
       "https://files.cdn.printful.com/files/a0c/a0cf1f9c62af459e62460fa8283969d6_preview.png",
+      "https://files.cdn.printful.com/files/b05/b05f78d19cc9da183b09731d5579d286_preview.png",
       "https://files.cdn.printful.com/files/053/053515252cd88d900a913118e7e75ce2_preview.png",
       "https://files.cdn.printful.com/files/5ed/5ed60fe86eb35d84c934c8f5cfa63910_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4ba/4bab8d90e325f4c34cabce7bf4b9ac66_preview.png",
+      "https://files.cdn.printful.com/files/b05/b05f78d19cc9da183b09731d5579d286_preview.png",
     ],
     printfulProduct: 479372589,
     sizes: {
@@ -2881,9 +3505,15 @@ const PRODUCTS = [
     color: "#1c1c18",
     image: "https://files.cdn.printful.com/files/b9e/b9e23a9f849933c28568c4a531f16eda_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/eec/eec239bb372c18105302d3876a9c27b3_preview.png",
       "https://files.cdn.printful.com/files/b9e/b9e23a9f849933c28568c4a531f16eda_preview.png",
+      "https://files.cdn.printful.com/files/b54/b540c0ca97940aafbc954207e65bf474_preview.png",
       "https://files.cdn.printful.com/files/66f/66faebbcef157a1f51bdd13d5d0be13d_preview.png",
       "https://files.cdn.printful.com/files/305/3056eb4f55210f11f98a5b4cc8bfb70a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/eec/eec239bb372c18105302d3876a9c27b3_preview.png",
+      "https://files.cdn.printful.com/files/b54/b540c0ca97940aafbc954207e65bf474_preview.png",
     ],
     printfulProduct: 479246740,
     sizes: {
@@ -2908,9 +3538,15 @@ const PRODUCTS = [
     color: "#171c38",
     image: "https://files.cdn.printful.com/files/b2d/b2dd931e95e1abb37ce2b61b7fbaa38c_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4bf/4bfd0f37c235ef8f17848efb7656bb1a_preview.png",
       "https://files.cdn.printful.com/files/b2d/b2dd931e95e1abb37ce2b61b7fbaa38c_preview.png",
+      "https://files.cdn.printful.com/files/d3a/d3adddb1ab6109274eaf3aaaa5a33279_preview.png",
       "https://files.cdn.printful.com/files/300/3003c2a8c28327c2718c1e1ac0f1c7e0_preview.png",
       "https://files.cdn.printful.com/files/fc2/fc22163050e015dfb63f90e514f2ecf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4bf/4bfd0f37c235ef8f17848efb7656bb1a_preview.png",
+      "https://files.cdn.printful.com/files/d3a/d3adddb1ab6109274eaf3aaaa5a33279_preview.png",
     ],
     printfulProduct: 479246740,
     sizes: {
@@ -2935,9 +3571,15 @@ const PRODUCTS = [
     color: "#72373c",
     image: "https://files.cdn.printful.com/files/b64/b64f2eb74dd62bf092ab77e7202db45d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c69/c699861ec15d26b3cd328f5ba50e8f86_preview.png",
       "https://files.cdn.printful.com/files/b64/b64f2eb74dd62bf092ab77e7202db45d_preview.png",
+      "https://files.cdn.printful.com/files/c26/c265c2f5a7010e3a1fe2b3b59be774d7_preview.png",
       "https://files.cdn.printful.com/files/df4/df4313a73484b085abdd6cc8ec22de84_preview.png",
       "https://files.cdn.printful.com/files/5a6/5a6cb68655e5f1382247fd63b54414c4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c69/c699861ec15d26b3cd328f5ba50e8f86_preview.png",
+      "https://files.cdn.printful.com/files/c26/c265c2f5a7010e3a1fe2b3b59be774d7_preview.png",
     ],
     printfulProduct: 479246740,
     sizes: {
@@ -2962,9 +3604,15 @@ const PRODUCTS = [
     color: "#4d473b",
     image: "https://files.cdn.printful.com/files/e36/e36dc80ffd57225feb7424ff8fe27e34_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/242/242109e9a468e64732ebecf7be2f0999_preview.png",
       "https://files.cdn.printful.com/files/e36/e36dc80ffd57225feb7424ff8fe27e34_preview.png",
+      "https://files.cdn.printful.com/files/4a8/4a8c21b7a2abdd2cf120fce438d4558f_preview.png",
       "https://files.cdn.printful.com/files/9a2/9a2a7675cc147fc5991c9e40738848b2_preview.png",
       "https://files.cdn.printful.com/files/246/2464bfa1a3625d26c3b045a76e1adbf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/242/242109e9a468e64732ebecf7be2f0999_preview.png",
+      "https://files.cdn.printful.com/files/4a8/4a8c21b7a2abdd2cf120fce438d4558f_preview.png",
     ],
     printfulProduct: 479246740,
     sizes: {
@@ -2989,9 +3637,15 @@ const PRODUCTS = [
     color: "#537f72",
     image: "https://files.cdn.printful.com/files/56e/56ed5877610fc1868d808f861c942ec5_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/f7f/f7fe1420c04a13481c5d37c8a858e8dc_preview.png",
       "https://files.cdn.printful.com/files/56e/56ed5877610fc1868d808f861c942ec5_preview.png",
+      "https://files.cdn.printful.com/files/25a/25af68de300c357e44420cf73d7bbaf7_preview.png",
       "https://files.cdn.printful.com/files/616/616ead4d52b8f14bde64d552f9bc0280_preview.png",
       "https://files.cdn.printful.com/files/f2f/f2fbcd5dd4d6f5c63f041f891a0f50f6_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/f7f/f7fe1420c04a13481c5d37c8a858e8dc_preview.png",
+      "https://files.cdn.printful.com/files/25a/25af68de300c357e44420cf73d7bbaf7_preview.png",
     ],
     printfulProduct: 479246740,
     sizes: {
@@ -3001,87 +3655,6 @@ const PRODUCTS = [
       XL: { syncVariantId: 5559658111 },
       "2XL": { syncVariantId: 5559658112 },
       "3XL": { syncVariantId: 5559658113 },
-    },
-  },
-  {
-    id: "tee-name-khaki",
-    group: "tee-name",
-    type: "T-shirts",
-    collection: "core",
-    title: "ܒܪܟ݂ܐ Tee",
-    colorName: "Khaki",
-    name: "BARKHO ܒܪܟ݂ܐ Tee — Khaki",
-    description: "Heavyweight garment-dyed oversized tee with ܒܪܟ݂ܐ (BARKHO in modern Assyrian) embroidered in black on the left chest.",
-    priceNok: 449,
-    color: "#c1a887",
-    image: "https://files.cdn.printful.com/files/662/662731fd92ef7b04079737c572e5c37d_preview.png",
-    images: [
-      "https://files.cdn.printful.com/files/662/662731fd92ef7b04079737c572e5c37d_preview.png",
-      "https://files.cdn.printful.com/files/3ae/3ae6f7e067c0fd2540a3a20f69d323d1_preview.png",
-      "https://files.cdn.printful.com/files/d27/d272780003beeee1ab56c47ab54246e1_preview.png",
-    ],
-    printfulProduct: 479376021,
-    sizes: {
-      S: { syncVariantId: 5560423650 },
-      M: { syncVariantId: 5560423651 },
-      L: { syncVariantId: 5560423652 },
-      XL: { syncVariantId: 5560423653 },
-      "2XL": { syncVariantId: 5560423654 },
-      "3XL": { syncVariantId: 5560423655 },
-    },
-  },
-  {
-    id: "tee-name-light-washed-denim",
-    group: "tee-name",
-    type: "T-shirts",
-    collection: "core",
-    title: "ܒܪܟ݂ܐ Tee",
-    colorName: "Light Washed Denim",
-    name: "BARKHO ܒܪܟ݂ܐ Tee — Light Washed Denim",
-    description: "Heavyweight garment-dyed oversized tee with ܒܪܟ݂ܐ (BARKHO in modern Assyrian) embroidered in black on the left chest.",
-    priceNok: 449,
-    color: "#c9d0d6",
-    image: "https://files.cdn.printful.com/files/419/4192bc09c10c675b412b25523a6ba9a7_preview.png",
-    images: [
-      "https://files.cdn.printful.com/files/419/4192bc09c10c675b412b25523a6ba9a7_preview.png",
-      "https://files.cdn.printful.com/files/566/566f10021481d4a521a5785988e02386_preview.png",
-      "https://files.cdn.printful.com/files/999/999d2a3b0ca86d22068a69c0a068a638_preview.png",
-    ],
-    printfulProduct: 479376021,
-    sizes: {
-      S: { syncVariantId: 5560423656 },
-      M: { syncVariantId: 5560423657 },
-      L: { syncVariantId: 5560423658 },
-      XL: { syncVariantId: 5560423659 },
-      "2XL": { syncVariantId: 5560423660 },
-      "3XL": { syncVariantId: 5560423661 },
-    },
-  },
-  {
-    id: "tee-name-vintage-white",
-    group: "tee-name",
-    type: "T-shirts",
-    collection: "core",
-    title: "ܒܪܟ݂ܐ Tee",
-    colorName: "Vintage White",
-    name: "BARKHO ܒܪܟ݂ܐ Tee — Vintage White",
-    description: "Heavyweight garment-dyed oversized tee with ܒܪܟ݂ܐ (BARKHO in modern Assyrian) embroidered in black on the left chest.",
-    priceNok: 449,
-    color: "#fff7e8",
-    image: "https://files.cdn.printful.com/files/a36/a363fe49c1739a740833a8e0c4a7d1b4_preview.png",
-    images: [
-      "https://files.cdn.printful.com/files/a36/a363fe49c1739a740833a8e0c4a7d1b4_preview.png",
-      "https://files.cdn.printful.com/files/053/053515252cd88d900a913118e7e75ce2_preview.png",
-      "https://files.cdn.printful.com/files/5ed/5ed60fe86eb35d84c934c8f5cfa63910_preview.png",
-    ],
-    printfulProduct: 479376021,
-    sizes: {
-      S: { syncVariantId: 5560423662 },
-      M: { syncVariantId: 5560423663 },
-      L: { syncVariantId: 5560423664 },
-      XL: { syncVariantId: 5560423665 },
-      "2XL": { syncVariantId: 5560423666 },
-      "3XL": { syncVariantId: 5560423667 },
     },
   },
   // ---------- T-shirts: ܒܪܟ݂ܐ Tee — Back Rosette ----------
@@ -3098,9 +3671,15 @@ const PRODUCTS = [
     color: "#1c1c18",
     image: "https://files.cdn.printful.com/files/6a2/6a2e3aafbdb899cc83414909a83dcdad_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/c3f/c3f11e127550ffdc27753b21bf2f1671_preview.png",
       "https://files.cdn.printful.com/files/6a2/6a2e3aafbdb899cc83414909a83dcdad_preview.png",
+      "https://files.cdn.printful.com/files/1e0/1e0d921b30502b17aad283cd34ee33da_preview.png",
       "https://files.cdn.printful.com/files/465/465899bfcf6b8ceda83e881a79ea6e77_preview.png",
       "https://files.cdn.printful.com/files/305/3056eb4f55210f11f98a5b4cc8bfb70a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/c3f/c3f11e127550ffdc27753b21bf2f1671_preview.png",
+      "https://files.cdn.printful.com/files/1e0/1e0d921b30502b17aad283cd34ee33da_preview.png",
     ],
     printfulProduct: 479249194,
     sizes: {
@@ -3125,9 +3704,15 @@ const PRODUCTS = [
     color: "#171c38",
     image: "https://files.cdn.printful.com/files/211/2117308762a2d45649cac46a9c740e20_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/9c5/9c5833449f5b8ee9a93817f30ce7c4fe_preview.png",
       "https://files.cdn.printful.com/files/211/2117308762a2d45649cac46a9c740e20_preview.png",
+      "https://files.cdn.printful.com/files/358/3586a7fd426f6177a1e02e9bb9508e2b_preview.png",
       "https://files.cdn.printful.com/files/f15/f1519ddd16a0770e15fd7a0f3755026d_preview.png",
       "https://files.cdn.printful.com/files/fc2/fc22163050e015dfb63f90e514f2ecf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/9c5/9c5833449f5b8ee9a93817f30ce7c4fe_preview.png",
+      "https://files.cdn.printful.com/files/358/3586a7fd426f6177a1e02e9bb9508e2b_preview.png",
     ],
     printfulProduct: 479249194,
     sizes: {
@@ -3152,9 +3737,15 @@ const PRODUCTS = [
     color: "#72373c",
     image: "https://files.cdn.printful.com/files/4ae/4ae557d5280cea0a44aad959f1ebf1d9_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/fd4/fd43ab60571c47b2fecd8cbb0f6511ef_preview.png",
       "https://files.cdn.printful.com/files/4ae/4ae557d5280cea0a44aad959f1ebf1d9_preview.png",
+      "https://files.cdn.printful.com/files/aff/aff24b26f66293e2511bbb42c36fc7db_preview.png",
       "https://files.cdn.printful.com/files/a88/a8847f1fbe4d7b1a7f1f8ee62f6605de_preview.png",
       "https://files.cdn.printful.com/files/5a6/5a6cb68655e5f1382247fd63b54414c4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/fd4/fd43ab60571c47b2fecd8cbb0f6511ef_preview.png",
+      "https://files.cdn.printful.com/files/aff/aff24b26f66293e2511bbb42c36fc7db_preview.png",
     ],
     printfulProduct: 479249194,
     sizes: {
@@ -3179,9 +3770,15 @@ const PRODUCTS = [
     color: "#4d473b",
     image: "https://files.cdn.printful.com/files/c73/c73a80589becb1125dc05aec63f2a649_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/b88/b883c050277350ae9e5a7c520fb6e279_preview.png",
       "https://files.cdn.printful.com/files/c73/c73a80589becb1125dc05aec63f2a649_preview.png",
+      "https://files.cdn.printful.com/files/4d8/4d80c1d6b59d53a5375eb563c38d4fbf_preview.png",
       "https://files.cdn.printful.com/files/a7c/a7cac96d517005d1102ad8c3e9e12f7f_preview.png",
       "https://files.cdn.printful.com/files/246/2464bfa1a3625d26c3b045a76e1adbf4_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/b88/b883c050277350ae9e5a7c520fb6e279_preview.png",
+      "https://files.cdn.printful.com/files/4d8/4d80c1d6b59d53a5375eb563c38d4fbf_preview.png",
     ],
     printfulProduct: 479249194,
     sizes: {
@@ -3206,9 +3803,15 @@ const PRODUCTS = [
     color: "#537f72",
     image: "https://files.cdn.printful.com/files/4d9/4d9df71406654267a61ad61a6b3d08ff_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/940/940ae052bb43ac4bbdb06c13b6e32b3c_preview.png",
       "https://files.cdn.printful.com/files/4d9/4d9df71406654267a61ad61a6b3d08ff_preview.png",
+      "https://files.cdn.printful.com/files/ed7/ed7ca5ff20fa36ccd7a0389da3373334_preview.png",
       "https://files.cdn.printful.com/files/160/160fda5c874cf4275afe4cd5d409c183_preview.png",
       "https://files.cdn.printful.com/files/f2f/f2fbcd5dd4d6f5c63f041f891a0f50f6_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/940/940ae052bb43ac4bbdb06c13b6e32b3c_preview.png",
+      "https://files.cdn.printful.com/files/ed7/ed7ca5ff20fa36ccd7a0389da3373334_preview.png",
     ],
     printfulProduct: 479249194,
     sizes: {
@@ -3234,9 +3837,15 @@ const PRODUCTS = [
     color: "#121212",
     image: "https://files.cdn.printful.com/files/2b2/2b2dbe648e3291bd6711cc7d1e9fa208_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/ad2/ad2306b3d6934ba77195d703c1a14799_preview.png",
       "https://files.cdn.printful.com/files/2b2/2b2dbe648e3291bd6711cc7d1e9fa208_preview.png",
+      "https://files.cdn.printful.com/files/5f5/5f52fb93b37d579361b66207ad5b0d30_preview.png",
       "https://files.cdn.printful.com/files/9c2/9c22593cd48d0232a0bb51ecfb8ef4f6_preview.png",
       "https://files.cdn.printful.com/files/035/035ca82a89d9f3f6cccdf1656f7d8c80_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/ad2/ad2306b3d6934ba77195d703c1a14799_preview.png",
+      "https://files.cdn.printful.com/files/5f5/5f52fb93b37d579361b66207ad5b0d30_preview.png",
     ],
     printfulProduct: 479382741,
     sizes: {
@@ -3263,9 +3872,15 @@ const PRODUCTS = [
     color: "#1a252e",
     image: "https://files.cdn.printful.com/files/d39/d396bf4d4922cb1859b26715fc0ffbe1_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/66d/66da303ff74e364dbb020db5c5a8e7a6_preview.png",
       "https://files.cdn.printful.com/files/d39/d396bf4d4922cb1859b26715fc0ffbe1_preview.png",
+      "https://files.cdn.printful.com/files/3af/3af1ca76049d1497bf683f18b1535f5f_preview.png",
       "https://files.cdn.printful.com/files/438/43868be8f9a411cd3aacc9cd931d278f_preview.png",
       "https://files.cdn.printful.com/files/38e/38e146fbd7b994480a7d9fb7270380a8_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/66d/66da303ff74e364dbb020db5c5a8e7a6_preview.png",
+      "https://files.cdn.printful.com/files/3af/3af1ca76049d1497bf683f18b1535f5f_preview.png",
     ],
     printfulProduct: 479382741,
     sizes: {
@@ -3292,9 +3907,15 @@ const PRODUCTS = [
     color: "#df0830",
     image: "https://files.cdn.printful.com/files/f61/f610c4e2bdeb41963bca06543f128f2d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/683/683d0ce7f9e31d8e80b1f0336e8009d4_preview.png",
       "https://files.cdn.printful.com/files/f61/f610c4e2bdeb41963bca06543f128f2d_preview.png",
+      "https://files.cdn.printful.com/files/36a/36aaf080ff95bbbf02c2368f8cc755f7_preview.png",
       "https://files.cdn.printful.com/files/39c/39c25c840f23c70a3504e3aa719bba17_preview.png",
       "https://files.cdn.printful.com/files/b62/b622f223c3aeff6144dc1dc7b843887e_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/683/683d0ce7f9e31d8e80b1f0336e8009d4_preview.png",
+      "https://files.cdn.printful.com/files/36a/36aaf080ff95bbbf02c2368f8cc755f7_preview.png",
     ],
     printfulProduct: 479382741,
     sizes: {
@@ -3321,9 +3942,15 @@ const PRODUCTS = [
     color: "#47464a",
     image: "https://files.cdn.printful.com/files/1b4/1b49c0921c126890d57583f70a760cc1_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/6df/6dfd29fb3c71b66f26a39d2410f9c848_preview.png",
       "https://files.cdn.printful.com/files/1b4/1b49c0921c126890d57583f70a760cc1_preview.png",
+      "https://files.cdn.printful.com/files/b80/b80a72df0b6d76f175c2f1c9900727a3_preview.png",
       "https://files.cdn.printful.com/files/d55/d5584b9658edafc98ff8f9dd47bf5ee9_preview.png",
       "https://files.cdn.printful.com/files/280/28084bf764af4bd87a3d56d47dd7b22c_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/6df/6dfd29fb3c71b66f26a39d2410f9c848_preview.png",
+      "https://files.cdn.printful.com/files/b80/b80a72df0b6d76f175c2f1c9900727a3_preview.png",
     ],
     printfulProduct: 479382741,
     sizes: {
@@ -3347,9 +3974,15 @@ const PRODUCTS = [
     color: "#808080",
     image: "https://files.cdn.printful.com/files/30f/30f4a6682b9ec2c508fdbee35f660d7e_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/86f/86f724bc49785fe73564fbe4c06bd985_preview.png",
       "https://files.cdn.printful.com/files/30f/30f4a6682b9ec2c508fdbee35f660d7e_preview.png",
+      "https://files.cdn.printful.com/files/334/33420b09bf93619798ea48760d624aab_preview.png",
       "https://files.cdn.printful.com/files/17b/17b87e3d295ffad2d48efbfc3dd27187_preview.png",
       "https://files.cdn.printful.com/files/e61/e61c8631928a09d01f98f9d8194102b7_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/86f/86f724bc49785fe73564fbe4c06bd985_preview.png",
+      "https://files.cdn.printful.com/files/334/33420b09bf93619798ea48760d624aab_preview.png",
     ],
     printfulProduct: 479382904,
     sizes: {
@@ -3373,9 +4006,15 @@ const PRODUCTS = [
     color: "#e9cfa5",
     image: "https://files.cdn.printful.com/files/239/23965e0ea2fef42d21eb1622f20ea8af_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/4ed/4ed0217103ac5b3932c388f810c94d26_preview.png",
       "https://files.cdn.printful.com/files/239/23965e0ea2fef42d21eb1622f20ea8af_preview.png",
+      "https://files.cdn.printful.com/files/7ec/7ecba1c7f0e7f6c21b9bdf400e123997_preview.png",
       "https://files.cdn.printful.com/files/572/572249a809a5443b6de32632b19a48b2_preview.png",
       "https://files.cdn.printful.com/files/efe/efeae03525531a156e8600221daf86ce_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/4ed/4ed0217103ac5b3932c388f810c94d26_preview.png",
+      "https://files.cdn.printful.com/files/7ec/7ecba1c7f0e7f6c21b9bdf400e123997_preview.png",
     ],
     printfulProduct: 479382904,
     sizes: {
@@ -3399,9 +4038,15 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/d58/d580c2808420cd8df6dd1fca49ae2003_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/6b4/6b41d2d4a9b0ea23cda102439f27e6b2_preview.png",
       "https://files.cdn.printful.com/files/d58/d580c2808420cd8df6dd1fca49ae2003_preview.png",
+      "https://files.cdn.printful.com/files/f7b/f7bae6d55bf2446e03e394ed788d9df2_preview.png",
       "https://files.cdn.printful.com/files/0a9/0a9180af42aa0602af52181c565c3213_preview.png",
       "https://files.cdn.printful.com/files/0de/0de890dbb7d75a6114f004b23af2db28_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/6b4/6b41d2d4a9b0ea23cda102439f27e6b2_preview.png",
+      "https://files.cdn.printful.com/files/f7b/f7bae6d55bf2446e03e394ed788d9df2_preview.png",
     ],
     printfulProduct: 479382904,
     sizes: {
@@ -3426,10 +4071,16 @@ const PRODUCTS = [
     color: "#24292f",
     image: "https://files.cdn.printful.com/files/fc1/fc1826020ccc8420d675ef82ec331c3d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/555/5550378aca53067f655d3ac03ff27d3a_preview.png",
       "https://files.cdn.printful.com/files/fc1/fc1826020ccc8420d675ef82ec331c3d_preview.png",
+      "https://files.cdn.printful.com/files/34a/34a37c3e42f9ccef4d78b6b7c31b8432_preview.png",
       "https://files.cdn.printful.com/files/cbd/cbd69d0e2de78a80baa467c820195eb5_preview.png",
       "https://files.cdn.printful.com/files/b8d/b8d2d4c1d740927c615016ce4efb42ba_preview.png",
       "https://files.cdn.printful.com/files/e86/e86884346a1712778c55294fce2e102a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/555/5550378aca53067f655d3ac03ff27d3a_preview.png",
+      "https://files.cdn.printful.com/files/34a/34a37c3e42f9ccef4d78b6b7c31b8432_preview.png",
     ],
     printfulProduct: 479260526,
     sizes: {
@@ -3469,10 +4120,16 @@ const PRODUCTS = [
     color: "#004074",
     image: "https://files.cdn.printful.com/files/1c2/1c2e979dfa3665940ea2deb0530f72a3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/381/3814a5d5f708f827bdc4eaf4324ab3f1_preview.png",
       "https://files.cdn.printful.com/files/1c2/1c2e979dfa3665940ea2deb0530f72a3_preview.png",
+      "https://files.cdn.printful.com/files/b72/b7251befdc8ee32aadd3c170a44bbbfa_preview.png",
       "https://files.cdn.printful.com/files/ddc/ddc91b71e1e650a5caaed1be7ed41277_preview.png",
       "https://files.cdn.printful.com/files/85d/85da902254fd955b2b72b045f55f87ad_preview.png",
       "https://files.cdn.printful.com/files/b7b/b7b75554266db50ced69cdbabe9f3e34_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/381/3814a5d5f708f827bdc4eaf4324ab3f1_preview.png",
+      "https://files.cdn.printful.com/files/b72/b7251befdc8ee32aadd3c170a44bbbfa_preview.png",
     ],
     printfulProduct: 479260526,
     sizes: {
@@ -3492,10 +4149,16 @@ const PRODUCTS = [
     color: "#9d9ca1",
     image: "https://files.cdn.printful.com/files/b47/b47677201c752c9128329ba9d4bdda46_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/44c/44c7fb10c2b9c5dafe2e2a7a27c40aca_preview.png",
       "https://files.cdn.printful.com/files/b47/b47677201c752c9128329ba9d4bdda46_preview.png",
+      "https://files.cdn.printful.com/files/d0e/d0e2c1d779b022ab02bbbb6b6b4b0040_preview.png",
       "https://files.cdn.printful.com/files/b0b/b0b2819acf984d3b0fb8ce4549bb6698_preview.png",
       "https://files.cdn.printful.com/files/c1d/c1d38dbb0231f302fdc097b2cae45dbf_preview.png",
       "https://files.cdn.printful.com/files/1cf/1cf9a987d151dc17ce8e905130ff9009_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/44c/44c7fb10c2b9c5dafe2e2a7a27c40aca_preview.png",
+      "https://files.cdn.printful.com/files/d0e/d0e2c1d779b022ab02bbbb6b6b4b0040_preview.png",
     ],
     printfulProduct: 479260526,
     sizes: {
@@ -3515,10 +4178,16 @@ const PRODUCTS = [
     color: "#b81530",
     image: "https://files.cdn.printful.com/files/3cc/3cc65a794677c0ad158ac6ba3714238f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/6c5/6c5eb550d9668c47b734c8d5c46736dc_preview.png",
       "https://files.cdn.printful.com/files/3cc/3cc65a794677c0ad158ac6ba3714238f_preview.png",
+      "https://files.cdn.printful.com/files/bfd/bfdae1cbea11dbfc67b8521ddb33eb07_preview.png",
       "https://files.cdn.printful.com/files/edb/edb3b868817ef574ee6ae09f0a6320b8_preview.png",
       "https://files.cdn.printful.com/files/0a5/0a537babaa794395a87595e61abeaaf7_preview.png",
       "https://files.cdn.printful.com/files/322/322b4307322510ab8cddc6b1357e7f9b_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/6c5/6c5eb550d9668c47b734c8d5c46736dc_preview.png",
+      "https://files.cdn.printful.com/files/bfd/bfdae1cbea11dbfc67b8521ddb33eb07_preview.png",
     ],
     printfulProduct: 479372706,
     sizes: {
@@ -3538,10 +4207,16 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/22b/22bf5893ae1b990dcab74e9449d6dce3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/d46/d46159537cf5b1e9d2f3b79691cd5b8a_preview.png",
       "https://files.cdn.printful.com/files/22b/22bf5893ae1b990dcab74e9449d6dce3_preview.png",
+      "https://files.cdn.printful.com/files/578/578bda6388e4519cbdcfb2b5c19b6909_preview.png",
       "https://files.cdn.printful.com/files/cb1/cb12b4f0055b1af87cf0f3e390f0860e_preview.png",
       "https://files.cdn.printful.com/files/6ce/6ce394df74924eefdddf1821e5ac861f_preview.png",
       "https://files.cdn.printful.com/files/6f7/6f705008fbd6940dfbcbf018a3957b14_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/d46/d46159537cf5b1e9d2f3b79691cd5b8a_preview.png",
+      "https://files.cdn.printful.com/files/578/578bda6388e4519cbdcfb2b5c19b6909_preview.png",
     ],
     printfulProduct: 479372955,
     sizes: {
@@ -3562,10 +4237,16 @@ const PRODUCTS = [
     color: "#24292f",
     image: "https://files.cdn.printful.com/files/e5a/e5a39117128565899c0a1d520744578b_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/408/408944c77f00072eec40b1ea0478a440_preview.png",
       "https://files.cdn.printful.com/files/e5a/e5a39117128565899c0a1d520744578b_preview.png",
+      "https://files.cdn.printful.com/files/afc/afccf25cf1b17c4a5fe6d1884ce7803f_preview.png",
       "https://files.cdn.printful.com/files/cbd/cbd69d0e2de78a80baa467c820195eb5_preview.png",
       "https://files.cdn.printful.com/files/b8d/b8d2d4c1d740927c615016ce4efb42ba_preview.png",
       "https://files.cdn.printful.com/files/e86/e86884346a1712778c55294fce2e102a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/408/408944c77f00072eec40b1ea0478a440_preview.png",
+      "https://files.cdn.printful.com/files/afc/afccf25cf1b17c4a5fe6d1884ce7803f_preview.png",
     ],
     printfulProduct: 479261375,
     sizes: {
@@ -3605,10 +4286,16 @@ const PRODUCTS = [
     color: "#004074",
     image: "https://files.cdn.printful.com/files/88e/88e62ff2597ccfe913f9e7623ba7a5ff_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/589/589e7e54415315ef8f6da9911464936e_preview.png",
       "https://files.cdn.printful.com/files/88e/88e62ff2597ccfe913f9e7623ba7a5ff_preview.png",
+      "https://files.cdn.printful.com/files/7d1/7d1c11b881496385e8d93de446cef958_preview.png",
       "https://files.cdn.printful.com/files/ddc/ddc91b71e1e650a5caaed1be7ed41277_preview.png",
       "https://files.cdn.printful.com/files/85d/85da902254fd955b2b72b045f55f87ad_preview.png",
       "https://files.cdn.printful.com/files/b7b/b7b75554266db50ced69cdbabe9f3e34_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/589/589e7e54415315ef8f6da9911464936e_preview.png",
+      "https://files.cdn.printful.com/files/7d1/7d1c11b881496385e8d93de446cef958_preview.png",
     ],
     printfulProduct: 479261375,
     sizes: {
@@ -3628,10 +4315,16 @@ const PRODUCTS = [
     color: "#9d9ca1",
     image: "https://files.cdn.printful.com/files/457/45713f749b548f8eed3bcb3085691d7a_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/aff/aff0e120baf8022619d9fae53519ede3_preview.png",
       "https://files.cdn.printful.com/files/457/45713f749b548f8eed3bcb3085691d7a_preview.png",
+      "https://files.cdn.printful.com/files/c05/c052847c70b563e2e03b67ac0af7660d_preview.png",
       "https://files.cdn.printful.com/files/b0b/b0b2819acf984d3b0fb8ce4549bb6698_preview.png",
       "https://files.cdn.printful.com/files/c1d/c1d38dbb0231f302fdc097b2cae45dbf_preview.png",
       "https://files.cdn.printful.com/files/1cf/1cf9a987d151dc17ce8e905130ff9009_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/aff/aff0e120baf8022619d9fae53519ede3_preview.png",
+      "https://files.cdn.printful.com/files/c05/c052847c70b563e2e03b67ac0af7660d_preview.png",
     ],
     printfulProduct: 479261375,
     sizes: {
@@ -3651,10 +4344,16 @@ const PRODUCTS = [
     color: "#b81530",
     image: "https://files.cdn.printful.com/files/15a/15a60c1074c8d7b5192b0c773f8e1092_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/a52/a5253293f8ffbee6cfe0cdfdf1cb516e_preview.png",
       "https://files.cdn.printful.com/files/15a/15a60c1074c8d7b5192b0c773f8e1092_preview.png",
+      "https://files.cdn.printful.com/files/aaf/aafa1ed9a90dc2f8e887243346f4509e_preview.png",
       "https://files.cdn.printful.com/files/edb/edb3b868817ef574ee6ae09f0a6320b8_preview.png",
       "https://files.cdn.printful.com/files/0a5/0a537babaa794395a87595e61abeaaf7_preview.png",
       "https://files.cdn.printful.com/files/322/322b4307322510ab8cddc6b1357e7f9b_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/a52/a5253293f8ffbee6cfe0cdfdf1cb516e_preview.png",
+      "https://files.cdn.printful.com/files/aaf/aafa1ed9a90dc2f8e887243346f4509e_preview.png",
     ],
     printfulProduct: 479373017,
     sizes: {
@@ -3674,10 +4373,16 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/3f0/3f08615524b1d413216fedbe7b92af3f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/478/4784bde8c18869b3dd6dcd7696c9c996_preview.png",
       "https://files.cdn.printful.com/files/3f0/3f08615524b1d413216fedbe7b92af3f_preview.png",
+      "https://files.cdn.printful.com/files/f0d/f0d8d32d8aba6757440596d153bd4f56_preview.png",
       "https://files.cdn.printful.com/files/cb1/cb12b4f0055b1af87cf0f3e390f0860e_preview.png",
       "https://files.cdn.printful.com/files/6ce/6ce394df74924eefdddf1821e5ac861f_preview.png",
       "https://files.cdn.printful.com/files/6f7/6f705008fbd6940dfbcbf018a3957b14_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/478/4784bde8c18869b3dd6dcd7696c9c996_preview.png",
+      "https://files.cdn.printful.com/files/f0d/f0d8d32d8aba6757440596d153bd4f56_preview.png",
     ],
     printfulProduct: 479373043,
     sizes: {
@@ -3698,10 +4403,16 @@ const PRODUCTS = [
     color: "#24292f",
     image: "https://files.cdn.printful.com/files/fc1/fc1826020ccc8420d675ef82ec331c3d_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/555/5550378aca53067f655d3ac03ff27d3a_preview.png",
       "https://files.cdn.printful.com/files/fc1/fc1826020ccc8420d675ef82ec331c3d_preview.png",
+      "https://files.cdn.printful.com/files/34a/34a37c3e42f9ccef4d78b6b7c31b8432_preview.png",
       "https://files.cdn.printful.com/files/75b/75be37752ba94cb2441257c65a810ac2_preview.png",
       "https://files.cdn.printful.com/files/b8d/b8d2d4c1d740927c615016ce4efb42ba_preview.png",
       "https://files.cdn.printful.com/files/e86/e86884346a1712778c55294fce2e102a_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/555/5550378aca53067f655d3ac03ff27d3a_preview.png",
+      "https://files.cdn.printful.com/files/34a/34a37c3e42f9ccef4d78b6b7c31b8432_preview.png",
     ],
     printfulProduct: 479261771,
     sizes: {
@@ -3741,10 +4452,16 @@ const PRODUCTS = [
     color: "#004074",
     image: "https://files.cdn.printful.com/files/1c2/1c2e979dfa3665940ea2deb0530f72a3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/381/3814a5d5f708f827bdc4eaf4324ab3f1_preview.png",
       "https://files.cdn.printful.com/files/1c2/1c2e979dfa3665940ea2deb0530f72a3_preview.png",
+      "https://files.cdn.printful.com/files/b72/b7251befdc8ee32aadd3c170a44bbbfa_preview.png",
       "https://files.cdn.printful.com/files/879/87959adb6b25b4e35f67d11709784095_preview.png",
       "https://files.cdn.printful.com/files/85d/85da902254fd955b2b72b045f55f87ad_preview.png",
       "https://files.cdn.printful.com/files/b7b/b7b75554266db50ced69cdbabe9f3e34_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/381/3814a5d5f708f827bdc4eaf4324ab3f1_preview.png",
+      "https://files.cdn.printful.com/files/b72/b7251befdc8ee32aadd3c170a44bbbfa_preview.png",
     ],
     printfulProduct: 479261771,
     sizes: {
@@ -3764,10 +4481,16 @@ const PRODUCTS = [
     color: "#9d9ca1",
     image: "https://files.cdn.printful.com/files/b47/b47677201c752c9128329ba9d4bdda46_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/44c/44c7fb10c2b9c5dafe2e2a7a27c40aca_preview.png",
       "https://files.cdn.printful.com/files/b47/b47677201c752c9128329ba9d4bdda46_preview.png",
+      "https://files.cdn.printful.com/files/d0e/d0e2c1d779b022ab02bbbb6b6b4b0040_preview.png",
       "https://files.cdn.printful.com/files/63d/63db59005062ab05e1bb6c614175fe72_preview.png",
       "https://files.cdn.printful.com/files/c1d/c1d38dbb0231f302fdc097b2cae45dbf_preview.png",
       "https://files.cdn.printful.com/files/1cf/1cf9a987d151dc17ce8e905130ff9009_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/44c/44c7fb10c2b9c5dafe2e2a7a27c40aca_preview.png",
+      "https://files.cdn.printful.com/files/d0e/d0e2c1d779b022ab02bbbb6b6b4b0040_preview.png",
     ],
     printfulProduct: 479261771,
     sizes: {
@@ -3787,10 +4510,16 @@ const PRODUCTS = [
     color: "#b81530",
     image: "https://files.cdn.printful.com/files/3cc/3cc65a794677c0ad158ac6ba3714238f_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/6c5/6c5eb550d9668c47b734c8d5c46736dc_preview.png",
       "https://files.cdn.printful.com/files/3cc/3cc65a794677c0ad158ac6ba3714238f_preview.png",
+      "https://files.cdn.printful.com/files/bfd/bfdae1cbea11dbfc67b8521ddb33eb07_preview.png",
       "https://files.cdn.printful.com/files/12b/12bfd7662f7808408617b5bdbe222149_preview.png",
       "https://files.cdn.printful.com/files/0a5/0a537babaa794395a87595e61abeaaf7_preview.png",
       "https://files.cdn.printful.com/files/322/322b4307322510ab8cddc6b1357e7f9b_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/6c5/6c5eb550d9668c47b734c8d5c46736dc_preview.png",
+      "https://files.cdn.printful.com/files/bfd/bfdae1cbea11dbfc67b8521ddb33eb07_preview.png",
     ],
     printfulProduct: 479373092,
     sizes: {
@@ -3810,10 +4539,16 @@ const PRODUCTS = [
     color: "#ffffff",
     image: "https://files.cdn.printful.com/files/22b/22bf5893ae1b990dcab74e9449d6dce3_preview.png",
     images: [
+      "https://files.cdn.printful.com/files/1ac/1ac78fe66b0a49d624f8d969ed201086_preview.png",
       "https://files.cdn.printful.com/files/22b/22bf5893ae1b990dcab74e9449d6dce3_preview.png",
+      "https://files.cdn.printful.com/files/e19/e198b946631a245307403ed1427b2dc6_preview.png",
       "https://files.cdn.printful.com/files/638/6383b253bc64d86a0861fc5b9436ca25_preview.png",
       "https://files.cdn.printful.com/files/6ce/6ce394df74924eefdddf1821e5ac861f_preview.png",
       "https://files.cdn.printful.com/files/6f7/6f705008fbd6940dfbcbf018a3957b14_preview.png",
+    ],
+    models: [
+      "https://files.cdn.printful.com/files/1ac/1ac78fe66b0a49d624f8d969ed201086_preview.png",
+      "https://files.cdn.printful.com/files/e19/e198b946631a245307403ed1427b2dc6_preview.png",
     ],
     printfulProduct: 479373245,
     sizes: {

@@ -118,9 +118,12 @@
           .map((v) => `<span class="color-dot" title="${v.colorName || ""}" style="background:${v.color}"></span>`)
           .join("")}</div>`
       : "";
+    const model = product.models && product.models.length ? product.models[0] : null;
     tile.innerHTML = `
-      <div class="product-swatch" style="background:${swatchBackground(product)};overflow:hidden;position:relative;">
+      <div class="product-swatch" style="background:${swatchBackground(product)};">
         ${swatchInner(product)}
+        ${model ? `<img class="tile-model" src="${model}" alt="${product.title || product.name} worn by a model" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">` : ""}
+        ${model ? '<span class="model-tag">On model</span>' : ""}
         ${product.comingSoon ? '<span class="soon-badge">Coming soon</span>' : ""}
       </div>
       <p class="product-name">${product.title || product.name}</p>
@@ -167,6 +170,7 @@
         if (type) {
           const h = document.createElement("h3");
           h.className = "type-title";
+          h.id = "type-" + type.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
           h.textContent = type;
           section.appendChild(h);
         }
@@ -232,6 +236,7 @@
 
     cartSubtotalEl.textContent = cartSubtotal() + " NOK";
     cartCountEl.textContent = cart.reduce((n, l) => n + l.qty, 0);
+    if (typeof updateShipNote === "function") updateShipNote();
   }
 
   // ---------- cart drawer open/close ----------
@@ -403,8 +408,27 @@
     const saved = localStorage.getItem("barkho_ship_region");
     if (saved && SHIP_NOTES[saved]) shipRegionEl.value = saved;
   } catch (e) { /* ignore */ }
+  // Free shipping in Europe from this subtotal (must match create-checkout-session.js)
+  const FREE_SHIPPING_FROM = 1200;
+  const freeShipEl = document.getElementById("freeShip");
   function updateShipNote() {
-    cartNoteEl.textContent = SHIP_NOTES[shipRegionEl.value] || SHIP_NOTES.europe;
+    const europe = shipRegionEl.value === "europe";
+    const sub = cartSubtotal();
+    const free = europe && sub >= FREE_SHIPPING_FROM;
+    cartNoteEl.textContent = free
+      ? "Free shipping. Made to order — ships in 2–5 business days."
+      : SHIP_NOTES[shipRegionEl.value] || SHIP_NOTES.europe;
+    if (freeShipEl) {
+      if (!europe || cart.length === 0) {
+        freeShipEl.innerHTML = "";
+      } else {
+        const pct = Math.min(100, Math.round((sub / FREE_SHIPPING_FROM) * 100));
+        freeShipEl.innerHTML = (free
+          ? "<b>You get free shipping.</b>"
+          : `Add <b>${FREE_SHIPPING_FROM - sub} NOK</b> more for free shipping.`) +
+          `<div class="free-ship-bar"><span style="width:${pct}%"></span></div>`;
+      }
+    }
     try { localStorage.setItem("barkho_ship_region", shipRegionEl.value); } catch (e) { /* ignore */ }
   }
   shipRegionEl.addEventListener("change", updateShipNote);
