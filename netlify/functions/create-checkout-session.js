@@ -5,6 +5,9 @@ const stripe = process.env.STRIPE_SECRET_KEY ? Stripe(process.env.STRIPE_SECRET_
 
 // Shipping regions. The customer picks one in the cart; Stripe then only
 // accepts addresses in that region's countries and charges its flat fee (NOK).
+// Free shipping for Europe from this subtotal (NOK). Must match script.js.
+const FREE_SHIPPING_FROM_NOK = 1200;
+
 const SHIPPING_REGIONS = {
   europe: {
     countries: ["NO", "SE", "DK", "FI", "DE", "NL", "GB", "US"],
@@ -51,6 +54,7 @@ exports.handler = async (event) => {
   }
 
   const line_items = [];
+  let subtotalNok = 0;
   for (const line of cart) {
     const product = PRODUCTS.find((p) => p.id === line.id);
     if (!product) {
@@ -61,6 +65,8 @@ exports.handler = async (event) => {
       return { statusCode: 400, body: `Unknown size "${line.size}" for ${line.id}` };
     }
     const qty = Number.isInteger(line.qty) && line.qty > 0 ? line.qty : 1;
+
+    subtotalNok += product.priceNok * qty;
 
     line_items.push({
       quantity: qty,
@@ -77,21 +83,28 @@ exports.handler = async (event) => {
   const region = SHIPPING_REGIONS[payload.region] ? payload.region : "europe";
   const ship = SHIPPING_REGIONS[region];
 
+  // Free shipping in Europe above the threshold (before any discount code).
+  const freeShipping = region === "europe" && subtotalNok >= FREE_SHIPPING_FROM_NOK;
+  const shippingFeeNok = freeShipping ? 0 : ship.feeNok;
+  const shippingLabel = freeShipping ? "Free shipping" : ship.label;
+
   const cartForMetadata = cart.map((l) => ({ id: l.id, size: l.size, qty: l.qty }));
 
   try {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items,
+      // Lets customers type a promotion code (e.g. WELCOME10) on the Stripe page.
+      allow_promotion_codes: true,
       success_url: `${siteUrl}/success.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/cancel.html`,
       shipping_address_collection: { allowed_countries: ship.countries },
       shipping_options: [
         {
           shipping_rate_data: {
-            display_name: ship.label,
+            display_name: shippingLabel,
             type: "fixed_amount",
-            fixed_amount: { amount: ship.feeNok * 100, currency: "nok" },
+            fixed_amount: { amount: shippingFeeNok * 100, currency: "nok" },
             delivery_estimate: {
               minimum: { unit: "business_day", value: ship.days[0] },
               maximum: { unit: "business_day", value: ship.days[1] },
